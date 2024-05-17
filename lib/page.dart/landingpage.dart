@@ -9,6 +9,8 @@ class landingpage extends StatelessWidget {
         body: SafeArea(
           top: true,
           child: Container(
+             width: MediaQuery.sizeOf(context).width * 1,
+            height: MediaQuery.sizeOf(context).height * 1,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
@@ -21,6 +23,7 @@ class landingpage extends StatelessWidget {
                 end: AlignmentDirectional(1, 0.98),
               ),
             ),
+            child:SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -229,7 +232,7 @@ class landingpage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          // Generated code for this Row Widget...
+                          
                           Padding(
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
@@ -315,7 +318,7 @@ class landingpage extends StatelessWidget {
 
                           Padding(
                             padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
+                                EdgeInsetsDirectional.fromSTEB(0, 60, 0, 0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
@@ -599,6 +602,7 @@ class landingpage extends StatelessWidget {
             ),
           ),
         ),
+      ),
       ),
     );
   }
