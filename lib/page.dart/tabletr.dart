@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class landingpage extends StatelessWidget {
+class tabletpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -28,7 +28,7 @@ class landingpage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(90, 20, 0, 0),
+                    padding: EdgeInsetsDirectional.fromSTEB(80, 20, 0, 0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,7 +67,7 @@ class landingpage extends StatelessWidget {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(70, 0, 70, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -101,7 +101,7 @@ class landingpage extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 400,
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 150,
                               0), // Replace STEB with your desired padding value
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -119,7 +119,7 @@ class landingpage extends StatelessWidget {
                         ),
                         Padding(
                           padding:
-                              EdgeInsetsDirectional.fromSTEB(50, 0, 150, 0),
+                              EdgeInsetsDirectional.fromSTEB(0, 0, 100, 0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -614,9 +614,9 @@ class landingpage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // Generated code for this Row Widget...
+                 
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(150, 40, 150, 40),
+                    padding: EdgeInsetsDirectional.fromSTEB(60, 40, 60, 40),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -690,7 +690,7 @@ class landingpage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(100, 0, 0, 0),
+                                  EdgeInsetsDirectional.fromSTEB(50, 0, 0, 0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -775,7 +775,7 @@ class landingpage extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(100, 0, 0, 0),
+                                  EdgeInsetsDirectional.fromSTEB(50, 0, 0, 0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [

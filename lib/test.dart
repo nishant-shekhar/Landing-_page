@@ -5,89 +5,90 @@ class Mobilel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent, // Set Scaffold background to transparent
+      backgroundColor:
+          Colors.transparent, // Set Scaffold background to transparent
       appBar: AppBar(
         title: Text('TM'),
-        backgroundColor: Colors.transparent, // Make AppBar background transparent
-        ),
-        endDrawer: Drawer(
-          child: Container(
-            child: ListView(
-              padding: EdgeInsetsDirectional.fromSTEB(0,40,0,0),
-              children: [
-                DrawerHeader(
-                  child: Text(
-                    'TM',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.w500,
-                    ),
+        backgroundColor:
+            Colors.transparent, // Make AppBar background transparent
+      ),
+      endDrawer: Drawer(
+        child: Container(
+          child: ListView(
+            padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
+            children: [
+              DrawerHeader(
+                child: Text(
+                  'TM',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
-                ListTile(
-                  title: Text('Resources'),
-                  onTap: () {
-                    // Update this function to perform the desired action when Item 1 is tapped
-                  },
-                ),
-                ListTile(
-                  title: Text('News'),
-                  onTap: () {
-                    // Update this function to perform the desired action when Item 2 is tapped
-                  },
-                ),
-                ListTile(
-                  onTap: () {
-                    // Update this function to perform the desired action when Item 3 is tapped
-                  },
-                  title: Container(
-                    width: 120,
-                    decoration: BoxDecoration(
-                      color: Color(0xFF3978F2),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 6,
-                          color: Color(0x33000000),
-                          offset: Offset(
-                            0,
-                            2,
-                          ),
-                          spreadRadius: 2,
-                        )
-                      ],
-                      borderRadius: BorderRadius.circular(50),
-                      shape: BoxShape.rectangle,
-                    ),
-                    child: Padding(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 10),
-                      child: Text(
-                        'Download app',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'Readex Pro',
-                          color: Colors
-                              .white, // Assuming you want white text color
-                          letterSpacing: 0,
+              ),
+              ListTile(
+                title: Text('Resources'),
+                onTap: () {
+                  // Update this function to perform the desired action when Item 1 is tapped
+                },
+              ),
+              ListTile(
+                title: Text('News'),
+                onTap: () {
+                  // Update this function to perform the desired action when Item 2 is tapped
+                },
+              ),
+              ListTile(
+                onTap: () {
+                  // Update this function to perform the desired action when Item 3 is tapped
+                },
+                title: Container(
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color(0xFF3978F2),
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 6,
+                        color: Color(0x33000000),
+                        offset: Offset(
+                          0,
+                          2,
                         ),
+                        spreadRadius: 2,
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(50),
+                    shape: BoxShape.rectangle,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+                    child: Text(
+                      'Download app',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'Readex Pro',
+                        color:
+                            Colors.white, // Assuming you want white text color
+                        letterSpacing: 0,
                       ),
                     ),
                   ),
-                )
-              ],
-            ),
+                ),
+              )
+            ],
           ),
         ),
-       body:Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Color(0xFFFD7E41), Color(0xFFFCC232), Color(0xFFF8F5F2)],
-              stops: [0, 0.1, 0.23],
-              begin: AlignmentDirectional(-1, -0.98),
-              end: AlignmentDirectional(1, 0.98),
-            ),
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color(0xFFFD7E41), Color(0xFFFCC232), Color(0xFFF8F5F2)],
+            stops: [0, 0.1, 0.23],
+            begin: AlignmentDirectional(-1, -0.98),
+            end: AlignmentDirectional(1, 0.98),
           ),
+        ),
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -526,11 +527,273 @@ class Mobilel extends StatelessWidget {
                   ],
                 ),
               ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 40),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.network(
+                                        'https://picsum.photos/seed/748/600',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Application',
+                                      style: TextStyle(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Container(
+                                      width: 240,
+                                      decoration: BoxDecoration(),
+                                      child: Text(
+                                        'he process of submitting interest in a job opening through a job app',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: 'Readex Pro',
+                                          letterSpacing: 0,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 20, 0, 0),
+                                    child: Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          0.95,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFFFFFFF),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.network(
+                                        'https://picsum.photos/seed/748/600',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'Dashboard',
+                                      style: TextStyle(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 240,
+                                      decoration: BoxDecoration(),
+                                      child: Text(
+                                        'A user interface in a job app providing an overview of job search activities and updates.',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: 'Readex Pro',
+                                          letterSpacing: 0,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 20, 0, 0),
+                                    child: Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          0.95,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFFFFFF6),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.network(
+                                        'https://picsum.photos/seed/748/600',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Algorithm',
+                                      style: TextStyle(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Container(
+                                      width: 240,
+                                      decoration: BoxDecoration(),
+                                      child: Text(
+                                        'A set of rules used by a job app to match users with relevant job opportunities based on their data',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: 'Readex Pro',
+                                          letterSpacing: 0,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
       ),
     );
-    
   }
 }
