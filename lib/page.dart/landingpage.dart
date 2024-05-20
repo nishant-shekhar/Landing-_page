@@ -101,7 +101,7 @@ class landingpage extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 400,
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0,
                               0), // Replace STEB with your desired padding value
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -616,10 +616,10 @@ class landingpage extends StatelessWidget {
                   ),
                   // Generated code for this Row Widget...
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(150, 40, 150, 40),
+                    padding: EdgeInsetsDirectional.fromSTEB(90, 40, 90, 40),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Row(
                           mainAxisSize: MainAxisSize.max,

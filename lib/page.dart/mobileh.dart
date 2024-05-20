@@ -5,8 +5,7 @@ class Mobilel2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-       child: Scaffold(
-        
+      child: Scaffold(
         body: Container(
           height: MediaQuery.sizeOf(context).height * 1,
           decoration: BoxDecoration(
@@ -32,16 +31,15 @@ class Mobilel2 extends StatelessWidget {
                         children: [
                           Text(
                             'TM',
-                            style:TextStyle(
-                                  fontFamily: 'Readex Pro',
-                                  fontSize: 18,
-                                  letterSpacing: 0,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                            style: TextStyle(
+                              fontFamily: 'Readex Pro',
+                              fontSize: 18,
+                              letterSpacing: 0,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ],
                       ),
-                      
                       Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -61,10 +59,8 @@ class Mobilel2 extends StatelessWidget {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Expanded(
-                      
                         child: Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(8, 20, 8, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(8, 20, 8, 0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -80,11 +76,11 @@ class Mobilel2 extends StatelessWidget {
                                     child: Text(
                                       'Start Your Journey Toward Success with Us!',
                                       style: TextStyle(
-                                            fontFamily: 'Readex Pro',
-                                            color: Color(0xFF28955E),
-                                            letterSpacing: 0,
-                                            fontWeight: FontWeight.w500,
-                                          ),
+                                        fontFamily: 'Readex Pro',
+                                        color: Color(0xFF28955E),
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.w500,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -102,12 +98,12 @@ class Mobilel2 extends StatelessWidget {
                                       child: Text(
                                         'Find your next career move on the go with our mobile app!',
                                         style: TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              color: Colors.black,
-                                              fontSize: 30,
-                                              letterSpacing: 0,
-                                              fontWeight: FontWeight.w600,
-                                            ),
+                                          fontFamily: 'Readex Pro',
+                                          color: Colors.black,
+                                          fontSize: 30,
+                                          letterSpacing: 0,
+                                          fontWeight: FontWeight.w600,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -126,11 +122,11 @@ class Mobilel2 extends StatelessWidget {
                                       child: Text(
                                         'Unlock Your Potential: Find Your Perfect Fit!',
                                         style: TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              color: Color(0xFF2E2D2C),
-                                              letterSpacing: 0,
-                                              fontWeight: FontWeight.w500,
-                                            ),
+                                          fontFamily: 'Readex Pro',
+                                          color: Color(0xFF2E2D2C),
+                                          letterSpacing: 0,
+                                          fontWeight: FontWeight.w500,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -259,11 +255,11 @@ class Mobilel2 extends StatelessWidget {
                                           child: Text(
                                             'Search Openings',
                                             style: TextStyle(
-                                                  fontFamily: 'Readex Pro',
-                                                  color: Color(0xFF7E7E7E),
-                                                  letterSpacing: 0,
-                                                  fontWeight: FontWeight.w300,
-                                                ),
+                                              fontFamily: 'Readex Pro',
+                                              color: Color(0xFF7E7E7E),
+                                              letterSpacing: 0,
+                                              fontWeight: FontWeight.w300,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -284,8 +280,7 @@ class Mobilel2 extends StatelessWidget {
                                             ),
                                             child: Icon(
                                               Icons.search,
-                                              color:
-                                                  Color(0xFFFFFFFF),
+                                              color: Color(0xFFFFFFFF),
                                               size: 24,
                                             ),
                                           ),
@@ -340,7 +335,7 @@ class Mobilel2 extends StatelessWidget {
                                                 decoration: BoxDecoration(),
                                                 child: Icon(
                                                   Icons.apple,
-                                                  color:Color(0xFFFFFFFF),
+                                                  color: Color(0xFFFFFFFF),
                                                   size: 30,
                                                 ),
                                               ),
@@ -360,12 +355,11 @@ class Mobilel2 extends StatelessWidget {
                                                   child: Text(
                                                     'Download on the',
                                                     style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          color:Color(0xFFFFFFFF),
-                                                          fontSize: 10,
-                                                          letterSpacing: 0,
-                                                        ),
+                                                      fontFamily: 'Readex Pro',
+                                                      color: Color(0xFFFFFFFF),
+                                                      fontSize: 10,
+                                                      letterSpacing: 0,
+                                                    ),
                                                   ),
                                                 ),
                                               ],
@@ -378,12 +372,11 @@ class Mobilel2 extends StatelessWidget {
                                                   child: Text(
                                                     'App store',
                                                     style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          color:Color(0xFFFFFFFF),
-                                                          fontSize: 14,
-                                                          letterSpacing: 0,
-                                                        ),
+                                                      fontFamily: 'Readex Pro',
+                                                      color: Color(0xFFFFFFFF),
+                                                      fontSize: 14,
+                                                      letterSpacing: 0,
+                                                    ),
                                                   ),
                                                 ),
                                               ],
@@ -458,13 +451,11 @@ class Mobilel2 extends StatelessWidget {
                                                   Text(
                                                     'GET IT ON',
                                                     style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          color:
-                                                              Color(0xFF39608F),
-                                                          fontSize: 10,
-                                                          letterSpacing: 0,
-                                                        ),
+                                                      fontFamily: 'Readex Pro',
+                                                      color: Color(0xFF39608F),
+                                                      fontSize: 10,
+                                                      letterSpacing: 0,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -474,13 +465,11 @@ class Mobilel2 extends StatelessWidget {
                                                   Text(
                                                     'GOOGLE PLAY',
                                                     style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          color:
-                                                              Color(0xFF39608F),
-                                                          fontSize: 14,
-                                                          letterSpacing: 0,
-                                                        ),
+                                                      fontFamily: 'Readex Pro',
+                                                      color: Color(0xFF39608F),
+                                                      fontSize: 14,
+                                                      letterSpacing: 0,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -499,6 +488,252 @@ class Mobilel2 extends StatelessWidget {
                     ],
                   ),
                 ),
+                // Generated code for this Row Widget...
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(5, 0, 5, 0),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.network(
+                                        'https://picsum.photos/seed/748/600',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Application',
+                                      style:TextStyle(
+                                            fontFamily: 'Readex Pro',
+                                            fontSize: 12,
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Container(
+                                      width: 200,
+                                      decoration: BoxDecoration(),
+                                      child: Text(
+                                        'he process of submitting interest in a job opening through a job app',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 10,
+                                              letterSpacing: 0,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Container(
+                              width: 2,
+                              height: 220,
+                              decoration: BoxDecoration(
+                                color:Color(0xFFFFFFFF),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.network(
+                                        'https://picsum.photos/seed/748/600',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'Dashboard',
+                                      style:TextStyle(
+                                            fontFamily: 'Readex Pro',
+                                            fontSize: 12,
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 200,
+                                      decoration: BoxDecoration(),
+                                      child: Text(
+                                        'A user interface in a job app providing an overview of job search activities and updates.',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 10,
+                                              letterSpacing: 0,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Container(
+                              width: 2,
+                              height: 220,
+                              decoration: BoxDecoration(
+                                color:Color(0xFFFFFFFF),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.network(
+                                        'https://picsum.photos/seed/748/600',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Algorithm',
+                                      style: TextStyle(
+                                            fontFamily: 'Readex Pro',
+                                            fontSize: 12,
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Container(
+                                      width: 200,
+                                      decoration: BoxDecoration(),
+                                      child: Text(
+                                        'A set of rules used by a job app to match users with relevant job opportunities based on their data',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 10,
+                                              letterSpacing: 0,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           ),

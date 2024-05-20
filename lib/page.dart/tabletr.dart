@@ -118,8 +118,7 @@ class tabletpage extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(0, 0, 100, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 100, 0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -614,7 +613,6 @@ class tabletpage extends StatelessWidget {
                       ],
                     ),
                   ),
-                 
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(60, 40, 60, 40),
                     child: Row(
@@ -627,8 +625,7 @@ class tabletpage extends StatelessWidget {
                           children: [
                             Column(
                               mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -658,10 +655,10 @@ class tabletpage extends StatelessWidget {
                                       Text(
                                         'Application',
                                         style: TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              letterSpacing: 0,
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                          fontFamily: 'Readex Pro',
+                                          letterSpacing: 0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -678,9 +675,9 @@ class tabletpage extends StatelessWidget {
                                         child: Text(
                                           'he process of submitting interest in a job opening through a job app',
                                           style: TextStyle(
-                                                fontFamily: 'Readex Pro',
-                                                letterSpacing: 0,
-                                              ),
+                                            fontFamily: 'Readex Pro',
+                                            letterSpacing: 0,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -743,10 +740,10 @@ class tabletpage extends StatelessWidget {
                                       Text(
                                         'Dashboard',
                                         style: TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              letterSpacing: 0,
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                          fontFamily: 'Readex Pro',
+                                          letterSpacing: 0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -763,9 +760,9 @@ class tabletpage extends StatelessWidget {
                                         child: Text(
                                           'A user interface in a job app providing an overview of job search activities and updates',
                                           style: TextStyle(
-                                                fontFamily: 'Readex Pro',
-                                                letterSpacing: 0,
-                                              ),
+                                            fontFamily: 'Readex Pro',
+                                            letterSpacing: 0,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -827,11 +824,11 @@ class tabletpage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Algorithm',
-                                        style:TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              letterSpacing: 0,
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                        style: TextStyle(
+                                          fontFamily: 'Readex Pro',
+                                          letterSpacing: 0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -848,9 +845,9 @@ class tabletpage extends StatelessWidget {
                                         child: Text(
                                           'A set of rules used by a job app to match users with relevant job opportunities based on their data',
                                           style: TextStyle(
-                                                fontFamily: 'Readex Pro',
-                                                letterSpacing: 0,
-                                              ),
+                                            fontFamily: 'Readex Pro',
+                                            letterSpacing: 0,
+                                          ),
                                         ),
                                       ),
                                     ],
