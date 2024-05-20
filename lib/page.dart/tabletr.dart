@@ -636,8 +636,8 @@ class tabletpage extends StatelessWidget {
                                       decoration: BoxDecoration(),
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
-                                        child: Image.network(
-                                          'https://picsum.photos/seed/748/600',
+                                        child: Image.asset(
+                                          'assets/images/lp1.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -721,8 +721,8 @@ class tabletpage extends StatelessWidget {
                                       decoration: BoxDecoration(),
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
-                                        child: Image.network(
-                                          'https://picsum.photos/seed/748/600',
+                                        child: Image.asset(
+                                          'assets/images/lp2.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -806,8 +806,8 @@ class tabletpage extends StatelessWidget {
                                       decoration: BoxDecoration(),
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
-                                        child: Image.network(
-                                          'https://picsum.photos/seed/748/600',
+                                        child: Image.asset(
+                                          'assets/images/lp3.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
