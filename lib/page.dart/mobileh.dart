@@ -29,14 +29,27 @@ class Mobilel2 extends StatelessWidget {
                       Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Text(
-                            'TM',
-                            style: TextStyle(
-                              fontFamily: 'Readex Pro',
-                              fontSize: 18,
-                              letterSpacing: 0,
-                              fontWeight: FontWeight.bold,
-                            ),
+                          RichText(
+                            text: TextSpan(
+                                text: 'TM',
+                                style: TextStyle(
+                                  fontFamily: 'Nunito',
+                                  fontSize: 25,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.w900,
+                                ),
+                                children: const <TextSpan>[
+                                  TextSpan(
+                                    text: '.',
+                                    style: TextStyle(
+                                      fontFamily: 'Nunito',
+                                      fontSize: 25,
+                                      letterSpacing: 0,
+                                      fontWeight: FontWeight.w900,
+                                      color: Colors.red,
+                                    ),
+                                  )
+                                ]),
                           ),
                         ],
                       ),
@@ -531,12 +544,12 @@ class Mobilel2 extends StatelessWidget {
                                   children: [
                                     Text(
                                       'Application',
-                                      style:TextStyle(
-                                            fontFamily: 'Readex Pro',
-                                            fontSize: 12,
-                                            letterSpacing: 0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                                      style: TextStyle(
+                                        fontFamily: 'Readex Pro',
+                                        fontSize: 12,
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -554,10 +567,10 @@ class Mobilel2 extends StatelessWidget {
                                         'he process of submitting interest in a job opening through a job app',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              fontSize: 10,
-                                              letterSpacing: 0,
-                                            ),
+                                          fontFamily: 'Readex Pro',
+                                          fontSize: 10,
+                                          letterSpacing: 0,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -573,7 +586,7 @@ class Mobilel2 extends StatelessWidget {
                               width: 2,
                               height: 220,
                               decoration: BoxDecoration(
-                                color:Color(0xFFFFFFFF),
+                                color: Color(0xFFFFFFFF),
                               ),
                             ),
                           ],
@@ -613,12 +626,12 @@ class Mobilel2 extends StatelessWidget {
                                   children: [
                                     Text(
                                       'Dashboard',
-                                      style:TextStyle(
-                                            fontFamily: 'Readex Pro',
-                                            fontSize: 12,
-                                            letterSpacing: 0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                                      style: TextStyle(
+                                        fontFamily: 'Readex Pro',
+                                        fontSize: 12,
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -637,10 +650,10 @@ class Mobilel2 extends StatelessWidget {
                                         'A user interface in a job app providing an overview of job search activities and updates.',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              fontSize: 10,
-                                              letterSpacing: 0,
-                                            ),
+                                          fontFamily: 'Readex Pro',
+                                          fontSize: 10,
+                                          letterSpacing: 0,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -656,7 +669,7 @@ class Mobilel2 extends StatelessWidget {
                               width: 2,
                               height: 220,
                               decoration: BoxDecoration(
-                                color:Color(0xFFFFFFFF),
+                                color: Color(0xFFFFFFFF),
                               ),
                             ),
                           ],
@@ -696,11 +709,11 @@ class Mobilel2 extends StatelessWidget {
                                     Text(
                                       'Algorithm',
                                       style: TextStyle(
-                                            fontFamily: 'Readex Pro',
-                                            fontSize: 12,
-                                            letterSpacing: 0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                                        fontFamily: 'Readex Pro',
+                                        fontSize: 12,
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -718,10 +731,10 @@ class Mobilel2 extends StatelessWidget {
                                         'A set of rules used by a job app to match users with relevant job opportunities based on their data',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                              fontFamily: 'Readex Pro',
-                                              fontSize: 10,
-                                              letterSpacing: 0,
-                                            ),
+                                          fontFamily: 'Readex Pro',
+                                          fontSize: 10,
+                                          letterSpacing: 0,
+                                        ),
                                       ),
                                     ),
                                   ],

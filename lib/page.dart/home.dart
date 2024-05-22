@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/page.dart/landingpage.dart';
 import 'package:flutter_application_1/page.dart/mobileh.dart';
 import 'package:flutter_application_1/page.dart/tabletr.dart';
+import 'package:flutter_application_1/sections/navbar.dart';
 import 'package:flutter_application_1/test.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -76,7 +77,7 @@ class TabletLayout extends StatelessWidget {
                       
                       height: screenHeight,
                       width: double.infinity,
-                      child: tabletpage(),  
+                      child: TabletPage(),  
                     ),  
                   ],
                 ),

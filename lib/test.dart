@@ -1,98 +1,75 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Mobilel extends StatelessWidget {
   const Mobilel({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          Colors.transparent, // Set Scaffold background to transparent
-      appBar: AppBar(
-        title: Text('TM'),
-        backgroundColor:
-            Colors.transparent, // Make AppBar background transparent
-      ),
-      endDrawer: Drawer(
-        child: Container(
-          child: ListView(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
-            children: [
-              DrawerHeader(
-                child: Text(
-                  'TM',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 24,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
-              ListTile(
-                title: Text('Resources'),
-                onTap: () {
-                  // Update this function to perform the desired action when Item 1 is tapped
-                },
-              ),
-              ListTile(
-                title: Text('News'),
-                onTap: () {
-                  // Update this function to perform the desired action when Item 2 is tapped
-                },
-              ),
-              ListTile(
-                onTap: () {
-                  // Update this function to perform the desired action when Item 3 is tapped
-                },
-                title: Container(
-                  width: 120,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF3978F2),
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 6,
-                        color: Color(0x33000000),
-                        offset: Offset(
-                          0,
-                          2,
-                        ),
-                        spreadRadius: 2,
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(50),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
-                    child: Text(
-                      'Download app',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontFamily: 'Readex Pro',
-                        color:
-                            Colors.white, // Assuming you want white text color
-                        letterSpacing: 0,
-                      ),
-                    ),
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFFFD7E41), Color(0xFFFCC232), Color(0xFFF8F5F2)],
-            stops: [0, 0.1, 0.23],
-            begin: AlignmentDirectional(-1, -0.98),
-            end: AlignmentDirectional(1, 0.98),
+            colors: [
+            Color(0xFFFD7E41),
+            Color(0xFFFCC232),
+            Color(0xFFFDF6EC),
+            Color(0xFFfffff)
+          ],
+          stops: [0, 0.1, 0.23, 0.615],
+          begin: AlignmentDirectional(-1, -0.98),
+          end: AlignmentDirectional(1, 0.98),
           ),
         ),
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20, 55, 20, 0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'TM',
+                              style: TextStyle(
+                                fontFamily: 'Nunito',
+                                fontSize: 25,
+                                letterSpacing: 0,
+                                fontWeight: FontWeight.w900,
+                              ),
+                              children: const <TextSpan>[
+                                TextSpan(
+                                  text: '.',
+                                  style: TextStyle(
+                                    fontFamily: 'Nunito',
+                                    fontSize: 25,
+                                    letterSpacing: 0,
+                                    fontWeight: FontWeight.w900,
+                                    color: Colors.red,
+                                  ),
+                                )
+                              ]),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Icon(
+                          Icons.dehaze,
+                          color: Color(0xFF57636C),
+                          size: 24,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 0),
                 child: Row(
@@ -269,8 +246,8 @@ class Mobilel extends StatelessWidget {
                                 color: Colors.white,
                                 boxShadow: [
                                   BoxShadow(
-                                    blurRadius: 5,
-                                    color: Color(0x33000000),
+                                    blurRadius: 8,
+                                    color: Color(0x33525252),
                                     offset: Offset(
                                       0,
                                       2,
@@ -528,7 +505,7 @@ class Mobilel extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(5, 0, 5, 30),
+                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 30),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -539,8 +516,8 @@ class Mobilel extends StatelessWidget {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -590,7 +567,7 @@ class Mobilel extends StatelessWidget {
                                     decoration: BoxDecoration(),
                                     child: Text(
                                       'he process of submitting interest in a job opening through a job app',
-                                      textAlign: TextAlign.center,
+                                      textAlign: TextAlign.start,
                                       style: TextStyle(
                                         fontFamily: 'Readex Pro',
                                         fontSize: 10,
@@ -604,24 +581,22 @@ class Mobilel extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Container(
-                            width: 2,
-                            height: 220,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
-                            ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                        child: Container(
+                          width: 0.5,
+                          height: 180,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFDEDEDE),
                           ),
-                        ],
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -673,7 +648,7 @@ class Mobilel extends StatelessWidget {
                                     decoration: BoxDecoration(),
                                     child: Text(
                                       'A user interface in a job app providing an overview of job search activities and updates.',
-                                      textAlign: TextAlign.center,
+                                      textAlign: TextAlign.start,
                                       style: TextStyle(
                                         fontFamily: 'Readex Pro',
                                         fontSize: 10,
@@ -687,24 +662,22 @@ class Mobilel extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Container(
-                            width: 2,
-                            height: 220,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
-                            ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                        child: Container(
+                          width: 0.5,
+                          height: 180,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFDEDEDE),
                           ),
-                        ],
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -754,7 +727,7 @@ class Mobilel extends StatelessWidget {
                                     decoration: BoxDecoration(),
                                     child: Text(
                                       'A set of rules used by a job app to match users with relevant job opportunities based on their data',
-                                      textAlign: TextAlign.center,
+                                      textAlign: TextAlign.start,
                                       style: TextStyle(
                                         fontFamily: 'Readex Pro',
                                         fontSize: 10,
