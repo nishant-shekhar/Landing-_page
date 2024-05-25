@@ -5,7 +5,7 @@ class  ThirdSection extends StatelessWidget{
   Widget build(BuildContext context){
   return // Generated code for this Row Widget...
 Padding(
-  padding: EdgeInsetsDirectional.fromSTEB(90, 0, 90, 0),
+  padding: EdgeInsetsDirectional.fromSTEB(90, 150, 90, 0),
   child: Row(
     mainAxisSize: MainAxisSize.max,
     mainAxisAlignment: MainAxisAlignment.start,
