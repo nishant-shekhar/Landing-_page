@@ -6,6 +6,7 @@ import 'package:flutter_application_1/sections/afterbody.dart';
 import 'package:flutter_application_1/sections/bodySection.dart';
 
 import 'package:flutter_application_1/sections/navbar.dart';
+import 'package:flutter_application_1/sections/stest.dart';
 
 class landingpage extends StatelessWidget {
   @override
@@ -41,6 +42,9 @@ class landingpage extends StatelessWidget {
                       children: [
                         //2nd section
                         BodySection(),
+                        
+                        //search section
+                        search1(),
 
                         //3rd section
                         ThirdSection(),

@@ -8,7 +8,7 @@ class BodySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(90, 80, 90, 50),
+      padding: EdgeInsetsDirectional.fromSTEB(90, 50, 90, 0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -73,7 +73,7 @@ class BodySection extends StatelessWidget {
                   ),
                 ),
                 
-                search1(),
+                
               ],
             ),
           ),
@@ -159,6 +159,7 @@ class BodySection extends StatelessWidget {
             ),
           ),
         ],
+      
       ),
     );
   }
