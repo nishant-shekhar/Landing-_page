@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Tablet/tabsearch.dart';
+import 'package:flutter_application_1/Desktop/ImageText.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:animate_do/animate_do.dart';
-import 'package:flutter_application_1/sections/searchbox.dart';
-import 'package:flutter_application_1/sections/stest.dart';
 
-//2nd body section
-class BodySection extends StatelessWidget {
+class Bodyt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(90, 50, 90, 0),
+      padding: EdgeInsetsDirectional.fromSTEB(50, 50, 50, 10),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -46,7 +47,7 @@ class BodySection extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Readex Pro',
                         color: Colors.black,
-                        fontSize: 50,
+                        fontSize: 45,
                         letterSpacing: 0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -72,12 +73,9 @@ class BodySection extends StatelessWidget {
                     ),
                   ),
                 ),
-                
-                
               ],
             ),
           ),
-          
           Expanded(
             flex: 1,
             child: SlideInRight(
@@ -159,7 +157,6 @@ class BodySection extends StatelessWidget {
             ),
           ),
         ],
-      
       ),
     );
   }

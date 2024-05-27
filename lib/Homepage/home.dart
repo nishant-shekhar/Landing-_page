@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/page.dart/landingpage.dart';
-import 'package:flutter_application_1/page.dart/mobileh.dart';
-import 'package:flutter_application_1/page.dart/tabletr.dart';
-import 'package:flutter_application_1/sections/navbar.dart';
-import 'package:flutter_application_1/test.dart';
+import 'package:flutter_application_1/Desktop/landingpage.dart';
+import 'package:flutter_application_1/Mobile/mobileh.dart';
+import 'package:flutter_application_1/Tablet/tabletr.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 

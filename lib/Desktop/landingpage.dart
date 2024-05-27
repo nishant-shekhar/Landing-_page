@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/sections/ImageText.dart';
-import 'package:flutter_application_1/sections/afterbody.dart';
-import 'package:flutter_application_1/sections/bodySection.dart';
+import 'package:flutter_application_1/Desktop/ImageText.dart';
+import 'package:flutter_application_1/Desktop/afterbody.dart';
+import 'package:flutter_application_1/Desktop/bodySection.dart';
 
-import 'package:flutter_application_1/sections/navbar.dart';
-import 'package:flutter_application_1/sections/stest.dart';
+import 'package:flutter_application_1/Desktop/navbar.dart';
+import 'package:flutter_application_1/Desktop/stest.dart';
 
 class landingpage extends StatelessWidget {
   @override
