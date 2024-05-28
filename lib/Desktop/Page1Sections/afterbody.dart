@@ -5,10 +5,11 @@ class  ThirdSection extends StatelessWidget{
   Widget build(BuildContext context){
   return // Generated code for this Row Widget...
 Padding(
-  padding: EdgeInsetsDirectional.fromSTEB(90, 150, 90, 0),
+  padding: EdgeInsetsDirectional.fromSTEB(90, 150, 90, 40),
   child: Row(
     mainAxisSize: MainAxisSize.max,
     mainAxisAlignment: MainAxisAlignment.start,
+    crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Container(
         decoration: BoxDecoration(
@@ -54,7 +55,6 @@ Padding(
                         child: Text(
                           'Download on the',
                           style: TextStyle(
-                                fontFamily: 'Readex Pro',
                                 color:Color(0xFFFFFFFF),
                                 letterSpacing: 0,
                               ),
@@ -70,7 +70,6 @@ Padding(
                         child: Text(
                           'App store',
                           style: TextStyle(
-                                fontFamily: 'Readex Pro',
                                 color: Color(0xFFFFFFFF),
                                 fontSize: 20,
                                 letterSpacing: 0,
@@ -133,7 +132,6 @@ Padding(
                         Text(
                           'GET IT ON',
                           style: TextStyle(
-                                fontFamily: 'Readex Pro',
                                 color: Color(0xFF39608F),
                                 letterSpacing: 0,
                               ),
@@ -146,7 +144,6 @@ Padding(
                         Text(
                           'GOOGLE PLAY',
                           style: TextStyle(
-                                fontFamily: 'Readex Pro',
                                 color: Color(0xFF39608F),
                                 fontSize: 20,
                                 letterSpacing: 0,

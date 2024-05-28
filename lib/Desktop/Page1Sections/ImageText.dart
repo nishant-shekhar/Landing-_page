@@ -17,15 +17,25 @@ class ImageTextWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(),
+            width: 300,
+            height: 250,
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  blurRadius: 5,
+                  color: Color(0x33000000),
+                  offset: Offset(
+                    0,
+                    2,
+                  ),
+                )
+              ],
+              borderRadius: BorderRadius.circular(5),
+            ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
                 image,
-                width: 300,
-                height: 200,
                 fit: BoxFit.cover,
               ),
             ),
@@ -35,8 +45,8 @@ class ImageTextWidget extends StatelessWidget {
             child: Text(
               t1,
               style: TextStyle(
-                fontFamily: 'Readex Pro',
-                letterSpacing: 0,
+                fontSize: 26,
+                letterSpacing: 2,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -46,12 +56,12 @@ class ImageTextWidget extends StatelessWidget {
             child: Text(
               t2,
               style: TextStyle(
-                fontFamily: 'Readex Pro',
-                letterSpacing: 0,
+                fontSize: 20,
+                letterSpacing: 1,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
-          
         ],
       ),
     );

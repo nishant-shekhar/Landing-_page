@@ -18,7 +18,6 @@ class Navm extends StatelessWidget {
                         text: TextSpan(
                             text: 'TM',
                             style: TextStyle(
-                              fontFamily: 'Nunito',
                               fontSize: 25,
                               letterSpacing: 0,
                               fontWeight: FontWeight.w900,
@@ -27,8 +26,7 @@ class Navm extends StatelessWidget {
                               TextSpan(
                                 text: '.',
                                 style: TextStyle(
-                                  fontFamily: 'Nunito',
-                                  fontSize: 25,
+                                      fontSize: 25,
                                   letterSpacing: 0,
                                   fontWeight: FontWeight.w900,
                                   color: Colors.red,

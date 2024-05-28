@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Tablet/tabsearch.dart';
-import 'package:flutter_application_1/Desktop/ImageText.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/ImageText.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:animate_do/animate_do.dart';

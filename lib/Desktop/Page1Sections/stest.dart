@@ -80,7 +80,6 @@ class _SearchWidgetState extends State<search1> {
                                 decoration: InputDecoration(
                                   hintText: 'Search openings',
                                   hintStyle: TextStyle(
-                                    fontFamily: 'Readex Pro',
                                     color: Color(0xFF7E7E7E),
                                     letterSpacing: 0,
                                   ),

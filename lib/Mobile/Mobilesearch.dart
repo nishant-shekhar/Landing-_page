@@ -75,7 +75,6 @@ class _SearchWidgetState extends State<Searchm> {
                         decoration: const InputDecoration(
                           hintText: 'Search openings',
                           hintStyle: TextStyle(
-                            fontFamily: 'Readex Pro',
                             color: Color(0xFF7E7E7E),
                             letterSpacing: 0,
                           ),

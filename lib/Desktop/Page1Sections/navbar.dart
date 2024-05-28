@@ -19,7 +19,6 @@ class navbar extends StatelessWidget{
             text: TextSpan(
               text: 'TM',
               style: TextStyle(
-                    fontFamily: 'Nunito',
                     fontSize: 25,
                     letterSpacing: 0,
                     fontWeight: FontWeight.w900,
@@ -28,7 +27,6 @@ class navbar extends StatelessWidget{
                     TextSpan(
                     text:'.',
                     style:TextStyle(
-                    fontFamily: 'Nunito',
                     fontSize: 25,
                     letterSpacing: 0,
                     fontWeight: FontWeight.w900,
@@ -39,14 +37,13 @@ class navbar extends StatelessWidget{
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(100, 0, 20, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(90, 0, 20, 0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Text(
                   'Resource',
                   style: TextStyle(
-                        fontFamily: 'Readex Pro',
                         letterSpacing: 0,
                         fontWeight: FontWeight.w600,
                       ),
@@ -63,7 +60,7 @@ class navbar extends StatelessWidget{
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(100, 0, 0, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(90, 0, 0, 0),
             child: Text(
               'News',
               style: TextStyle(

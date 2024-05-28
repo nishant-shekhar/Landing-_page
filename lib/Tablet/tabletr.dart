@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/bodySection.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/navbar.dart';
 import 'package:flutter_application_1/Tablet/body.dart';
 import 'package:flutter_application_1/Tablet/navbart.dart';
 import 'package:flutter_application_1/Tablet/tabsearch.dart';
-import 'package:flutter_application_1/Desktop/ImageText.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/ImageText.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:animate_do/animate_do.dart';
@@ -29,18 +31,130 @@ class TabletPage extends StatelessWidget {
       child: Column(
         children: [
           navbart(),
+          
          Expanded(
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Bodyt(),
+                  
                   Tabs(),
-                  Padding(
+                 /*Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(90, 40, 90, 40),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Flexible(
+                          flex: 1,
+                          child: ImageTextWidget(
+                              "Application",
+                              "he process of submitting interest in a job opening through a job app",
+                              'assets/images/lp1.png'),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                          child: Container(
+                            width: 0.5,
+                            height: 160,
+                            decoration: BoxDecoration(
+                              color: Color(0xFFDEDEDE),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(30, 0, 20, 0),
+                          child: Container(
+                            width: 0.5,
+                            color: Color.fromARGB(255, 105, 105, 105),
+                          ),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: ImageTextWidget(
+                              "Dashboard",
+                              "A user interface in a job app providing an overview of job search activities and updates.",
+                              'assets/images/lp2.png'),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                          child: Container(
+                            width: 0.5,
+                            height: 160,
+                            decoration: BoxDecoration(
+                              color: Color(0xFFDEDEDE),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: ImageTextWidget(
+                              "Algorithm",
+                              'A set of rules used by a job app to match users with relevant job opportunities based on their data',
+                              'assets/images/lp3.png'),
+                        ),
+                      ],
+                    ),
+                  )
+                */
+                 Stack(
+                  children: [
+                    Align(
+                      alignment: AlignmentDirectional(0, -2.41),
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 110, 0, 0),
+                        child: Container(
+                          width: MediaQuery.sizeOf(context).width,
+                          height: 400,
+                          decoration: BoxDecoration(
+                            color: Color(0xFFFFFCEF),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(),
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(90, 0, 90, 0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Flexible(
+                              flex: 1,
+                              child: ImageTextWidget(
+                                  "Application",
+                                  "he process of submitting interest in a job opening through a job app",
+                                  'assets/images/Appl.png'),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              child: ImageTextWidget(
+                                  "Dashboard",
+                                  "A user interface in a job app providing an overview of job search activities and updates.",
+                                  'assets/images/dash.png'),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              child: ImageTextWidget(
+                                  "Algorithm",
+                                  'A set of rules used by a job app to match users with relevant job opportunities based on their data',
+                                  'assets/images/algo.png'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                 Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(50, 0, 50, 0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           decoration: BoxDecoration(
@@ -112,7 +226,7 @@ class TabletPage extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 30),
                           child: Container(
                             decoration: BoxDecoration(
                               color: Color(0xFFD3E4FF),
@@ -185,63 +299,9 @@ class TabletPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(90, 40, 90, 40),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Flexible(
-                          flex: 1,
-                          child: ImageTextWidget(
-                              "Application",
-                              "he process of submitting interest in a job opening through a job app",
-                              'assets/images/lp1.png'),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
-                          child: Container(
-                            width: 0.5,
-                            height: 160,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFDEDEDE),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(30, 0, 20, 0),
-                          child: Container(
-                            width: 0.5,
-                            color: Color.fromARGB(255, 105, 105, 105),
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: ImageTextWidget(
-                              "Dashboard",
-                              "A user interface in a job app providing an overview of job search activities and updates.",
-                              'assets/images/lp2.png'),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
-                          child: Container(
-                            width: 0.5,
-                            height: 160,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFDEDEDE),
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: ImageTextWidget(
-                              "Algorithm",
-                              'A set of rules used by a job app to match users with relevant job opportunities based on their data',
-                              'assets/images/lp3.png'),
-                        ),
-                      ],
-                    ),
-                  )
+                  
+
+               
                 ],
               ),
             ),

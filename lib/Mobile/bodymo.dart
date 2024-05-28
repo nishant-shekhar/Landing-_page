@@ -30,7 +30,6 @@ class Bodym extends StatelessWidget {
                           child: Text(
                             'Start Your Journey Toward Success with Us!',
                             style: TextStyle(
-                              fontFamily: 'Readex Pro',
                               color: Color(0xFF28955E),
                               letterSpacing: 0,
                               fontWeight: FontWeight.w500,
@@ -50,8 +49,7 @@ class Bodym extends StatelessWidget {
                             child: Text(
                               'Find your next career move on the go with our mobile app!',
                               style: TextStyle(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.black,
+                                  color: Colors.black,
                                 fontSize: 30,
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w600,
@@ -72,8 +70,7 @@ class Bodym extends StatelessWidget {
                             child: Text(
                               'Unlock Your Potential: Find Your Perfect Fit!',
                               style: TextStyle(
-                                fontFamily: 'Readex Pro',
-                                color: Color(0xFF2E2D2C),
+                                  color: Color(0xFF2E2D2C),
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w500,
                               ),

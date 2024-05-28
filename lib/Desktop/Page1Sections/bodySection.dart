@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
-import 'package:flutter_application_1/Desktop/searchbox.dart';
-import 'package:flutter_application_1/Desktop/stest.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/searchbox.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
 
 //2nd body section
 class BodySection extends StatelessWidget {
@@ -29,10 +29,10 @@ class BodySection extends StatelessWidget {
                     child: Text(
                       'Start Your Journey Toward Success with Us!',
                       style: TextStyle(
-                        fontFamily: 'Readex Pro',
                         color: Color(0xFF28955E),
-                        letterSpacing: 0,
+                        letterSpacing: 1,
                         fontWeight: FontWeight.w500,
+                      
                       ),
                     ),
                   ),
@@ -44,10 +44,9 @@ class BodySection extends StatelessWidget {
                     child: Text(
                       'Find your next career move on the go with our mobile app!',
                       style: TextStyle(
-                        fontFamily: 'Readex Pro',
                         color: Colors.black,
-                        fontSize: 50,
-                        letterSpacing: 0,
+                        fontSize: 45,
+                        letterSpacing: 1.5,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -63,9 +62,8 @@ class BodySection extends StatelessWidget {
                       child: Text(
                         'Unlock Your Potential: Find Your Perfect Fit!',
                         style: TextStyle(
-                          fontFamily: 'Readex Pro',
-                          color: Color(0xFF2E2D2C),
-                          letterSpacing: 0,
+                            color: Color(0xFF2E2D2C),
+                          letterSpacing: 1,
                           fontWeight: FontWeight.w500,
                         ),
                       ),

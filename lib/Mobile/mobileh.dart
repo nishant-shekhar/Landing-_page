@@ -100,8 +100,7 @@ class Mobilel extends StatelessWidget {
                                                       child: Text(
                                                         'Download on the',
                                                         style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
+                                                         
                                                           color:
                                                               Color(0xFFFFFFFF),
                                                           fontSize: 10,
@@ -121,8 +120,7 @@ class Mobilel extends StatelessWidget {
                                                       child: Text(
                                                         'App store',
                                                         style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
+                                                         
                                                           color:
                                                               Color(0xFFFFFFFF),
                                                           fontSize: 14,
@@ -203,8 +201,7 @@ class Mobilel extends StatelessWidget {
                                                       Text(
                                                         'GET IT ON',
                                                         style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
+                                                         
                                                           color:
                                                               Color(0xFF39608F),
                                                           fontSize: 10,
@@ -220,8 +217,7 @@ class Mobilel extends StatelessWidget {
                                                       Text(
                                                         'GOOGLE PLAY',
                                                         style: TextStyle(
-                                                          fontFamily:
-                                                              'Readex Pro',
+                                                         
                                                           color:
                                                               Color(0xFF39608F),
                                                           fontSize: 14,
