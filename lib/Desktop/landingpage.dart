@@ -111,7 +111,7 @@ class landingpage extends StatelessWidget {
 
                 //bottom page
                 Container(
-                  color: Color.fromARGB(255, 248, 248, 248),
+                  
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -216,7 +216,7 @@ class landingpage extends StatelessWidget {
                                         children: [
                                           Icon(
                                             Icons.facebook,
-                                            color: Color(0xFFFFFFFF),
+                                            color: Color(0xFF172c34),
                                             size: 24,
                                           ),
                                           Padding(
