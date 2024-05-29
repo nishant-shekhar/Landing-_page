@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/ImageText.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/MYTEAM.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/afterbody.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/bodySection.dart';
 
@@ -26,7 +27,9 @@ class landingpage extends StatelessWidget {
                 //search section
                 search1(),
 
-                //
+                
+
+
 
                 //4th section
                 Padding(
@@ -106,12 +109,11 @@ class landingpage extends StatelessWidget {
                 ),
 
                 //3rd section
-                //3rd section
                 ThirdSection(),
-
+                //4th section
+              // MyTeam(),
                 //bottom page
                 Container(
-                  
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
