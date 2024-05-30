@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/Desktop/Page1.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/navbar.dart';
-import 'package:flutter_application_1/Desktop/Page2.dart';
+import 'package:flutter_application_1/Desktop/Page2sections/Section1.dart';
+import 'package:flutter_application_1/Desktop/Page2sections/afterbody.dart';
 import 'package:flutter_application_1/Desktop/Page3.dart';
 import 'package:flutter_application_1/Desktop/Page4.dart';
 import 'package:flutter_application_1/Mobile/mobileh.dart';
@@ -64,11 +65,12 @@ class DesktopLayout extends StatelessWidget {
                       child: LandingPage(),
                     ),
                     //page2
-                    Container(
-                      width: double.infinity,
-                      height: screenHeight+400,
-                      child: Page2(),
-                    ),
+
+                    
+                    Section1(),
+                    ThirdSection(),
+                    
+
                     // Page3
                     Container(
                       width: double.infinity,
@@ -78,33 +80,10 @@ class DesktopLayout extends StatelessWidget {
                       ),
                     ),
                     // Page 4
-                    Container(
-                      width: double.infinity,
-                      height: screenHeight+200,
-                      child: BottomPage(),
-                    ),
-                    // Page 5
-                    Container(
-                      width: double.infinity,
-                      height: screenHeight,
-                      child: Center(
-                        child: Text(
-                          'Page 5 Content',
-                          style: TextStyle(fontSize: 24),
-                        ),
-                      ),
-                    ),
-                    // Page 6
-                    Container(
-                      width: double.infinity,
-                      height: screenHeight,
-                      child: Center(
-                        child: Text(
-                          'Page 6 Content',
-                          style: TextStyle(fontSize: 24),
-                        ),
-                      ),
-                    ),
+                    BottomPage(),
+
+          
+                    
                   ],
                 ),
               ),

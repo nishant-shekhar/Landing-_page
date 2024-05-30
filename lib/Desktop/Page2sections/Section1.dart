@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter_application_1/Desktop/Page2sections/ImageText.dart';
-import 'package:flutter_application_1/Desktop/Page2sections/afterbody.dart';
+import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
 
 class Section1 extends StatelessWidget {
   @override
