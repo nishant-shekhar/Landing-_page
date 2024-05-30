@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Desktop/Page1Sections/MYTEAM.dart';
+import 'package:flutter_application_1/Desktop/Page2.dart';
+import 'package:flutter_application_1/Desktop/Page2sections/Section1.dart';
+import 'package:flutter_application_1/Desktop/Page3.dart';
 import 'package:flutter_application_1/Homepage/home.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
 import 'package:google_fonts/google_fonts.dart';
