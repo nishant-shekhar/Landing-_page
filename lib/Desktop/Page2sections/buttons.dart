@@ -71,7 +71,7 @@ Padding(
                           'App store',
                           style: TextStyle(
                                 color: Color(0xFFFFFFFF),
-                                fontSize: 20,
+                                fontSize: 18,
                                 letterSpacing: 0,
                               ),
                         ),
@@ -145,7 +145,7 @@ Padding(
                           'GOOGLE PLAY',
                           style: TextStyle(
                                 color: Color(0xFF39608F),
-                                fontSize: 20,
+                                fontSize: 18,
                                 letterSpacing: 0,
                               ),
                         ),

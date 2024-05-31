@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class BottomPage extends StatelessWidget {
   @override
@@ -62,7 +63,7 @@ class BottomPage extends StatelessWidget {
                                 Text(
                                   'TM',
                                   style: TextStyle(
-                                    fontSize: 30,
+                                    fontSize:25,
                                     letterSpacing: 0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -103,42 +104,70 @@ class BottomPage extends StatelessWidget {
                               Icon(
                                 Icons.facebook,
                                 color: Color(0xFF172c34),
-                                size: 24,
+                                size: 20,
                               ),
                               Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                                child: Icon(
-                                  Icons.settings,
-                                  color: Color(0xFF67788A),
-                                  size: 24,
+                                child: Container(
+                                  decoration: BoxDecoration(),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(0),
+                                    child: SvgPicture.asset(
+                                      'assets/images/inst.svg',
+                                      width: 20,
+                                      height: 20,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
                                 ),
                               ),
                               Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                                child: Icon(
-                                  Icons.settings_outlined,
-                                  color: Color(0xFF67788A),
-                                  size: 24,
+                               child: Container(
+                                  decoration: BoxDecoration(),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(0),
+                                    child: SvgPicture.asset(
+                                      'assets/images/ln.svg',
+                                      width: 20,
+                                      height: 20,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
                                 ),
                               ),
                               Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                                child: Icon(
-                                  Icons.settings_outlined,
-                                  color: Color(0xFF67788A),
-                                  size: 24,
+                               child: Container(
+                                  decoration: BoxDecoration(),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(0),
+                                    child: SvgPicture.asset(
+                                      'assets/images/tw.svg',
+                                      width: 20,
+                                      height: 20,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
                                 ),
                               ),
                               Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                                child: Icon(
-                                  Icons.settings_outlined,
-                                  color: Color(0xFF67788A),
-                                  size: 24,
+                                child: Container(
+                                  decoration: BoxDecoration(),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(0),
+                                    child: SvgPicture.asset(
+                                      'assets/images/dribbble.svg',
+                                      width: 20,
+                                      height: 20,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ],

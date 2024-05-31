@@ -26,7 +26,7 @@ class MyTeam extends StatelessWidget {
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
                         child: Container(
-                          width: 250,
+                          width: 200,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(100),
                             border: Border.all(
@@ -35,15 +35,15 @@ class MyTeam extends StatelessWidget {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                14, 10, 10, 10),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(14, 10, 10, 10),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Container(
-                                  width: 25,
-                                  height: 25,
+                                  width: 20,
+                                  height: 20,
                                   decoration: BoxDecoration(
                                     color: Color(0xFF14181B),
                                     shape: BoxShape.circle,
@@ -55,7 +55,7 @@ class MyTeam extends StatelessWidget {
                                   child: Text(
                                     'OUR TEAM',
                                     style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       letterSpacing: 0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -76,7 +76,7 @@ class MyTeam extends StatelessWidget {
                             Text(
                               'NS APPS',
                               style: TextStyle(
-                                fontSize: 60,
+                                fontSize: 45,
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -85,7 +85,7 @@ class MyTeam extends StatelessWidget {
                               'INNOVATION LLP',
                               style: TextStyle(
                                 color: Color(0xFFEBAF04),
-                                fontSize: 50,
+                                fontSize: 40,
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -97,12 +97,11 @@ class MyTeam extends StatelessWidget {
                         width: MediaQuery.sizeOf(context).width * 0.3,
                         decoration: BoxDecoration(),
                         child: Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(0, 0, 0, 100),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 100),
                           child: Text(
                             '\"Empowering Talent, Together\"',
                             style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 22,
                               letterSpacing: 0,
                               fontWeight: FontWeight.normal,
                             ),
@@ -199,8 +198,8 @@ class _HoverProfileState extends State<HoverProfile> {
           alignment: Alignment.center,
           children: [
             Container(
-              width: MediaQuery.sizeOf(context).width * 0.2,
-              height: MediaQuery.sizeOf(context).height * 0.8,
+              width: MediaQuery.sizeOf(context).width * 0.18,
+              height: MediaQuery.sizeOf(context).height * 0.7,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -213,6 +212,16 @@ class _HoverProfileState extends State<HoverProfile> {
                   end: AlignmentDirectional(0, 1),
                 ),
                 borderRadius: BorderRadius.circular(40),
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 8,
+                    color: Color(0x33000000),
+                    offset: Offset(
+                      0,
+                      2,
+                    ),
+                  )
+                ],
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
@@ -226,8 +235,8 @@ class _HoverProfileState extends State<HoverProfile> {
             ),
             if (_isHovering)
               Container(
-                width: MediaQuery.sizeOf(context).width * 0.2,
-                height: MediaQuery.sizeOf(context).height * 0.8,
+                width: MediaQuery.sizeOf(context).width * 0.18,
+                height: MediaQuery.sizeOf(context).height * 0.7,
                 decoration: BoxDecoration(
                   color: Colors.brown.withOpacity(0.8),
                   borderRadius: BorderRadius.circular(40),

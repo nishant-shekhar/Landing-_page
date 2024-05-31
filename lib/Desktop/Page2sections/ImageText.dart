@@ -14,15 +14,15 @@ class ImageTextWidget extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            width: 300,
-            height: 250,
+            width: 250,
+            height: 200,
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  blurRadius: 5,
+                  blurRadius: 8,
                   color: Color(0x33000000),
                   offset: Offset(
                     0,
@@ -45,7 +45,7 @@ class ImageTextWidget extends StatelessWidget {
             child: Text(
               t1,
               style: TextStyle(
-                fontSize: 26,
+                fontSize: 20,
                 letterSpacing: 2,
                 fontWeight: FontWeight.bold,
               ),
@@ -53,10 +53,12 @@ class ImageTextWidget extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+            
             child: Text(
+              textAlign: TextAlign.center,
               t2,
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 18,
                 letterSpacing: 1,
                 fontWeight: FontWeight.w500,
               ),

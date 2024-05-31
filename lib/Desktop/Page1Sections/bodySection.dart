@@ -32,6 +32,7 @@ class BodySection extends StatelessWidget {
                         color: Color(0xFF28955E),
                         letterSpacing: 1,
                         fontWeight: FontWeight.w500,
+                        fontSize: 14,
                       
                       ),
                     ),
@@ -47,7 +48,9 @@ class BodySection extends StatelessWidget {
                         color: Colors.black,
                         fontSize: 45,
                         letterSpacing: 1.5,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w600,
+                      
+                        
                       ),
                     ),
                   ),
@@ -65,6 +68,7 @@ class BodySection extends StatelessWidget {
                             color: Color(0xFF2E2D2C),
                           letterSpacing: 1,
                           fontWeight: FontWeight.w500,
+                          fontSize: 14,
                         ),
                       ),
                     ),

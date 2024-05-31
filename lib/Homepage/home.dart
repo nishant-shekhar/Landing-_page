@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/Desktop/Page1.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/navbar.dart';
 import 'package:flutter_application_1/Desktop/Page2sections/Section1.dart';
-import 'package:flutter_application_1/Desktop/Page2sections/afterbody.dart';
+import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
 import 'package:flutter_application_1/Desktop/Page3.dart';
 import 'package:flutter_application_1/Desktop/Page4.dart';
 import 'package:flutter_application_1/Mobile/mobileh.dart';
