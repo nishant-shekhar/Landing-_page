@@ -123,7 +123,7 @@ class _SearchWidgetState extends State<search1> {
                     padding: EdgeInsetsDirectional.fromSTEB(4, 10, 0, 6),
                     child: Container(
                       width: 380,
-                      height: 50,
+                    
                       
                       decoration: BoxDecoration(
                         color: Colors.white,
