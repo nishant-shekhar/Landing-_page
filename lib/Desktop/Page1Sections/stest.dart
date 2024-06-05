@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:animate_do/animate_do.dart';
 
 class search1 extends StatefulWidget {
   @override
@@ -20,6 +19,9 @@ class _SearchWidgetState extends State<search1> {
   ];
   List<String> _filteredJobs = [];
 
+  bool showSearchContainer = false;
+  bool showSearchIcon = false;
+
   @override
   void initState() {
     super.initState();
@@ -30,6 +32,14 @@ class _SearchWidgetState extends State<search1> {
                 .toLowerCase()
                 .contains(_search1Controller.text.toLowerCase()))
             .toList();
+      });
+    });
+
+    // Trigger animations initially
+    Future.delayed(Duration(milliseconds: 100), () {
+      setState(() {
+        showSearchContainer = true;
+        showSearchIcon = true;
       });
     });
   }
@@ -51,8 +61,19 @@ class _SearchWidgetState extends State<search1> {
             padding: EdgeInsetsDirectional.fromSTEB(4, 20, 0, 6),
             child: Column(
               children: [
-                SlideInLeft(
+                TweenAnimationBuilder<double>(
+                  tween:
+                      Tween<double>(begin: 0, end: showSearchContainer ? 1 : 0),
                   duration: Duration(seconds: 1),
+                  builder: (context, value, child) {
+                    return Opacity(
+                      opacity: value,
+                      child: Transform.translate(
+                        offset: Offset(-100 * (1 - value), 0),
+                        child: child,
+                      ),
+                    );
+                  },
                   child: Container(
                     width: 380,
                     decoration: BoxDecoration(
@@ -97,15 +118,26 @@ class _SearchWidgetState extends State<search1> {
                         Padding(
                           padding:
                               EdgeInsetsDirectional.fromSTEB(0, 10, 10, 10),
-                          child: Container(
-                            width: 40,
-                            height: 40,
-                            decoration: BoxDecoration(
-                              color: Color(0xFF3978F2),
-                              shape: BoxShape.circle,
-                            ),
-                            child: SlideInRight(
-                              duration: Duration(seconds: 1),
+                          child: TweenAnimationBuilder<double>(
+                            tween: Tween<double>(
+                                begin: 0, end: showSearchIcon ? 1 : 0),
+                            duration: Duration(seconds: 1),
+                            builder: (context, value, child) {
+                              return Opacity(
+                                opacity: value,
+                                child: Transform.translate(
+                                  offset: Offset(100 * (1 - value), 0),
+                                  child: child,
+                                ),
+                              );
+                            },
+                            child: Container(
+                              width: 40,
+                              height: 40,
+                              decoration: BoxDecoration(
+                                color: Color(0xFF3978F2),
+                                shape: BoxShape.circle,
+                              ),
                               child: Icon(
                                 Icons.search,
                                 color: Color(0xFFFFFFFF),
@@ -123,8 +155,6 @@ class _SearchWidgetState extends State<search1> {
                     padding: EdgeInsetsDirectional.fromSTEB(4, 10, 0, 6),
                     child: Container(
                       width: 380,
-                    
-                      
                       decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: [

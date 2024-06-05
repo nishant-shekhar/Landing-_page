@@ -53,7 +53,7 @@ class DesktopLayout extends StatelessWidget {
       child: Stack(children: [
         Column(
           children: [
-            navbar(),
+            Navbar(),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -66,10 +66,8 @@ class DesktopLayout extends StatelessWidget {
                     ),
                     //page2
 
-                    
                     Section1(),
                     ThirdSection(),
-                    
 
                     // Page3
                     Container(
@@ -80,10 +78,10 @@ class DesktopLayout extends StatelessWidget {
                       ),
                     ),
                     // Page 4
-                    BottomPage(),
-
-          
-                    
+                    Container(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      child: BottomPage(),
+                    ),
                   ],
                 ),
               ),

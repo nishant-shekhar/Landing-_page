@@ -17,8 +17,18 @@ class Section1 extends StatelessWidget {
             Container(
               width: MediaQuery.sizeOf(context).width * 0.4,
               decoration: BoxDecoration(),
-              child: SlideInRight(
-                duration: Duration(seconds: 1),
+              child: TweenAnimationBuilder<double>(
+                    tween: Tween<double>(begin: -100, end: 0),
+                    duration: Duration(seconds: 1),
+                    builder: (context, value, child) {
+                      return Transform.translate(
+                        offset: Offset(value, 0),
+                        child: Opacity(
+                          opacity: (100 + value) / 100,
+                          child: child,
+                        ),
+                      );
+                    },
                 child: Text(
                   'Core Features of Our Job Application Platform',
                   style: TextStyle(

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:animate_do/animate_do.dart';
-import 'package:flutter_application_1/Desktop/Page1Sections/searchbox.dart';
-import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
 
-//2nd body section
 class BodySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,33 +20,74 @@ class BodySection extends StatelessWidget {
                 Container(
                   width: MediaQuery.sizeOf(context).width * 0.4,
                   decoration: BoxDecoration(),
-                  child: SlideInLeft(
+                  child: TweenAnimationBuilder<double>(
+                    tween: Tween<double>(begin: -100, end: 0),
                     duration: Duration(seconds: 1),
+                    builder: (context, value, child) {
+                      return Transform.translate(
+                        offset: Offset(value, 0),
+                        child: Opacity(
+                          opacity: (100 + value) / 100,
+                          child: child,
+                        ),
+                      );
+                    },
                     child: Text(
                       'Start Your Journey Toward Success with Us!',
                       style: TextStyle(
-                        color: Color(0xFF28955E),
+                        color: Color(0xFFFD7E41),
                         letterSpacing: 1,
                         fontWeight: FontWeight.w500,
                         fontSize: 14,
-                      
                       ),
                     ),
                   ),
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
-                  child: SlideInLeft(
+                  child: TweenAnimationBuilder<double>(
+                    tween: Tween<double>(begin: -100, end: 0),
                     duration: Duration(seconds: 1),
-                    child: Text(
-                      'Find your next career move on the go with our mobile app!',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 45,
-                        letterSpacing: 1.5,
-                        fontWeight: FontWeight.w600,
-                      
-                        
+                    builder: (context, value, child) {
+                      return Transform.translate(
+                        offset: Offset(value, 0),
+                        child: Opacity(
+                          opacity: (100 + value) / 100,
+                          child: child,
+                        ),
+                      );
+                    },
+                    child: Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Find your next ',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 45,
+                              letterSpacing: 1.5,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          TextSpan(
+                            text: 'career',
+                            style: TextStyle(
+                              color: Colors.blue, // Highlight color
+                              fontSize: 45,
+                              letterSpacing: 1.5,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          TextSpan(
+                            text: ' move on the go with our mobile app!',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 45,
+                              letterSpacing: 1.5,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -60,12 +97,22 @@ class BodySection extends StatelessWidget {
                   decoration: BoxDecoration(),
                   child: Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
-                    child: SlideInLeft(
+                    child: TweenAnimationBuilder<double>(
+                      tween: Tween<double>(begin: -100, end: 0),
                       duration: Duration(seconds: 1),
+                      builder: (context, value, child) {
+                        return Transform.translate(
+                          offset: Offset(value, 0),
+                          child: Opacity(
+                            opacity: (100 + value) / 100,
+                            child: child,
+                          ),
+                        );
+                      },
                       child: Text(
                         'Unlock Your Potential: Find Your Perfect Fit!',
                         style: TextStyle(
-                            color: Color(0xFF2E2D2C),
+                          color: Color(0xFF2E2D2C),
                           letterSpacing: 1,
                           fontWeight: FontWeight.w500,
                           fontSize: 14,
@@ -74,16 +121,23 @@ class BodySection extends StatelessWidget {
                     ),
                   ),
                 ),
-                
-                
               ],
             ),
           ),
-          
           Expanded(
             flex: 1,
-            child: SlideInRight(
+            child: TweenAnimationBuilder<double>(
+              tween: Tween<double>(begin: 100, end: 0),
               duration: Duration(seconds: 2),
+              builder: (context, value, child) {
+                return Transform.translate(
+                  offset: Offset(value, 0),
+                  child: Opacity(
+                    opacity: (100 - value) / 100,
+                    child: child,
+                  ),
+                );
+              },
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -102,12 +156,7 @@ class BodySection extends StatelessWidget {
                             width: MediaQuery.sizeOf(context).width * 0.1,
                             decoration: BoxDecoration(),
                             child: ClipRRect(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(0),
-                                bottomRight: Radius.circular(0),
-                                topLeft: Radius.circular(0),
-                                topRight: Radius.circular(0),
-                              ),
+                              borderRadius: BorderRadius.zero,
                               child: Image.asset(
                                 'assets/images/Home2.png',
                                 fit: BoxFit.cover,
@@ -121,12 +170,7 @@ class BodySection extends StatelessWidget {
                             width: MediaQuery.sizeOf(context).width * 0.1,
                             decoration: BoxDecoration(),
                             child: ClipRRect(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(0),
-                                bottomRight: Radius.circular(0),
-                                topLeft: Radius.circular(0),
-                                topRight: Radius.circular(0),
-                              ),
+                              borderRadius: BorderRadius.zero,
                               child: Image.asset(
                                 'assets/images/Profile2.png',
                                 fit: BoxFit.fill,
@@ -140,12 +184,7 @@ class BodySection extends StatelessWidget {
                             width: MediaQuery.sizeOf(context).width * 0.1,
                             decoration: BoxDecoration(),
                             child: ClipRRect(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(0),
-                                bottomRight: Radius.circular(0),
-                                topLeft: Radius.circular(0),
-                                topRight: Radius.circular(0),
-                              ),
+                              borderRadius: BorderRadius.zero,
                               child: Image.asset(
                                 'assets/images/Home3.png',
                                 fit: BoxFit.fill,
@@ -161,7 +200,6 @@ class BodySection extends StatelessWidget {
             ),
           ),
         ],
-      
       ),
     );
   }
