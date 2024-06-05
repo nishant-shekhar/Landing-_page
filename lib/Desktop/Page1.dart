@@ -9,17 +9,10 @@ class LandingPage extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.max,
       children: [
-        Expanded(
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              // 2nd section
-              BodySection(),
+         BodySection(),
               // Search section
-              search1(),
-            ],
-          ),
-        ),
+                  search1(),
+       
       ],
     );
   }

@@ -303,7 +303,7 @@ class BottomPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,

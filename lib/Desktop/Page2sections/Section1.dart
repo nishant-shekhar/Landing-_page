@@ -29,13 +29,36 @@ class Section1 extends StatelessWidget {
                     ),
                   );
                 },
-                child: Text(
-                  'Core Features of Our Job Application Platform',
-                  style: TextStyle(
-                    fontSize: 30,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w600,
-                  ),
+                child: Text.rich(
+                  TextSpan(children: [
+                    TextSpan(
+                      text: 'Core',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 30,
+                        letterSpacing: 2,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    TextSpan(
+                      text: ' Features ',
+                      style: TextStyle(
+                        fontSize: 30,
+                        letterSpacing: 2,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.blue,
+                      ),
+                    ),
+                    TextSpan(
+                      text: 'of Our Job Application Platform',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 30,
+                        letterSpacing: 2,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    )
+                  ]),
                 ),
               ),
             ),
@@ -93,7 +116,7 @@ class Section1 extends StatelessWidget {
           ),
         ],
       ),
-      ThirdSection(),
+      
     ]);
   }
 }

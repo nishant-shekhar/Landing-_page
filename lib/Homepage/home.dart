@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/Desktop/Page1.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/bodySection.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/navbar.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
 import 'package:flutter_application_1/Desktop/Page2sections/Section1.dart';
 import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
 import 'package:flutter_application_1/Desktop/Page3.dart';
@@ -28,20 +29,15 @@ class HomeMain extends StatelessWidget {
   }
 }
 
-class DesktopLayout extends StatefulWidget {
-  @override
-  _DesktopLayoutState createState() => _DesktopLayoutState();
-}
-
-class _DesktopLayoutState extends State<DesktopLayout> {
-  final PageController _pageController = PageController();
-
+class DesktopLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      height: screenHeight,
+      width: screenWidth,
+      height: screenWidth,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -55,33 +51,45 @@ class _DesktopLayoutState extends State<DesktopLayout> {
           end: AlignmentDirectional(1, 0.98),
         ),
       ),
-      child: Column(
-        children: [
-          Navbar(),
-          Expanded(
-            child: PageView(
-              scrollDirection: Axis.vertical,
-              controller: _pageController,
-              children: [
-                LandingPage(),
-                Section1(),
-                MyTeam(),
-                Container(
-                  color: Color.fromARGB(255, 255, 255, 255),
-                  child: BottomPage(),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+      child: Stack(children: [
+        Column(
+          children: [
+            Navbar(),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    //Page1
+                    
+                    BodySection(),
+                    search1(),
+                    //page2
 
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
+                    Section1(),
+                    ThirdSection(),
+
+                    // Page3
+                    Container(
+                      width: double.infinity,
+                      height: screenHeight,
+                      child: Center(
+                        child: MyTeam(),
+                      ),
+                    ),
+                    // Page 4
+                    Container(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      child: BottomPage(),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ]),
+    );
   }
 }
 

@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:flutter/widgets.dart";
 
 class ImageTextWidget extends StatelessWidget {
   final String t1;
@@ -17,8 +18,8 @@ class ImageTextWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            width: 250,
-            height: 200,
+            width: 200,
+            height: 170,
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -51,16 +52,18 @@ class ImageTextWidget extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-            
-            child: Text(
-              textAlign: TextAlign.center,
-              t2,
-              style: TextStyle(
-                fontSize: 18,
-                letterSpacing: 1,
-                fontWeight: FontWeight.w500,
+          Container(
+            width:MediaQuery.sizeOf(context).height * 0.4,
+            child: Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+              child: Text(
+                textAlign: TextAlign.center,
+                t2,
+                style: TextStyle(
+                  fontSize: 18,
+                  letterSpacing: 1,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           ),
