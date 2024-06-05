@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter_application_1/Desktop/Page2sections/ImageText.dart';
@@ -6,8 +7,7 @@ import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
 class Section1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
+    return Column(children: [
       Padding(
         padding: EdgeInsetsDirectional.fromSTEB(90, 40, 90, 40),
         child: Row(
@@ -18,17 +18,17 @@ class Section1 extends StatelessWidget {
               width: MediaQuery.sizeOf(context).width * 0.4,
               decoration: BoxDecoration(),
               child: TweenAnimationBuilder<double>(
-                    tween: Tween<double>(begin: -100, end: 0),
-                    duration: Duration(seconds: 1),
-                    builder: (context, value, child) {
-                      return Transform.translate(
-                        offset: Offset(value, 0),
-                        child: Opacity(
-                          opacity: (100 + value) / 100,
-                          child: child,
-                        ),
-                      );
-                    },
+                tween: Tween<double>(begin: -100, end: 0),
+                duration: Duration(seconds: 1),
+                builder: (context, value, child) {
+                  return Transform.translate(
+                    offset: Offset(value, 0),
+                    child: Opacity(
+                      opacity: (100 + value) / 100,
+                      child: child,
+                    ),
+                  );
+                },
                 child: Text(
                   'Core Features of Our Job Application Platform',
                   style: TextStyle(
@@ -93,8 +93,7 @@ class Section1 extends StatelessWidget {
           ),
         ],
       ),
-    
-    ]
-    );
+      ThirdSection(),
+    ]);
   }
 }

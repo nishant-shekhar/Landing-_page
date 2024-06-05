@@ -28,14 +28,19 @@ class HomeMain extends StatelessWidget {
   }
 }
 
-class DesktopLayout extends StatelessWidget {
+class DesktopLayout extends StatefulWidget {
+  @override
+  _DesktopLayoutState createState() => _DesktopLayoutState();
+}
+
+class _DesktopLayoutState extends State<DesktopLayout> {
+  final PageController _pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
-    double screenWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      width: screenWidth,
       height: screenHeight,
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -50,46 +55,33 @@ class DesktopLayout extends StatelessWidget {
           end: AlignmentDirectional(1, 0.98),
         ),
       ),
-      child: Stack(children: [
-        Column(
-          children: [
-            Navbar(),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      height: screenHeight,
-                      width: double.infinity,
-                      child: LandingPage(),
-                    ),
-                    //page2
-
-                    Section1(),
-                    ThirdSection(),
-
-                    // Page3
-                    Container(
-                      width: double.infinity,
-                      height: screenHeight,
-                      child: Center(
-                        child: MyTeam(),
-                      ),
-                    ),
-                    // Page 4
-                    Container(
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      child: BottomPage(),
-                    ),
-                  ],
+      child: Column(
+        children: [
+          Navbar(),
+          Expanded(
+            child: PageView(
+              scrollDirection: Axis.vertical,
+              controller: _pageController,
+              children: [
+                LandingPage(),
+                Section1(),
+                MyTeam(),
+                Container(
+                  color: Color.fromARGB(255, 255, 255, 255),
+                  child: BottomPage(),
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
-      ]),
+          ),
+        ],
+      ),
     );
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
 }
 

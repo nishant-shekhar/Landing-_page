@@ -25,43 +25,56 @@ class MyTeam extends StatelessWidget {
                     children: [
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
-                        child: Container(
-                          width: 200,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            border: Border.all(
-                              color: Color(0xFF14181B),
-                              width: 1,
+                        child: TweenAnimationBuilder<double>(
+                          tween: Tween<double>(begin: -100, end: 0),
+                          duration: Duration(seconds: 1),
+                          builder: (context, value, child) {
+                            return Transform.translate(
+                              offset: Offset(value, 0),
+                              child: Opacity(
+                                opacity: (100 + value) / 100,
+                                child: child,
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: 200,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              border: Border.all(
+                                color: Color(0xFF14181B),
+                                width: 1,
+                              ),
                             ),
-                          ),
-                          child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(14, 10, 10, 10),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Container(
-                                  width: 20,
-                                  height: 20,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFF14181B),
-                                    shape: BoxShape.circle,
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      10, 0, 0, 0),
-                                  child: Text(
-                                    'OUR TEAM',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      letterSpacing: 0,
-                                      fontWeight: FontWeight.w500,
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  14, 10, 10, 10),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF14181B),
+                                      shape: BoxShape.circle,
                                     ),
                                   ),
-                                ),
-                              ],
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: Text(
+                                      'OUR TEAM',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        letterSpacing: 0,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -73,22 +86,42 @@ class MyTeam extends StatelessWidget {
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              'NS APPS',
-                              style: TextStyle(
-                                fontSize: 45,
-                                letterSpacing: 0,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            TweenAnimationBuilder<double>(
+                              tween: Tween<double>(
+                                  begin: 0,
+                                  end: 45), // Define the range of animation
+                              duration: Duration(
+                                  seconds:
+                                      1), // Set the duration of the animation
+                              builder: (context, value, child) {
+                                return Text(
+                                  'NS APPS',
+                                  style: TextStyle(
+                                    fontSize: value, // Animate the font size
+                                    letterSpacing: 0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                );
+                              },
                             ),
-                            Text(
-                              'INNOVATION LLP',
-                              style: TextStyle(
-                                color: Color(0xFFEBAF04),
-                                fontSize: 40,
-                                letterSpacing: 0,
-                                fontWeight: FontWeight.w600,
-                              ),
+                            TweenAnimationBuilder<double>(
+                              tween: Tween<double>(
+                                  begin: 0,
+                                  end: 90), // Define the range of animation
+                              duration: Duration(
+                                  seconds:
+                                      1), // Set the duration of the animation
+                              builder: (context, value, child) {
+                                return Text(
+                                  'INNOVATION LLP',
+                                  style: TextStyle(
+                                    color: Color(0xFFEBAF04),
+                                    fontSize: 40,
+                                    letterSpacing: 0,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                );
+                              },
                             ),
                           ],
                         ),
@@ -198,7 +231,7 @@ class _HoverProfileState extends State<HoverProfile> {
           alignment: Alignment.center,
           children: [
             Container(
-              width: MediaQuery.sizeOf(context).width * 0.18,
+              width: MediaQuery.sizeOf(context).width * 0.16,
               height: MediaQuery.sizeOf(context).height * 0.7,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -235,7 +268,7 @@ class _HoverProfileState extends State<HoverProfile> {
             ),
             if (_isHovering)
               Container(
-                width: MediaQuery.sizeOf(context).width * 0.18,
+                width: MediaQuery.sizeOf(context).width * 0.16,
                 height: MediaQuery.sizeOf(context).height * 0.7,
                 decoration: BoxDecoration(
                   color: Colors.brown.withOpacity(0.8),

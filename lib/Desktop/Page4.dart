@@ -8,7 +8,7 @@ class BottomPage extends StatelessWidget {
       color: Colors.transparent,
       child: Column(
         mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
@@ -303,7 +303,7 @@ class BottomPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
