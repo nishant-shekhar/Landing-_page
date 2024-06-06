@@ -1,12 +1,11 @@
-import "package:flutter/material.dart";
-import "package:flutter/widgets.dart";
+import 'package:flutter/material.dart';
 
-class ImageTextWidget extends StatelessWidget {
+class ImageTextWidget1 extends StatelessWidget {
   final String t1;
   final String t2;
   final String image;
 
-  ImageTextWidget(this.t1, this.t2, this.image);
+  ImageTextWidget1(this.t1, this.t2, this.image);
 
   @override
   Widget build(BuildContext context) {
@@ -18,18 +17,11 @@ class ImageTextWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            width: 200,
-            height: 170,
+            width: 150,
+            height: 180,
             decoration: BoxDecoration(
               boxShadow: [
-                BoxShadow(
-                  blurRadius: 8,
-                  color: Color(0x33000000),
-                  offset: Offset(
-                    0,
-                    2,
-                  ),
-                )
+                
               ],
               borderRadius: BorderRadius.circular(5),
             ),
@@ -49,13 +41,13 @@ class ImageTextWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 child: Image.asset(
                   image,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                 ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
             child: TweenAnimationBuilder<double>(
               tween: Tween<double>(begin: -100, end: 0),
               duration: Duration(seconds: 1),
@@ -71,7 +63,7 @@ class ImageTextWidget extends StatelessWidget {
               child: Text(
                 t1,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   letterSpacing: 2,
                   fontWeight: FontWeight.bold,
                 ),
@@ -91,14 +83,14 @@ class ImageTextWidget extends StatelessWidget {
               );
             },
             child: Container(
-              width: MediaQuery.sizeOf(context).height * 0.4,
+              width: MediaQuery.of(context).size.height * 0.4,
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                 child: Text(
-                  textAlign: TextAlign.center,
                   t2,
+                  textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 15,
                     letterSpacing: 1,
                     fontWeight: FontWeight.w500,
                   ),

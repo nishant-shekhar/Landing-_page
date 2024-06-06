@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class MyTeam extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -230,39 +231,52 @@ class _HoverProfileState extends State<HoverProfile> {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Container(
-              width: MediaQuery.sizeOf(context).width * 0.16,
-              height: MediaQuery.sizeOf(context).height * 0.7,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color(0xFFF9DADF),
-                    Color(0xFFFFFFFF),
-                    Color(0xFFFCD0DA)
+            TweenAnimationBuilder<double>(
+              tween: Tween<double>(begin: -100, end: 0),
+              duration: Duration(seconds: 1),
+              builder: (context, value, child) {
+                return Transform.translate(
+                  offset: Offset(value, 0),
+                  child: Opacity(
+                    opacity: (100 + value) / 100,
+                    child: child,
+                  ),
+                );
+              },
+              child: Container(
+                width: MediaQuery.sizeOf(context).width * 0.16,
+                height: MediaQuery.sizeOf(context).height * 0.7,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Color(0xFFF9DADF),
+                      Color(0xFFFFFFFF),
+                      Color(0xFFFCD0DA)
+                    ],
+                    stops: [0.5, 0.6, 1],
+                    begin: AlignmentDirectional(0, -1),
+                    end: AlignmentDirectional(0, 1),
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      color: Color(0x33000000),
+                      offset: Offset(
+                        0,
+                        2,
+                      ),
+                    )
                   ],
-                  stops: [0.5, 0.6, 1],
-                  begin: AlignmentDirectional(0, -1),
-                  end: AlignmentDirectional(0, 1),
                 ),
-                borderRadius: BorderRadius.circular(40),
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 8,
-                    color: Color(0x33000000),
-                    offset: Offset(
-                      0,
-                      2,
-                    ),
-                  )
-                ],
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(40),
-                child: Image.asset(
-                  widget.imagePath,
-                  width: 300,
-                  height: 200,
-                  fit: BoxFit.cover,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(40),
+                  child: Image.asset(
+                    widget.imagePath,
+                    width: 300,
+                    height: 200,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),

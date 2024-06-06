@@ -6,7 +6,7 @@ class Navm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20, 55, 20, 0),
+              padding: EdgeInsetsDirectional.fromSTEB(20, 40, 20, 0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

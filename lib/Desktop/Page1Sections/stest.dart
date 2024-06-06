@@ -52,9 +52,9 @@ class _SearchWidgetState extends State<search1> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return /*Padding(
       padding: EdgeInsetsDirectional.fromSTEB(90, 0, 90, 20),
-      child: Row(
+      child: */Row(
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
@@ -188,7 +188,7 @@ class _SearchWidgetState extends State<search1> {
             ),
           ),
         ],
-      ),
+      //),
     );
   }
 }

@@ -45,12 +45,12 @@ class _ThirdSectionState extends State<ThirdSection> {
                 shape: BoxShape.rectangle,
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10, 20, 15, 20),
+                padding: EdgeInsetsDirectional.fromSTEB(15, 20, 15, 20),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                       child: Container(
                         decoration: BoxDecoration(),
                         child: Icon(
@@ -88,7 +88,7 @@ class _ThirdSectionState extends State<ThirdSection> {
                                 'App store',
                                 style: TextStyle(
                                   color: Color(0xFFFFFFFF),
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   letterSpacing: 0,
                                 ),
                               ),
@@ -130,12 +130,12 @@ class _ThirdSectionState extends State<ThirdSection> {
                   shape: BoxShape.rectangle,
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10, 20, 15, 20),
+                  padding: EdgeInsetsDirectional.fromSTEB(20, 20, 15, 20),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                         child: Container(
                           decoration: BoxDecoration(),
                           child: ClipRRect(
@@ -172,7 +172,7 @@ class _ThirdSectionState extends State<ThirdSection> {
                                 'GOOGLE PLAY',
                                 style: TextStyle(
                                   color: Color(0xFF39608F),
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   letterSpacing: 0,
                                 ),
                               ),

@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter_application_1/Desktop/Page2sections/ImageText.dart';
-import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
 
 class Section1 extends StatelessWidget {
   @override
@@ -73,7 +71,7 @@ class Section1 extends StatelessWidget {
               padding: EdgeInsetsDirectional.fromSTEB(0, 110, 0, 0),
               child: Container(
                 width: MediaQuery.sizeOf(context).width,
-                height: 400,
+                height: 280,
                 decoration: BoxDecoration(
                   color: Color(0xFFFFFCEF),
                 ),

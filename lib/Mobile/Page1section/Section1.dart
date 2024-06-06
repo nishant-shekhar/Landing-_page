@@ -7,9 +7,19 @@ class Bodym extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 0),
-      child: SlideInLeft(
-        duration: Duration(seconds: 1),
+      padding: EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+      child: TweenAnimationBuilder<double>(
+                    tween: Tween<double>(begin: -100, end: 0),
+                    duration: Duration(seconds: 1),
+                    builder: (context, value, child) {
+                      return Transform.translate(
+                        offset: Offset(value, 0),
+                        child: Opacity(
+                          opacity: (100 + value) / 100,
+                          child: child,
+                        ),
+                      );
+                    },
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -25,12 +35,12 @@ class Bodym extends StatelessWidget {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Container(
-                          width: MediaQuery.sizeOf(context).width * 0.90,
+                          width: MediaQuery.sizeOf(context).width * 0.80,
                           decoration: BoxDecoration(),
                           child: Text(
                             'Start Your Journey Toward Success with Us!',
                             style: TextStyle(
-                              color: Color(0xFF28955E),
+                              color: Color(0xFFFD7E41),
                               letterSpacing: 0,
                               fontWeight: FontWeight.w500,
                             ),
@@ -44,12 +54,12 @@ class Bodym extends StatelessWidget {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            width: MediaQuery.sizeOf(context).width * 0.90,
+                            width: MediaQuery.sizeOf(context).width * 0.80,
                             decoration: BoxDecoration(),
                             child: Text(
                               'Find your next career move on the go with our mobile app!',
                               style: TextStyle(
-                                  color: Colors.black,
+                                color: Colors.black,
                                 fontSize: 30,
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w600,
@@ -65,12 +75,12 @@ class Bodym extends StatelessWidget {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            width: MediaQuery.sizeOf(context).width * 0.90,
+                            width: MediaQuery.sizeOf(context).width * 0.80,
                             decoration: BoxDecoration(),
                             child: Text(
                               'Unlock Your Potential: Find Your Perfect Fit!',
                               style: TextStyle(
-                                  color: Color(0xFF2E2D2C),
+                                color: Color(0xFF2E2D2C),
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w500,
                               ),
