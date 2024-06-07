@@ -314,8 +314,8 @@ class Myteamm extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
-                            width: MediaQuery.sizeOf(context).width * 0.3,
-                            height: MediaQuery.sizeOf(context).height * 0.4,
+                            width: MediaQuery.sizeOf(context).width * 0.4,
+                            height: MediaQuery.sizeOf(context).height * 0.35,
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0xFFF9B396), Color(0xFFFDA816)],
@@ -339,8 +339,8 @@ class Myteamm extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(15, 0, 15, 0),
                             child: Container(
-                              width: MediaQuery.sizeOf(context).width * 0.3,
-                              height: MediaQuery.sizeOf(context).height * 0.4,
+                              width: MediaQuery.sizeOf(context).width * 0.4,
+                              height: MediaQuery.sizeOf(context).height * 0.35,
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
@@ -369,8 +369,8 @@ class Myteamm extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                             child: Container(
-                              width: MediaQuery.sizeOf(context).width * 0.3,
-                              height: MediaQuery.sizeOf(context).height * 0.4,
+                              width: MediaQuery.sizeOf(context).width * 0.4,
+                              height: MediaQuery.sizeOf(context).height * 0.35,
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
@@ -399,8 +399,8 @@ class Myteamm extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                             child: Container(
-                              width: MediaQuery.sizeOf(context).width * 0.3,
-                              height: MediaQuery.sizeOf(context).height * 0.4,
+                              width: MediaQuery.sizeOf(context).width * 0.4,
+                              height: MediaQuery.sizeOf(context).height * 0.35,
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [

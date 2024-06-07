@@ -8,7 +8,7 @@ class Section1m extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(20, 10, 10, 20),
+          padding: EdgeInsetsDirectional.fromSTEB(20, 10, 10, 25),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.start,

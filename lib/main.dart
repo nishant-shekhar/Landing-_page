@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Desktop/Page3.dart';
 import 'package:flutter_application_1/Homepage/home.dart';
+import 'package:flutter_application_1/Mobile/Page3section/Myteam.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
