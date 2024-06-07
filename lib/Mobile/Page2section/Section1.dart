@@ -14,7 +14,7 @@ class Section1m extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                width: MediaQuery.of(context).size.width * 0.8,
+                width: MediaQuery.of(context).size.width * 0.6,
                 child: TweenAnimationBuilder<double>(
                   tween: Tween<double>(begin: -100, end: 0),
                   duration: Duration(seconds: 1),

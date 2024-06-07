@@ -6,9 +6,8 @@ class Bodym1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
+      padding: EdgeInsetsDirectional.fromSTEB(20,5,0,0),
+      
         child: TweenAnimationBuilder<double>(
           tween: Tween<double>(begin: -100, end: 0),
           duration: Duration(seconds: 1),
@@ -28,7 +27,7 @@ class Bodym1 extends StatelessWidget {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 50, 5, 0),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.28,
+                  width: MediaQuery.sizeOf(context).width * 0.24,
                   decoration: BoxDecoration(),
                   child: ClipRRect(
                     borderRadius: BorderRadius.only(
@@ -47,7 +46,7 @@ class Bodym1 extends StatelessWidget {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.28,
+                  width: MediaQuery.sizeOf(context).width * 0.24,
                   decoration: BoxDecoration(),
                   child: ClipRRect(
                     borderRadius: BorderRadius.only(
@@ -66,7 +65,7 @@ class Bodym1 extends StatelessWidget {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 70, 0, 0),
                 child: Container(
-                  width: MediaQuery.sizeOf(context).width * 0.28,
+                  width: MediaQuery.sizeOf(context).width * 0.24,
                   decoration: BoxDecoration(),
                   child: ClipRRect(
                     borderRadius: BorderRadius.only(
@@ -85,7 +84,6 @@ class Bodym1 extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

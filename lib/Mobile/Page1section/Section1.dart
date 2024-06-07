@@ -60,7 +60,7 @@ class Bodym extends StatelessWidget {
                               'Find your next career move on the go with our mobile app!',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: 30,
+                                fontSize: 28,
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w600,
                               ),

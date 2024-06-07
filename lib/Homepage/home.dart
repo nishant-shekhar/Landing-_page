@@ -1,17 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/Desktop/Page1.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/navbar.dart';
-import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
 import 'package:flutter_application_1/Desktop/Page2.dart';
 import 'package:flutter_application_1/Desktop/Page3.dart';
 import 'package:flutter_application_1/Desktop/Page4.dart';
 import 'package:flutter_application_1/Mobile/Page1.dart';
 import 'package:flutter_application_1/Mobile/Page2.dart';
-import 'package:flutter_application_1/Mobile/Page2section/Section1.dart';
+import 'package:flutter_application_1/Mobile/Page3section/Myteam.dart';
 import 'package:flutter_application_1/Mobile/navm.dart';
-import 'package:flutter_application_1/Tablet/navbart.dart';
 import 'package:flutter_application_1/Tablet/tabletr.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -152,6 +148,7 @@ class Mobilelayout extends StatelessWidget {
                   children: [
                     Page1m(),
                     Page2m(),
+                    Myteamm(),
                     
                   ],
                 ),
