@@ -16,20 +16,15 @@ class Page4m extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
-                  child: Container(
-                    width: MediaQuery.sizeOf(context).width,
-                    height: 3,
-                    decoration: BoxDecoration(
-                      color: Color(0xFFEFF0F1),
-                    ),
-                  ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+              child: Container(
+                width: MediaQuery.sizeOf(context).width,
+                height: 3,
+                decoration: BoxDecoration(
+                  color: Color(0xFFEFF0F1),
                 ),
-              ],
+              ),
             ),
             Container(
               width: MediaQuery.sizeOf(context).width * 0.4,

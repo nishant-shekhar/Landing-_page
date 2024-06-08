@@ -126,31 +126,31 @@ class BodySection extends StatelessWidget {
           ),
           Expanded(
             flex: 1,
-            child: TweenAnimationBuilder<double>(
-              tween: Tween<double>(begin: 100, end: 0),
-              duration: Duration(seconds: 2),
-              builder: (context, value, child) {
-                return Transform.translate(
-                  offset: Offset(value, 0),
-                  child: Opacity(
-                    opacity: (100 - value) / 100,
-                    child: child,
-                  ),
-                );
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      TweenAnimationBuilder<double>(
+                        tween: Tween<double>(begin: -100, end: 0),
+                        duration: Duration(seconds: 1),
+                        builder: (context, value, child) {
+                          return Transform.translate(
+                            offset: Offset(value, 0),
+                            child: Opacity(
+                              opacity: (100 + value) / 100,
+                              child: child,
+                            ),
+                          );
+                        },
+                        child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.1,
@@ -164,21 +164,50 @@ class BodySection extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Padding(
+                      ),
+                      TweenAnimationBuilder<double>(
+                        tween: Tween<double>(begin: 100, end: 0),
+                        duration: Duration(seconds: 1),
+                        builder: (context, value, child) {
+                          return Transform.translate(
+                            offset: Offset(0, value),
+                            child: Opacity(
+                              opacity: (100 - value) / 100,
+                              child: child,
+                            ),
+                          );
+                        },
+                        child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
-                          child: Container(
-                            width: MediaQuery.sizeOf(context).width * 0.1,
-                            decoration: BoxDecoration(),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.zero,
-                              child: Image.asset(
-                                'assets/images/Profile2.png',
-                                fit: BoxFit.fill,
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
+                            child: Container(
+                              width: MediaQuery.sizeOf(context).width * 0.1,
+                              decoration: BoxDecoration(),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.zero,
+                                child: Image.asset(
+                                  'assets/images/Profile2.png',
+                                  fit: BoxFit.fill,
+                                ),
                               ),
                             ),
                           ),
                         ),
-                        Padding(
+                      ),
+                      TweenAnimationBuilder<double>(
+                        tween: Tween<double>(begin: 100, end: 0),
+                        duration: Duration(seconds: 1),
+                        builder: (context, value, child) {
+                          return Transform.translate(
+                            offset: Offset(-value, 0),
+                            child: Opacity(
+                              opacity: (100 - value) / 100,
+                              child: child,
+                            ),
+                          );
+                        },
+                        child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.1,
@@ -192,11 +221,11 @@ class BodySection extends StatelessWidget {
                             ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],

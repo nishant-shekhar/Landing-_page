@@ -96,23 +96,44 @@ class DesktopLayout extends StatelessWidget {
 class TabletLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-
     return Container(
-      color: Color.fromARGB(255, 253, 253, 253),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color(0xFFFD7E41),
+            Color(0xFFFCC232),
+            Color(0xFFFDF6EC),
+            Color(0xFFFFFFFF),
+          ],
+          stops: [0, 0.1, 0.23, 0.615],
+          begin: AlignmentDirectional(-1, -0.98),
+          end: AlignmentDirectional(1, 0.98),
+        ),
+      ),
       child: Stack(children: [
         Column(
           children: [
+            Navm(),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    SizedBox(
-                      height: screenHeight,
-                      width: double.infinity,
-                      child: TabletPage(),
+                    //page1
+                    Bodym(),
+                    Bodym1(),
+                    //page2
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(45, 5, 0, 10),
+                      child: search1(),
                     ),
+                    Section1m(),
+                    //Page3
+
+                    Myteamm(),
+
+                    //page4
+                    Page4m(),
                   ],
                 ),
               ),
@@ -155,14 +176,15 @@ class Mobilelayout extends StatelessWidget {
                     Bodym1(),
                     //page2
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(45, 5, 0, 10),
+                      padding: EdgeInsetsDirectional.fromSTEB(30, 5, 0, 10),
                       child: search1(),
                     ),
                     Section1m(),
                     //Page3
-                    //Myteamm(),
 
-                     //page4
+                    Myteamm(),
+
+                    //page4
                     Page4m(),
                   ],
                 ),
