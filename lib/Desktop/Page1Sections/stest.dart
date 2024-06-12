@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Desktop/Profile.dart';
 
-
 class search1 extends StatefulWidget {
   @override
   _SearchWidgetState createState() => _SearchWidgetState();
@@ -20,9 +19,9 @@ class _SearchWidgetState extends State<search1> {
     'B-hub Space',
   ];
   List<String> _filteredJobs = [];
-
   bool showSearchContainer = false;
   bool showSearchIcon = false;
+  int? _hoveredIndex;
 
   @override
   void initState() {
@@ -30,9 +29,8 @@ class _SearchWidgetState extends State<search1> {
     _search1Controller.addListener(() {
       setState(() {
         _filteredJobs = jobs
-            .where((job) => job
-                .toLowerCase()
-                .contains(_search1Controller.text.toLowerCase()))
+            .where((job) =>
+                job.toLowerCase().contains(_search1Controller.text.toLowerCase()))
             .toList();
       });
     });
@@ -168,16 +166,33 @@ class _SearchWidgetState extends State<search1> {
                       shrinkWrap: true,
                       itemCount: _filteredJobs.length,
                       itemBuilder: (context, index) {
-                        return ListTile(
-                          title: Text(_filteredJobs[index]),
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) =>Profile(),
-                              ),
-                            );
+                        return MouseRegion(
+                          onEnter: (_) {
+                            setState(() {
+                              _hoveredIndex = index;
+                            });
                           },
+                          onExit: (_) {
+                            setState(() {
+                              _hoveredIndex = null;
+                            });
+                          },
+                          child: Container(
+                            color: _hoveredIndex == index
+                                ? Colors.grey[200]
+                                : Colors.transparent,
+                            child: ListTile(
+                              title: Text(_filteredJobs[index]),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Profile(),
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
                         );
                       },
                     ),

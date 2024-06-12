@@ -5,14 +5,12 @@ import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
 import 'package:flutter_application_1/Desktop/Page2.dart';
 import 'package:flutter_application_1/Desktop/Page3.dart';
 import 'package:flutter_application_1/Desktop/Page4.dart';
-import 'package:flutter_application_1/Mobile/Mobilesearch.dart';
 import 'package:flutter_application_1/Mobile/Page1section/Section1.dart';
 import 'package:flutter_application_1/Mobile/Page1section/Section2.dart';
 import 'package:flutter_application_1/Mobile/Page2section/Section1.dart';
 import 'package:flutter_application_1/Mobile/Page3section/Myteam.dart';
 import 'package:flutter_application_1/Mobile/Page4.dart';
 import 'package:flutter_application_1/Mobile/navm.dart';
-import 'package:flutter_application_1/Tablet/tabletr.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeMain extends StatelessWidget {
@@ -123,9 +121,14 @@ class TabletLayout extends StatelessWidget {
                     Bodym(),
                     Bodym1(),
                     //page2
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(45, 5, 0, 10),
-                      child: search1(),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(45, 5, 0, 10),
+                          child: search1(),
+                        ),
+                      ],
                     ),
                     Section1m(),
                     //Page3
