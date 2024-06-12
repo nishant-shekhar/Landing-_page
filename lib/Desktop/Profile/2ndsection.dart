@@ -38,6 +38,8 @@ class Body extends StatelessWidget {
                               letterSpacing: 0,
                               fontWeight: FontWeight.w500,
                               fontFamily: 'Readex Pro',
+                              color: Colors.black,
+                              decoration: TextDecoration.none,
                             ),
                           ),
                         ),
@@ -48,6 +50,8 @@ class Body extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 16,
                               letterSpacing: 0,
+                              color: Colors.black,
+                              decoration: TextDecoration.none,
                             ),
                           ),
                         ),
@@ -57,6 +61,9 @@ class Body extends StatelessWidget {
                             'A-block 5th floor Mauryalok complex Patna',
                             style: TextStyle(
                               letterSpacing: 0,
+                              color: Colors.black,
+                              fontSize: 14,
+                              decoration: TextDecoration.none,
                             ),
                           ),
                         ),
@@ -66,6 +73,20 @@ class Body extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                  child: Text(
+                    'Information',
+                    style: TextStyle(
+                      fontFamily: 'Readex Pro',
+                      fontSize: 20,
+                      letterSpacing: 0,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                   child: Container(
                     width: MediaQuery.sizeOf(context).width * 0.2,
                     decoration: BoxDecoration(
@@ -78,19 +99,6 @@ class Body extends StatelessWidget {
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                            child: Text(
-                              'Information',
-                              style: TextStyle(
-                                fontFamily: 'Readex Pro',
-                                fontSize: 20,
-                                letterSpacing: 0,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -116,6 +124,8 @@ class Body extends StatelessWidget {
                                       style: TextStyle(
                                         color: Color(0xFF76859C),
                                         letterSpacing: 0,
+                                        fontSize: 14,
+                                        decoration: TextDecoration.none,
                                       ),
                                     ),
                                   ),
@@ -130,6 +140,8 @@ class Body extends StatelessWidget {
                                       fontSize: 15,
                                       letterSpacing: 0,
                                       fontWeight: FontWeight.w500,
+                                      color: Colors.black,
+                                      decoration: TextDecoration.none,
                                     ),
                                   ),
                                 ],
@@ -164,6 +176,8 @@ class Body extends StatelessWidget {
                                         style: TextStyle(
                                           color: Color(0xFF76859C),
                                           letterSpacing: 0,
+                                          fontSize: 14,
+                                          decoration: TextDecoration.none,
                                         ),
                                       ),
                                     ),
@@ -178,6 +192,8 @@ class Body extends StatelessWidget {
                                         fontSize: 15,
                                         letterSpacing: 0,
                                         fontWeight: FontWeight.w500,
+                                        color: Colors.black,
+                                        decoration: TextDecoration.none,
                                       ),
                                     ),
                                   ],
@@ -213,6 +229,8 @@ class Body extends StatelessWidget {
                                         style: TextStyle(
                                           color: Color(0xFF76859C),
                                           letterSpacing: 0,
+                                          fontSize: 14,
+                                          decoration: TextDecoration.none,
                                         ),
                                       ),
                                     ),
@@ -227,6 +245,8 @@ class Body extends StatelessWidget {
                                         fontSize: 15,
                                         letterSpacing: 0,
                                         fontWeight: FontWeight.w500,
+                                        color: Colors.black,
+                                        decoration: TextDecoration.none,
                                       ),
                                     ),
                                   ],
@@ -262,6 +282,8 @@ class Body extends StatelessWidget {
                                         style: TextStyle(
                                           color: Color(0xFF76859C),
                                           letterSpacing: 0,
+                                          fontSize: 14,
+                                          decoration: TextDecoration.none,
                                         ),
                                       ),
                                     ),
@@ -276,6 +298,8 @@ class Body extends StatelessWidget {
                                         fontSize: 15,
                                         letterSpacing: 0,
                                         fontWeight: FontWeight.w500,
+                                        color: Colors.black,
+                                        decoration: TextDecoration.none,
                                       ),
                                     ),
                                   ],
@@ -326,6 +350,8 @@ class Body extends StatelessWidget {
                       fontSize: 20,
                       letterSpacing: 0,
                       fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                      decoration: TextDecoration.none,
                     ),
                   ),
                 ),
@@ -356,6 +382,10 @@ class Body extends StatelessWidget {
                             style: TextStyle(
                               letterSpacing: 0,
                               fontWeight: FontWeight.w500,
+                              fontFamily: 'Readex Pro',
+                              fontSize: 14,
+                              color: Colors.black,
+                              decoration: TextDecoration.none,
                             ),
                           ),
                         ),
@@ -394,6 +424,9 @@ class Body extends StatelessWidget {
                                 fontFamily: 'Readex Pro',
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                color: Colors.black,
+                                decoration: TextDecoration.none,
                               ),
                             ),
                           ),
@@ -433,6 +466,9 @@ class Body extends StatelessWidget {
                                 fontFamily: 'Readex Pro',
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                color: Colors.black,
+                                decoration: TextDecoration.none,
                               ),
                             ),
                           ),
@@ -466,6 +502,8 @@ class Body extends StatelessWidget {
                     fontSize: 20,
                     letterSpacing: 0,
                     fontWeight: FontWeight.w500,
+                    color: Colors.black,
+                    decoration: TextDecoration.none,
                   ),
                 ),
                 Padding(
@@ -485,13 +523,15 @@ class Body extends StatelessWidget {
                           fontSize: 14,
                           letterSpacing: 0,
                           fontWeight: FontWeight.w500,
+                          color: Colors.black,
+                          decoration: TextDecoration.none,
                         ),
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 10),
                   child: Text(
                     'Show case',
                     style: TextStyle(
@@ -499,6 +539,8 @@ class Body extends StatelessWidget {
                       fontSize: 20,
                       letterSpacing: 0,
                       fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                      decoration: TextDecoration.none,
                     ),
                   ),
                 ),
