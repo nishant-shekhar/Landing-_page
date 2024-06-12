@@ -30,7 +30,7 @@ class Body extends StatelessWidget {
                       children: [
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 10),
-                          child: Text(
+                          child: SelectableText(
                             'B-hub Space',
                             textAlign: TextAlign.start,
                             style: TextStyle(
@@ -45,7 +45,7 @@ class Body extends StatelessWidget {
                         ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                          child: Text(
+                          child: SelectableText(
                             'Co-working space',
                             style: TextStyle(
                               fontSize: 16,
@@ -57,7 +57,7 @@ class Body extends StatelessWidget {
                         ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                          child: Text(
+                          child: SelectableText(
                             'A-block 5th floor Mauryalok complex Patna',
                             style: TextStyle(
                               letterSpacing: 0,
@@ -73,7 +73,7 @@ class Body extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
-                  child: Text(
+                  child: SelectableText(
                     'Information',
                     style: TextStyle(
                       fontFamily: 'Readex Pro',
@@ -119,7 +119,7 @@ class Body extends StatelessWidget {
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         5, 0, 0, 0),
-                                    child: Text(
+                                    child: SelectableText(
                                       'Website',
                                       style: TextStyle(
                                         color: Color(0xFF76859C),
@@ -134,7 +134,7 @@ class Body extends StatelessWidget {
                               Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Text(
+                                  SelectableText(
                                     'https://bhub.org.in',
                                     style: TextStyle(
                                       fontSize: 15,
@@ -171,7 +171,7 @@ class Body extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           5, 0, 0, 0),
-                                      child: Text(
+                                      child: SelectableText(
                                         'Email',
                                         style: TextStyle(
                                           color: Color(0xFF76859C),
@@ -224,7 +224,7 @@ class Body extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           5, 0, 0, 0),
-                                      child: Text(
+                                      child: SelectableText(
                                         'Phone',
                                         style: TextStyle(
                                           color: Color(0xFF76859C),
@@ -239,7 +239,7 @@ class Body extends StatelessWidget {
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Text(
+                                    SelectableText(
                                       '+919128712345',
                                       style: TextStyle(
                                         fontSize: 15,
@@ -277,7 +277,7 @@ class Body extends StatelessWidget {
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           5, 0, 0, 0),
-                                      child: Text(
+                                      child: SelectableText(
                                         'Joined',
                                         style: TextStyle(
                                           color: Color(0xFF76859C),
@@ -292,7 +292,7 @@ class Body extends StatelessWidget {
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Text(
+                                    SelectableText(
                                       '26 March,2015',
                                       style: TextStyle(
                                         fontSize: 15,
@@ -343,7 +343,7 @@ class Body extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 10),
-                  child: Text(
+                  child: SelectableText(
                     'Services',
                     style: TextStyle(
                       fontFamily: 'Readex Pro',
@@ -377,7 +377,7 @@ class Body extends StatelessWidget {
                         ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                          child: Text(
+                          child: SelectableText(
                             'Mentorship Facilities',
                             style: TextStyle(
                               letterSpacing: 0,
@@ -418,7 +418,7 @@ class Body extends StatelessWidget {
                           Padding(
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                            child: Text(
+                            child: SelectableText(
                               'Connect with Investors',
                               style: TextStyle(
                                 fontFamily: 'Readex Pro',
@@ -460,7 +460,7 @@ class Body extends StatelessWidget {
                           Padding(
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                            child: Text(
+                            child: SelectableText(
                               'Pool of Resources',
                               style: TextStyle(
                                 fontFamily: 'Readex Pro',
@@ -495,15 +495,15 @@ class Body extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                SelectableText(
                   'About company',
                   style: TextStyle(
                     fontFamily: 'Readex Pro',
-                    fontSize: 20,
-                    letterSpacing: 0,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
-                    decoration: TextDecoration.none,
+                      fontSize: 20,
+                      letterSpacing: 0,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                      decoration: TextDecoration.none,
                   ),
                 ),
                 Padding(
@@ -516,7 +516,7 @@ class Body extends StatelessWidget {
                     ),
                     child: Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                      child: Text(
+                      child: SelectableText(
                         'B-Hub is an innovative initiative by the Bihar government aimed at fostering the growth of startups in the region. Located in the heart of Bihar, B-Hub provides budding entrepreneurs with state-of-the-art infrastructure, mentorship, and access to a network of investors and industry experts.',
                         style: TextStyle(
                           fontFamily: 'Readex Pro',
@@ -532,13 +532,13 @@ class Body extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 10),
-                  child: Text(
+                  child: SelectableText(
                     'Show case',
                     style: TextStyle(
                       fontFamily: 'Readex Pro',
                       fontSize: 20,
                       letterSpacing: 0,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w600,
                       color: Colors.black,
                       decoration: TextDecoration.none,
                     ),

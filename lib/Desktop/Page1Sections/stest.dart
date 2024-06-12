@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Desktop/Profile.dart';
-import 'package:flutter_application_1/Desktop/Profile/2ndsection.dart';
-import 'package:flutter_application_1/Desktop/Profile/Coverp.dart';
-  // Import the JobDetailPage
+
 
 class search1 extends StatefulWidget {
   @override
