@@ -148,7 +148,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                 EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
