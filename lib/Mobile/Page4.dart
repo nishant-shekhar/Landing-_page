@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Page4m extends StatelessWidget {
   @override
@@ -188,40 +189,44 @@ class Page4m extends StatelessWidget {
               children: [
                 Icon(
                   Icons.facebook,
-                  color: Color(0xFF57636c),
-                  size: 24,
+                  color: Color.fromARGB(255, 0, 0, 0),
+                  size: 28,
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                  child: Icon(
-                    Icons.settings_outlined,
-                    color: Color(0xFF57636c),
-                    size: 24,
-                  ),
+                  child:SvgPicture.asset(
+                    'assets/images/inst.svg',
+                    width:30,
+                    height:25,
+
+                  )
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                  child: Icon(
-                    Icons.settings_outlined,
-                    color: Color(0xFF57636c),
-                    size: 24,
-                  ),
+                  child:SvgPicture.asset(
+                    'assets/images/ln.svg',
+                    width:30,
+                    height:25,
+
+                  )
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                  child: Icon(
-                    Icons.settings_outlined,
-                    color: Color(0xFF57636c),
-                    size: 24,
-                  ),
+                  child:SvgPicture.asset(
+                    'assets/images/tw.svg',
+                    width:30,
+                    height:25,
+
+                  )
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                  child: Icon(
-                    Icons.settings_outlined,
-                    color: Color(0xFF57636c),
-                    size: 24,
-                  ),
+                  child:SvgPicture.asset(
+                    'assets/images/dribbble.svg',
+                    width:30,
+                    height:25,
+
+                  )
                 ),
               ],
             ),

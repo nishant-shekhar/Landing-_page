@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Desktop/Profile/2ndsection.dart';
+import 'package:flutter_application_1/Desktop/Profile/Details.dart';
 import 'package:flutter_application_1/Desktop/Profile/Coverp.dart';
 import 'package:flutter_application_1/Mobile/Profile/mprofile.dart';
+import 'package:flutter_application_1/Model/model.dart';
+import 'package:flutter_application_1/Model/modelclass.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class Profile extends StatelessWidget {
@@ -38,8 +40,9 @@ class DesktopLayout extends StatelessWidget {
                 child: Column(
                   children: [
                     //Page1
-                    coverp(),
-                    Body(),
+                    Model1(),
+                    Model2(),
+                    
                   ],
                 ),
               ),

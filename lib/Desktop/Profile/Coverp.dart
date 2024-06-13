@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
-class coverp extends StatelessWidget {
+class CoverProfile extends StatelessWidget {
+  final String backgroundImagePath;
+  final String profileImagePath;
+
+  CoverProfile({
+    required this.backgroundImagePath,
+    required this.profileImagePath,
+  });
+
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context).size;
@@ -25,32 +33,15 @@ class coverp extends StatelessWidget {
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(20),
                             bottomRight: Radius.circular(20),
-                            topLeft: Radius.circular(0),
-                            topRight: Radius.circular(0),
                           ),
                           child: Image.asset(
-                            'assets/images/ccc.png',
+                            backgroundImagePath,
                             fit: BoxFit.cover,
                           ),
                         ),
                       ),
                     ),
                   ],
-                ),
-                Align(
-                  alignment: AlignmentDirectional(1.1, -1.02),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 20, 20, 0),
-                    child: Container(
-                      width: mediaQuery.width * 0.1,
-                      height: mediaQuery.height * 0.04,
-                      child: Icon(
-                        Icons.edit_outlined,
-                        color: Colors.black,
-                        size: 24,
-                      ),
-                    ),
-                  ),
                 ),
                 Align(
                   alignment: AlignmentDirectional(-0.81, 0.63),
@@ -69,7 +60,7 @@ class coverp extends StatelessWidget {
                           shape: BoxShape.circle,
                         ),
                         child: Image.asset(
-                          'assets/images/ppp.png',
+                          profileImagePath,
                           fit: BoxFit.cover,
                         ),
                       ),

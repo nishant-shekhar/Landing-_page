@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Desktop/Profile.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HoverButton extends StatefulWidget {
@@ -70,7 +71,13 @@ class Buttonm extends StatelessWidget {
             children: [
               HoverButton(
                 defaultColor: Color(0xFF39608F),
-                hoverColor: Colors.blue, // Change to your desired hover color
+                hoverColor: Colors.blue,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Profile()),
+                  );
+                },
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(10, 20, 15, 20),
                   child: Row(
@@ -80,8 +87,7 @@ class Buttonm extends StatelessWidget {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                             child: Container(
                               decoration: BoxDecoration(),
                               child: Icon(
@@ -146,7 +152,13 @@ class Buttonm extends StatelessWidget {
                 padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                 child: HoverButton(
                   defaultColor: Color(0xFFD3E4FF),
-                  hoverColor: Colors.blue, // Change to your desired hover color
+                  hoverColor: Colors.blue,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
+                  },
                   child: Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(10, 20, 10, 20),
                     child: Row(
@@ -156,8 +168,7 @@ class Buttonm extends StatelessWidget {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(15, 0, 10, 0),
                               child: Container(
                                 decoration: BoxDecoration(),
                                 child: ClipRRect(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Desktop/Profile.dart';
 
 class Navbar extends StatefulWidget {
   @override
@@ -117,33 +118,41 @@ class _NavbarState extends State<Navbar> {
                 isDownloadHovered = false;
               });
             },
-            child: Container(
-              width: 120,
-              decoration: BoxDecoration(
-                color: isDownloadHovered ? Colors.blue[700] : Color(0xFF3978F2),
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 6,
-                    color: Color(0x33000000),
-                    offset: Offset(
-                      0,
-                      2,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          Profile()), // Replace with your target screen
+                );
+              },
+              child: Container(
+                width: 120,
+                decoration: BoxDecoration(
+                  color:
+                      isDownloadHovered ? Colors.blue[700] : Color(0xFF3978F2),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 6,
+                      color: Color(0x33000000),
+                      offset: Offset(0, 2),
+                      spreadRadius: 2,
                     ),
-                    spreadRadius: 2,
-                  )
-                ],
-                borderRadius: BorderRadius.circular(50),
-                shape: BoxShape.rectangle,
-              ),
-              child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10, 15, 10, 15),
-                child: Text(
-                  'Download app',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Readex Pro',
-                    color: Color(0xFFFFFFFF),
-                    letterSpacing: 0,
+                  ],
+                  borderRadius: BorderRadius.circular(50),
+                  shape: BoxShape.rectangle,
+                ),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(10, 15, 10, 15),
+                  child: Text(
+                    'Download app',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Readex Pro',
+                      color: Color(0xFFFFFFFF),
+                      letterSpacing: 0,
+                    ),
                   ),
                 ),
               ),

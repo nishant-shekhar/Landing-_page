@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class MobileprofileWidget extends StatefulWidget {
   const MobileprofileWidget({super.key});
@@ -121,7 +119,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(0),
                 bottomRight: Radius.circular(0),
-                topLeft: Radius.circular(20),
+                topLeft: Radius.circular(0),
                 topRight: Radius.circular(0),
               ),
             ),
@@ -160,7 +158,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                       fontFamily: 'Readexpro',
                                       fontSize: 25,
                                       letterSpacing: 0,
-                                      fontWeight: FontWeight.w500,
+                                      fontWeight: FontWeight.w600,
                                     ),
                                   ),
                                 ),
@@ -640,7 +638,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 10),
                           child: Text(
                             'Show case',
                             style: TextStyle(

@@ -1,6 +1,45 @@
 import 'package:flutter/material.dart';
 
-class Body extends StatelessWidget {
+class detailsprofile extends StatelessWidget {
+  final String name;
+  final String details;
+  final String add;
+  final String website;
+  final String Email;
+  final String Phone;
+  final String Joined;
+  final String services1;
+  final String services2;
+  final String services3;
+  final String Aboutcompany;
+  final String Showcase1;
+  final String Showcase2;
+  final String Showcase3;
+  final String Showcase4;
+  final String Showcase5;
+
+
+  detailsprofile({
+    required this.name,
+    required this.details,
+    required this.add,
+    required this.website,
+    required this.Email,
+    required this.Phone,
+    required this.Joined,
+    required this.services1,
+    required this.services2,
+    required this.services3,
+    required this.Aboutcompany,
+    required this.Showcase1,
+    required this.Showcase2,
+    required this.Showcase3,
+    required this.Showcase4,
+    required this.Showcase5,
+
+  });
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,11 +48,11 @@ class Body extends StatelessWidget {
         padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(100, 0, 0, 0),
+              padding: EdgeInsetsDirectional.fromSTEB(0,0,0,0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,15 +73,14 @@ class Body extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 10),
                             child: SelectableText(
-                              'B-hub Space',
+                              name,
                               textAlign: TextAlign.start,
                               style: TextStyle(
                                 fontSize: 25,
                                 letterSpacing: 0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w600,
                                 fontFamily: 'Readex Pro',
                                 color: Colors.black,
-                                decoration: TextDecoration.none,
                               ),
                             ),
                           ),
@@ -50,7 +88,7 @@ class Body extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: SelectableText(
-                              'Co-working space',
+                              details,
                               style: TextStyle(
                                 fontSize: 16,
                                 letterSpacing: 0,
@@ -63,7 +101,7 @@ class Body extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                             child: SelectableText(
-                              'A-block 5th floor Mauryalok complex Patna',
+                              add,
                               style: TextStyle(
                                 letterSpacing: 0,
                                 color: Colors.black,
@@ -79,7 +117,7 @@ class Body extends StatelessWidget {
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                     child: SelectableText(
-                      'Information',
+                      website,
                       style: TextStyle(
                         fontFamily: 'Readex Pro',
                         fontSize: 20,
@@ -140,9 +178,9 @@ class Body extends StatelessWidget {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     SelectableText(
-                                      'https://bhub.org.in',
+                                      website,
                                       style: TextStyle(
-                                        fontSize: 15,
+                                        fontSize: 12,
                                         letterSpacing: 0,
                                         fontWeight: FontWeight.w500,
                                         color: Colors.black,
@@ -193,9 +231,9 @@ class Body extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       SelectableText(
-                                        'enquiry@bhub.org.in',
+                                        Email,
                                         style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           letterSpacing: 0,
                                           fontWeight: FontWeight.w500,
                                           color: Colors.black,
@@ -247,9 +285,9 @@ class Body extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       SelectableText(
-                                        '+919128712345',
+                                        Phone,
                                         style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           letterSpacing: 0,
                                           fontWeight: FontWeight.w500,
                                           color: Colors.black,
@@ -301,9 +339,9 @@ class Body extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       SelectableText(
-                                        '26 March,2015',
+                                        Joined,
                                         style: TextStyle(
-                                          fontSize: 15,
+                                          fontSize: 12,
                                           letterSpacing: 0,
                                           fontWeight: FontWeight.w500,
                                           color: Colors.black,
@@ -387,7 +425,7 @@ class Body extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                             child: SelectableText(
-                              'Mentorship Facilities',
+                              services1,
                               style: TextStyle(
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w500,
@@ -428,7 +466,7 @@ class Body extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                               child: SelectableText(
-                                'Connect with Investors',
+                                services2,
                                 style: TextStyle(
                                   fontFamily: 'Readex Pro',
                                   letterSpacing: 0,
@@ -470,7 +508,7 @@ class Body extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                               child: SelectableText(
-                                'Pool of Resources',
+                                services3,
                                 style: TextStyle(
                                   fontFamily: 'Readex Pro',
                                   letterSpacing: 0,
@@ -499,7 +537,7 @@ class Body extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(80, 0, 0, 0),
+              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -528,7 +566,7 @@ class Body extends StatelessWidget {
                           padding:
                               EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                           child: SelectableText(
-                            'B-Hub is an innovative initiative by the Bihar government aimed at fostering the growth of startups in the region. Located in the heart of Bihar, B-Hub provides budding entrepreneurs with state-of-the-art infrastructure, mentorship, and access to a network of investors and industry experts.',
+                            Aboutcompany,
                             style: TextStyle(
                               fontFamily: 'Readex Pro',
                               fontSize: 14,
@@ -573,9 +611,9 @@ class Body extends StatelessWidget {
                                 children: [
                                   Container(
                                     width:
-                                        MediaQuery.sizeOf(context).width * 0.25,
+                                        MediaQuery.sizeOf(context).width * 0.24,
                                     height: MediaQuery.sizeOf(context).height *
-                                        0.25,
+                                        0.23,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(10),
@@ -583,7 +621,7 @@ class Body extends StatelessWidget {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8),
                                       child: Image.asset(
-                                        'assets/images/pic1.png',
+                                        Showcase1,
                                         width: 300,
                                         height: 200,
                                         fit: BoxFit.cover,
@@ -595,10 +633,10 @@ class Body extends StatelessWidget {
                                         20, 0, 0, 0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.15,
+                                          0.14,
                                       height:
                                           MediaQuery.sizeOf(context).height *
-                                              0.25,
+                                              0.23,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(10),
@@ -606,7 +644,7 @@ class Body extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: Image.asset(
-                                          'assets/images/pic2.png',
+                                          Showcase2,
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -619,10 +657,10 @@ class Body extends StatelessWidget {
                                         20, 0, 0, 0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.15,
+                                          0.14,
                                       height:
                                           MediaQuery.sizeOf(context).height *
-                                              0.25,
+                                              0.23,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(10),
@@ -630,7 +668,7 @@ class Body extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: Image.asset(
-                                          'assets/images/pic3.png',
+                                          Showcase3,
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -649,7 +687,7 @@ class Body extends StatelessWidget {
                                       0, 20, 0, 0),
                                   child: Container(
                                     width:
-                                        MediaQuery.sizeOf(context).width * 0.3,
+                                        MediaQuery.sizeOf(context).width * 0.28,
                                     height: MediaQuery.sizeOf(context).height *
                                         0.25,
                                     decoration: BoxDecoration(
@@ -659,7 +697,7 @@ class Body extends StatelessWidget {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8),
                                       child: Image.asset(
-                                        'assets/images/pic4.png',
+                                        Showcase4,
                                         width: 300,
                                         height: 200,
                                         fit: BoxFit.cover,
@@ -688,7 +726,7 @@ class Body extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(8),
                                           child: Image.asset(
-                                            'assets/images/pic5.png',
+                                            Showcase5,
                                             width: 300,
                                             height: 200,
                                             fit: BoxFit.cover,
