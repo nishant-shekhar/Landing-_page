@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Desktop/Profile.dart';
+import 'package:flutter_application_1/Mobile/Page3section/Myteam.dart';
 
 class Navbar extends StatefulWidget {
   @override
@@ -124,7 +125,7 @@ class _NavbarState extends State<Navbar> {
                   context,
                   MaterialPageRoute(
                       builder: (context) =>
-                          Profile()), // Replace with your target screen
+                          Myteamm()), // Replace with your target screen
                 );
               },
               child: Container(

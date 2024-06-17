@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Desktop/Page3.dart';
 import 'package:flutter_application_1/Desktop/Profile.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -24,7 +25,7 @@ class _ThirdSectionState extends State<ThirdSection> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Profile()),
+                MaterialPageRoute(builder: (context) => MyTeam()),
               );
             },
             child: MouseRegion(
@@ -117,7 +118,7 @@ class _ThirdSectionState extends State<ThirdSection> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Profile()),
+                  MaterialPageRoute(builder: (context) => MyTeam()),
                 );
               },
               child: MouseRegion(

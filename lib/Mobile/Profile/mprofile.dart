@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Model/company.dart';
 
 class MobileprofileWidget extends StatefulWidget {
-  const MobileprofileWidget({super.key});
+  final CompanyModel companyModel;
+  MobileprofileWidget(this.companyModel);
+  
 
   @override
   State<MobileprofileWidget> createState() => _MobileprofileWidgetState();
@@ -609,9 +612,9 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           'About company',
                           style: TextStyle(
                             fontFamily: 'Readex Pro',
-                              fontSize: 20,
-                              letterSpacing: 0,
-                              fontWeight: FontWeight.w600,
+                            fontSize: 20,
+                            letterSpacing: 0,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                         Padding(

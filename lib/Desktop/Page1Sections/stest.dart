@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Desktop/Page1Sections/navbar.dart';
 import 'package:flutter_application_1/Desktop/Profile.dart';
+import 'package:flutter_application_1/Model/company.dart';
 
 class search1 extends StatefulWidget {
   @override
-  _SearchWidgetState createState() => _SearchWidgetState();
+  _Search1State createState() => _Search1State();
 }
 
-class _SearchWidgetState extends State<search1> {
+class _Search1State extends State<search1> {
   TextEditingController _search1Controller = TextEditingController();
   final List<String> jobs = [
     'Software Engineer',
@@ -29,8 +31,9 @@ class _SearchWidgetState extends State<search1> {
     _search1Controller.addListener(() {
       setState(() {
         _filteredJobs = jobs
-            .where((job) =>
-                job.toLowerCase().contains(_search1Controller.text.toLowerCase()))
+            .where((job) => job
+                .toLowerCase()
+                .contains(_search1Controller.text.toLowerCase()))
             .toList();
       });
     });
@@ -60,7 +63,8 @@ class _SearchWidgetState extends State<search1> {
           child: Column(
             children: [
               TweenAnimationBuilder<double>(
-                tween: Tween<double>(begin: 0, end: showSearchContainer ? 1 : 0),
+                tween:
+                    Tween<double>(begin: 0, end: showSearchContainer ? 1 : 0),
                 duration: Duration(seconds: 1),
                 builder: (context, value, child) {
                   return Opacity(
@@ -115,7 +119,8 @@ class _SearchWidgetState extends State<search1> {
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 10, 10, 10),
                         child: TweenAnimationBuilder<double>(
-                          tween: Tween<double>(begin: 0, end: showSearchIcon ? 1 : 0),
+                          tween: Tween<double>(
+                              begin: 0, end: showSearchIcon ? 1 : 0),
                           duration: Duration(seconds: 1),
                           builder: (context, value, child) {
                             return Opacity(
@@ -182,14 +187,42 @@ class _SearchWidgetState extends State<search1> {
                                 ? Colors.grey[200]
                                 : Colors.transparent,
                             child: ListTile(
+                              
                               title: Text(_filteredJobs[index]),
                               onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => Profile(),
-                                  ),
+                                String k=_filteredJobs[index];
+                                
+                                CompanyModel companyMod = CompanyModel(
+                                  id: k,
+                                  cover: 'assets/images/ccc.png',
+                                  profile: 'assets/images/ppp.png',
+                                  name: 'B-hub Space',
+                                  details: 'Co-working space',
+                                  address:
+                                      'A-block 5th floor Mauryalok complex Patna',
+                                  website: 'https://bhub.org.in',
+                                  email: 'enquiry@bhub.org.in',
+                                  phone: '+919128712345',
+                                  joined: '26 March,2015',
+                                  aboutCompany:
+                                      'B-Hub is an innovative initiative by the Bihar government aimed at fostering the growth of startups in the region. Located in the heart of Bihar, B-Hub provides budding entrepreneurs with state-of-the-art infrastructure, mentorship, and access to a network of investors and industry experts.',
                                 );
+                                   
+                                // Update the search box with the selected job name
+                                _search1Controller.text = _filteredJobs[index];
+                                // Pass job title or other necessary data
+
+                                // Delay the navigation to allow the text to update
+                                Future.delayed(Duration(milliseconds: 300), () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Profile(companyMod),
+                                      
+
+                                    ),
+                                  );
+                                });
                               },
                             ),
                           ),

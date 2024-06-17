@@ -1,47 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Model/company.dart';
+import 'package:flutter_application_1/Model/company.dart';
 
-class detailsprofile extends StatelessWidget {
-  final String name;
-  final String details;
-  final String add;
-  final String website;
-  final String Email;
-  final String Phone;
-  final String Joined;
-  final String services1;
-  final String services2;
-  final String services3;
-  final String Aboutcompany;
-  final String Showcase1;
-  final String Showcase2;
-  final String Showcase3;
-  final String Showcase4;
-  final String Showcase5;
-
-
-  detailsprofile({
-    required this.name,
-    required this.details,
-    required this.add,
-    required this.website,
-    required this.Email,
-    required this.Phone,
-    required this.Joined,
-    required this.services1,
-    required this.services2,
-    required this.services3,
-    required this.Aboutcompany,
-    required this.Showcase1,
-    required this.Showcase2,
-    required this.Showcase3,
-    required this.Showcase4,
-    required this.Showcase5,
-
-  });
-
-
+class Details extends StatelessWidget {
+  final CompanyModel companyModel;
+  Details(this.companyModel);
   @override
   Widget build(BuildContext context) {
+    
     return Container(
       color: Colors.white,
       child: Padding(
@@ -52,72 +18,69 @@ class detailsprofile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0,0,0,0),
+              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    width: MediaQuery.sizeOf(context).width * 0.2,
-                    decoration: BoxDecoration(
-                      color: Color(0xFFF7F7F7),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 10, 10),
-                            child: SelectableText(
-                              name,
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 25,
-                                letterSpacing: 0,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'Readex Pro',
-                                color: Colors.black,
-                              ),
+                  //Container(
+                  //width: MediaQuery.sizeOf(context).width * 0.2,
+                  //decoration: BoxDecoration(
+                  //color: Color(0xFFF7F7F7),
+                  //borderRadius: BorderRadius.circular(10),
+                  //),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 10),
+                          child: SelectableText(
+                            companyModel.name,
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontSize: 25,
+                              letterSpacing: 0,
+                              fontWeight: FontWeight.w600,
+                              fontFamily: 'Readex Pro',
+                              color: Colors.black,
                             ),
                           ),
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                            child: SelectableText(
-                              details,
-                              style: TextStyle(
-                                fontSize: 16,
-                                letterSpacing: 0,
-                                color: Colors.black,
-                                decoration: TextDecoration.none,
-                              ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                          child: SelectableText(
+                            companyModel.details,
+                            style: TextStyle(
+                              fontSize: 16,
+                              letterSpacing: 0,
+                              color: Colors.black,
+                              decoration: TextDecoration.none,
                             ),
                           ),
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                            child: SelectableText(
-                              add,
-                              style: TextStyle(
-                                letterSpacing: 0,
-                                color: Colors.black,
-                                fontSize: 14,
-                                decoration: TextDecoration.none,
-                              ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                          child: SelectableText(
+                            companyModel.address,
+                            style: TextStyle(
+                              letterSpacing: 0,
+                              color: Colors.black,
+                              fontSize: 14,
+                              decoration: TextDecoration.none,
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
+                  //),
                   Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                     child: SelectableText(
-                      website,
+                      'Information',
                       style: TextStyle(
                         fontFamily: 'Readex Pro',
                         fontSize: 20,
@@ -178,7 +141,7 @@ class detailsprofile extends StatelessWidget {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     SelectableText(
-                                      website,
+                                      companyModel.website,
                                       style: TextStyle(
                                         fontSize: 12,
                                         letterSpacing: 0,
@@ -231,7 +194,7 @@ class detailsprofile extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       SelectableText(
-                                        Email,
+                                        companyModel.id,
                                         style: TextStyle(
                                           fontSize: 12,
                                           letterSpacing: 0,
@@ -285,7 +248,7 @@ class detailsprofile extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       SelectableText(
-                                        Phone,
+                                        companyModel.phone,
                                         style: TextStyle(
                                           fontSize: 12,
                                           letterSpacing: 0,
@@ -339,7 +302,7 @@ class detailsprofile extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       SelectableText(
-                                        Joined,
+                                        companyModel.joined,
                                         style: TextStyle(
                                           fontSize: 12,
                                           letterSpacing: 0,
@@ -425,7 +388,7 @@ class detailsprofile extends StatelessWidget {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                             child: SelectableText(
-                              services1,
+                              'Mentorship Facilities',
                               style: TextStyle(
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w500,
@@ -466,7 +429,7 @@ class detailsprofile extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                               child: SelectableText(
-                                services2,
+                                'Connect with Investors',
                                 style: TextStyle(
                                   fontFamily: 'Readex Pro',
                                   letterSpacing: 0,
@@ -508,7 +471,7 @@ class detailsprofile extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                               child: SelectableText(
-                                services3,
+                                'Pool of Resources',
                                 style: TextStyle(
                                   fontFamily: 'Readex Pro',
                                   letterSpacing: 0,
@@ -566,7 +529,7 @@ class detailsprofile extends StatelessWidget {
                           padding:
                               EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                           child: SelectableText(
-                            Aboutcompany,
+                            companyModel.aboutCompany,
                             style: TextStyle(
                               fontFamily: 'Readex Pro',
                               fontSize: 14,
@@ -621,7 +584,7 @@ class detailsprofile extends StatelessWidget {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8),
                                       child: Image.asset(
-                                        Showcase1,
+                                        'assets/images/pic1.png',
                                         width: 300,
                                         height: 200,
                                         fit: BoxFit.cover,
@@ -644,7 +607,7 @@ class detailsprofile extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: Image.asset(
-                                          Showcase2,
+                                          'assets/images/pic1.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -668,7 +631,7 @@ class detailsprofile extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: Image.asset(
-                                          Showcase3,
+                                          'assets/images/pic1.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -697,7 +660,7 @@ class detailsprofile extends StatelessWidget {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8),
                                       child: Image.asset(
-                                        Showcase4,
+                                        'assets/images/pic1.png',
                                         width: 300,
                                         height: 200,
                                         fit: BoxFit.cover,
@@ -726,7 +689,7 @@ class detailsprofile extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(8),
                                           child: Image.asset(
-                                            Showcase5,
+                                            'assets/images/pic1.png',
                                             width: 300,
                                             height: 200,
                                             fit: BoxFit.cover,
