@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Model/company.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Details extends StatelessWidget {
   final CompanyModel companyModel;
@@ -523,38 +524,22 @@ class Details extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Color(0xFFF5F9FC),
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 2,
-                              color: Color.fromARGB(200, 240, 244, 252),
-                              spreadRadius: 2,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
                   ],
                 ),
               ),
             ),
             Container(
-               decoration: BoxDecoration(
-                          color: Color(0xFFF5F9FC),
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 2,
-                              color: Color.fromARGB(200, 240, 244, 252),
-                              spreadRadius: 2,
-                            ),
-                          ],
-                        ),
+              decoration: BoxDecoration(
+                color: Color(0xFFF5F9FC),
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 2,
+                    color: Color.fromARGB(200, 240, 244, 252),
+                    spreadRadius: 2,
+                  ),
+                ],
+              ),
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                 child: Column(
@@ -700,7 +685,7 @@ class Details extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: Image.asset(
-                                          'assets/images/pic1.png',
+                                          'assets/images/pic2.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -729,7 +714,7 @@ class Details extends StatelessWidget {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8),
                                       child: Image.asset(
-                                        'assets/images/pic1.png',
+                                        'assets/images/pic3.png',
                                         width: 300,
                                         height: 200,
                                         fit: BoxFit.cover,
@@ -758,7 +743,7 @@ class Details extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(8),
                                           child: Image.asset(
-                                            'assets/images/pic1.png',
+                                            'assets/images/pic4.png',
                                             width: 300,
                                             height: 200,
                                             fit: BoxFit.cover,

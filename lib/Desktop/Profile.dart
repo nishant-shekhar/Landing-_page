@@ -73,10 +73,7 @@ class DesktopLayout extends StatelessWidget {
                       child: Container(
                         height: mediaQuery.height * 0.22,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(20),
-                            bottomRight: Radius.circular(20),
-                          ),
+                          
                           child: Image.asset(
                             companyModel.cover,
                             fit: BoxFit.cover,
@@ -125,6 +122,7 @@ class TabletLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Color(0xFFF8F8F8),
       child: Stack(children: [
         Column(
           children: [
@@ -152,6 +150,7 @@ class Mobilelayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Color(0xFFF8F8F8),
       child: Stack(children: [
         Column(
           children: [

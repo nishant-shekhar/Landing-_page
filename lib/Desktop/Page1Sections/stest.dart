@@ -186,14 +186,13 @@ class _Search1State extends State<search1> {
                                 ? Colors.grey[200]
                                 : Colors.transparent,
                             child: ListTile(
-                              
                               title: Text(_filteredJobs[index]),
                               onTap: () {
-                                String k=_filteredJobs[index];
-                                
+                                String k = _filteredJobs[index];
+
                                 CompanyModel companyMod = CompanyModel(
                                   id: k,
-                                  cover: 'assets/images/ccc.png',
+                                  cover: 'assets/images/cover.png',
                                   profile: 'assets/images/ppp.png',
                                   name: 'B-hub Space',
                                   details: 'Co-working space',
@@ -206,7 +205,7 @@ class _Search1State extends State<search1> {
                                   aboutCompany:
                                       'B-Hub is an innovative initiative by the Bihar government aimed at fostering the growth of startups in the region. Located in the heart of Bihar, B-Hub provides budding entrepreneurs with state-of-the-art infrastructure, mentorship, and access to a network of investors and industry experts.',
                                 );
-                                   
+
                                 // Update the search box with the selected job name
                                 _search1Controller.text = _filteredJobs[index];
                                 // Pass job title or other necessary data
@@ -217,8 +216,6 @@ class _Search1State extends State<search1> {
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => Profile(companyMod),
-                                      
-
                                     ),
                                   );
                                 });

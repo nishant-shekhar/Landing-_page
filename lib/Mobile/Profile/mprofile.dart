@@ -25,7 +25,6 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
         children: [
           Container(
             height: MediaQuery.of(context).size.height * 0.35,
-            
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -38,14 +37,8 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           Container(
                             width: MediaQuery.of(context).size.width,
                             height: MediaQuery.of(context).size.height * 0.22,
-                            
                             child: ClipRRect(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(20),
-                                bottomRight: Radius.circular(20),
-                                topLeft: Radius.circular(0),
-                                topRight: Radius.circular(0),
-                              ),
+                              
                               child: Image.asset(
                                 widget.companyModel.cover,
                                 width: 300,
@@ -106,7 +99,6 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
           ),
           Container(
             width: MediaQuery.sizeOf(context).width,
-            
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
               child: Column(
@@ -122,8 +114,15 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                         Container(
                           width: MediaQuery.sizeOf(context).width * 0.7,
                           decoration: BoxDecoration(
-                            color: Color(0xFFF7F7F7),
+                            color: Color(0xFFF5F9FC),
                             borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 2,
+                                color: Color.fromARGB(200, 240, 244, 252),
+                                spreadRadius: 2,
+                              ),
+                            ],
                           ),
                           child: Padding(
                             padding:
@@ -190,8 +189,15 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.7,
                             decoration: BoxDecoration(
-                              color: Color(0xFFF7F7F7),
+                              color: Color(0xFFF5F9FC),
                               borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 2,
+                                  color: Color.fromARGB(200, 240, 244, 252),
+                                  spreadRadius: 2,
+                                ),
+                              ],
                             ),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -340,7 +346,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Text(
-                                          widget.companyModel.phone,
+                                              widget.companyModel.phone,
                                               style: TextStyle(
                                                 fontFamily: 'Readex Pro',
                                                 fontSize: 15,
@@ -455,8 +461,15 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                         Container(
                           width: MediaQuery.sizeOf(context).width * 0.7,
                           decoration: BoxDecoration(
-                            color: Color(0xFFF7F7F7),
+                            color: Color(0xFFF5F9FC),
                             borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 2,
+                                color: Color.fromARGB(200, 240, 244, 252),
+                                spreadRadius: 2,
+                              ),
+                            ],
                           ),
                           child: Padding(
                             padding:
@@ -535,8 +548,15 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.7,
                             decoration: BoxDecoration(
-                              color: Color(0xFFF7F7F7),
+                              color: Color(0xFFF5F9FC),
                               borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 2,
+                                  color: Color.fromARGB(200, 240, 244, 252),
+                                  spreadRadius: 2,
+                                ),
+                              ],
                             ),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -575,8 +595,15 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Color(0xFFE9E9E9),
-                              borderRadius: BorderRadius.circular(50),
+                             color: Color(0xFFF5F9FC),
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 2,
+                                  color: Color.fromARGB(200, 240, 244, 252),
+                                  spreadRadius: 2,
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -603,8 +630,15 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.7,
                             decoration: BoxDecoration(
-                              color: Color(0xFFF7F7F7),
+                              color: Color(0xFFF5F9FC),
                               borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 2,
+                                  color: Color.fromARGB(200, 240, 244, 252),
+                                  spreadRadius: 2,
+                                ),
+                              ],
                             ),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -636,8 +670,15 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                         Container(
                           width: MediaQuery.sizeOf(context).width * 0.943,
                           decoration: BoxDecoration(
-                            color: Color(0xFFF7F7F7),
+                            color: Color(0xFFF5F9FC),
                             borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 2,
+                                color: Color.fromARGB(200, 240, 244, 252),
+                                spreadRadius: 2,
+                              ),
+                            ],
                           ),
                           child: Padding(
                             padding:
