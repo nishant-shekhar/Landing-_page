@@ -25,9 +25,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
         children: [
           Container(
             height: MediaQuery.of(context).size.height * 0.35,
-            decoration: BoxDecoration(
-              color: Colors.white,
-            ),
+            
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -40,15 +38,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           Container(
                             width: MediaQuery.of(context).size.width,
                             height: MediaQuery.of(context).size.height * 0.22,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(0),
-                                bottomRight: Radius.circular(0),
-                                topLeft: Radius.circular(0),
-                                topRight: Radius.circular(0),
-                              ),
-                            ),
+                            
                             child: ClipRRect(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(20),
@@ -116,15 +106,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
           ),
           Container(
             width: MediaQuery.sizeOf(context).width,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(0),
-                bottomRight: Radius.circular(0),
-                topLeft: Radius.circular(0),
-                topRight: Radius.circular(0),
-              ),
-            ),
+            
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
               child: Column(

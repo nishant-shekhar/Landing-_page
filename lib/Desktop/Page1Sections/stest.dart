@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Desktop/Page1Sections/navbar.dart';
 import 'package:flutter_application_1/Desktop/Profile.dart';
 import 'package:flutter_application_1/Model/company.dart';
 

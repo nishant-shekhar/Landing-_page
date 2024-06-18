@@ -29,12 +29,13 @@ class DesktopLayout extends StatelessWidget {
   DesktopLayout(this.companyModel);
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
 
     final mediaQuery = MediaQuery.of(context).size;
 
     return Container(
+     color:Color(0xFFFBF3D5),
+
       width: screenWidth,
       height: screenWidth,
       child: Stack(children: [
@@ -42,10 +43,13 @@ class DesktopLayout extends StatelessWidget {
           children: [
             Expanded(
               child: SingleChildScrollView(
-                child: Column(children: [
-                  coverProfile(mediaQuery),
-                  Details(companyModel),
-                ]),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                  child: Column(children: [
+                    coverProfile(mediaQuery),
+                    Details(companyModel),
+                  ]),
+                ),
               ),
             ),
           ],
@@ -55,10 +59,7 @@ class DesktopLayout extends StatelessWidget {
   }
 
   Container coverProfile(Size mediaQuery) {
-    return
-        //Page1
-        Container(
-      color: Colors.white,
+    return Container(
       height: mediaQuery.height * 0.35,
       child: Row(
         mainAxisSize: MainAxisSize.max,
@@ -72,7 +73,6 @@ class DesktopLayout extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: mediaQuery.height * 0.22,
-                        decoration: BoxDecoration(color: Colors.white),
                         child: ClipRRect(
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(20),
