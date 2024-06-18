@@ -34,7 +34,7 @@ class DesktopLayout extends StatelessWidget {
     final mediaQuery = MediaQuery.of(context).size;
 
     return Container(
-     color:Color(0xFFFBF3D5),
+     color:Color(0xFFF8F8F8),
 
       width: screenWidth,
       height: screenWidth,
@@ -43,13 +43,12 @@ class DesktopLayout extends StatelessWidget {
           children: [
             Expanded(
               child: SingleChildScrollView(
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                
                   child: Column(children: [
                     coverProfile(mediaQuery),
                     Details(companyModel),
                   ]),
-                ),
+                
               ),
             ),
           ],

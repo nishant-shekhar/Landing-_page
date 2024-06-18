@@ -17,12 +17,18 @@ class Details extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: Color(0xFFEFBC9B),
+                color: Color(0xFFF5F9FC),
                 borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 2,
+                    color: Color.fromARGB(200, 240, 244, 252),
+                    spreadRadius: 2,
+                  ),
+                ],
               ),
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,7 +56,7 @@ class Details extends StatelessWidget {
                                 letterSpacing: 0,
                                 fontWeight: FontWeight.w600,
                                 fontFamily: 'Readex Pro',
-                                color:Color(0xFF9CAFAA),
+                                color: Colors.black,
                               ),
                             ),
                           ),
@@ -103,8 +109,15 @@ class Details extends StatelessWidget {
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.2,
                         decoration: BoxDecoration(
-                          color: Color(0xFFF7F7F7),
+                          color: Color(0xFFF2F5FB),
                           borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 4,
+                              color: Color.fromARGB(200, 232, 241, 249),
+                              spreadRadius: 2,
+                            ),
+                          ],
                         ),
                         child: Padding(
                           padding:
@@ -122,9 +135,6 @@ class Details extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                        ),
                                         child: Icon(
                                           Icons.blur_circular_outlined,
                                           color: Color(0xFF76859C),
@@ -175,9 +185,6 @@ class Details extends StatelessWidget {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                          ),
                                           child: Icon(
                                             Icons.email_outlined,
                                             color: Color(0xFF76859C),
@@ -230,9 +237,6 @@ class Details extends StatelessWidget {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                          ),
                                           child: Icon(
                                             Icons.call,
                                             color: Color(0xFF76859C),
@@ -285,9 +289,6 @@ class Details extends StatelessWidget {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                          ),
                                           child: Icon(
                                             Icons.calendar_month,
                                             color: Color(0xFF76859C),
@@ -379,8 +380,15 @@ class Details extends StatelessWidget {
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.2,
                       decoration: BoxDecoration(
-                        color: Color(0xFFF7F7F7),
+                        color: Color(0xFFF2F5FB),
                         borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            blurRadius: 4,
+                            color: Color.fromARGB(200, 232, 241, 249),
+                            spreadRadius: 2,
+                          ),
+                        ],
                       ),
                       child: Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
@@ -420,8 +428,15 @@ class Details extends StatelessWidget {
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.2,
                         decoration: BoxDecoration(
-                          color: Color(0xFFF7F7F7),
+                          color: Color(0xFFF2F5FB),
                           borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 4,
+                              color: Color.fromARGB(200, 232, 241, 249),
+                              spreadRadius: 2,
+                            ),
+                          ],
                         ),
                         child: Padding(
                           padding:
@@ -463,8 +478,15 @@ class Details extends StatelessWidget {
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.2,
                         decoration: BoxDecoration(
-                          color: Color(0xFFF7F7F7),
+                          color: Color(0xFFF2F5FB),
                           borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 4,
+                              color: Color.fromARGB(200, 232, 241, 249),
+                              spreadRadius: 2,
+                            ),
+                          ],
                         ),
                         child: Padding(
                           padding:
@@ -505,30 +527,87 @@ class Details extends StatelessWidget {
                       padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFFE9E9E9),
-                          borderRadius: BorderRadius.circular(50),
+                          color: Color(0xFFF5F9FC),
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 2,
+                              color: Color.fromARGB(200, 240, 244, 252),
+                              spreadRadius: 2,
+                            ),
+                          ],
                         ),
                       ),
                     ),
                   ],
                 ),
               ),
-              ),
-            
+            ),
             Container(
-              decoration: BoxDecoration(
-                color: Color(0xFFEFBC9B),
-                borderRadius: BorderRadius.circular(10),
-              ),
+               decoration: BoxDecoration(
+                          color: Color(0xFFF5F9FC),
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 2,
+                              color: Color.fromARGB(200, 240, 244, 252),
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SelectableText(
-                        'About company',
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SelectableText(
+                      'About company',
+                      style: TextStyle(
+                        fontFamily: 'Readex Pro',
+                        fontSize: 20,
+                        letterSpacing: 0,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                      child: Container(
+                        width: MediaQuery.sizeOf(context).width * 0.57,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFF2F5FB),
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 4,
+                              color: Color.fromARGB(200, 232, 241, 249),
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
+                        child: Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                          child: SelectableText(
+                            companyModel.aboutCompany,
+                            style: TextStyle(
+                              fontFamily: 'Readex Pro',
+                              fontSize: 14,
+                              letterSpacing: 0,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                              decoration: TextDecoration.none,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 10),
+                      child: SelectableText(
+                        'Show case',
                         style: TextStyle(
                           fontFamily: 'Readex Pro',
                           fontSize: 20,
@@ -538,65 +617,55 @@ class Details extends StatelessWidget {
                           decoration: TextDecoration.none,
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-                        child: Container(
-                          width: MediaQuery.sizeOf(context).width * 0.3,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFF7F7F7),
-                            borderRadius: BorderRadius.circular(10),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color(0xFFF2F5FB),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            blurRadius: 4,
+                            color: Color.fromARGB(200, 232, 241, 249),
+                            spreadRadius: 2,
                           ),
-                          child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                            child: SelectableText(
-                              companyModel.aboutCompany,
-                              style: TextStyle(
-                                fontFamily: 'Readex Pro',
-                                fontSize: 14,
-                                letterSpacing: 0,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
-                                decoration: TextDecoration.none,
-                              ),
-                            ),
-                          ),
-                        ),
+                        ],
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 10),
-                        child: SelectableText(
-                          'Show case',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontSize: 20,
-                            letterSpacing: 0,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black,
-                            decoration: TextDecoration.none,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Color(0xFFF7F7F7),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Container(
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width:
+                                        MediaQuery.sizeOf(context).width * 0.24,
+                                    height: MediaQuery.sizeOf(context).height *
+                                        0.23,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.asset(
+                                        'assets/images/pic1.png',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        20, 0, 0, 0),
+                                    child: Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.24,
+                                          0.14,
                                       height:
                                           MediaQuery.sizeOf(context).height *
                                               0.23,
@@ -614,75 +683,16 @@ class Details extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20, 0, 0, 0),
-                                      child: Container(
-                                        width:
-                                            MediaQuery.sizeOf(context).width *
-                                                0.14,
-                                        height:
-                                            MediaQuery.sizeOf(context).height *
-                                                0.23,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                        ),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8),
-                                          child: Image.asset(
-                                            'assets/images/pic1.png',
-                                            width: 300,
-                                            height: 200,
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20, 0, 0, 0),
-                                      child: Container(
-                                        width:
-                                            MediaQuery.sizeOf(context).width *
-                                                0.14,
-                                        height:
-                                            MediaQuery.sizeOf(context).height *
-                                                0.23,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                        ),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8),
-                                          child: Image.asset(
-                                            'assets/images/pic1.png',
-                                            width: 300,
-                                            height: 200,
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
+                                  ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 20, 0, 0),
+                                        20, 0, 0, 0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.28,
+                                          0.14,
                                       height:
                                           MediaQuery.sizeOf(context).height *
-                                              0.25,
+                                              0.23,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(10),
@@ -698,85 +708,113 @@ class Details extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Stack(
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            20, 20, 0, 0),
-                                        child: Container(
-                                          width:
-                                              MediaQuery.sizeOf(context).width *
-                                                  0.27,
-                                          height: MediaQuery.sizeOf(context)
-                                                  .height *
-                                              0.25,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius:
-                                                BorderRadius.circular(10),
-                                          ),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8),
-                                            child: Image.asset(
-                                              'assets/images/pic1.png',
-                                              width: 300,
-                                              height: 200,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            20, 20, 0, 0),
-                                        child: Container(
-                                          width:
-                                              MediaQuery.sizeOf(context).width *
-                                                  0.27,
-                                          height: MediaQuery.sizeOf(context)
-                                                  .height *
-                                              0.25,
-                                          decoration: BoxDecoration(
-                                            boxShadow: [
-                                              BoxShadow(
-                                                blurRadius: 4,
-                                                color: Color(0x33000000),
-                                                offset: Offset(
-                                                  0,
-                                                  2,
-                                                ),
-                                              )
-                                            ],
-                                            borderRadius:
-                                                BorderRadius.circular(10),
-                                          ),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    140, 90, 0, 0),
-                                            child: Text(
-                                              '+Other',
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 20,
-                                                letterSpacing: 0,
-                                                fontWeight: FontWeight.w600,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
                                 ],
                               ),
-                            ],
-                          ),
+                            ),
+                            Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 20, 0, 0),
+                                  child: Container(
+                                    width:
+                                        MediaQuery.sizeOf(context).width * 0.28,
+                                    height: MediaQuery.sizeOf(context).height *
+                                        0.25,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: Image.asset(
+                                        'assets/images/pic1.png',
+                                        width: 300,
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Stack(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20, 20, 0, 0),
+                                      child: Container(
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                0.27,
+                                        height:
+                                            MediaQuery.sizeOf(context).height *
+                                                0.25,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(8),
+                                          child: Image.asset(
+                                            'assets/images/pic1.png',
+                                            width: 300,
+                                            height: 200,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          20, 20, 0, 0),
+                                      child: Container(
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                0.27,
+                                        height:
+                                            MediaQuery.sizeOf(context).height *
+                                                0.25,
+                                        decoration: BoxDecoration(
+                                          boxShadow: [
+                                            BoxShadow(
+                                              blurRadius: 4,
+                                              color: Color(0x33000000),
+                                              offset: Offset(
+                                                0,
+                                                2,
+                                              ),
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  140, 90, 0, 0),
+                                          child: Text(
+                                            '+Other',
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 20,
+                                              letterSpacing: 0,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
