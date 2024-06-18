@@ -21,11 +21,7 @@ class Details extends StatelessWidget {
                 color: Color(0xFFF5F9FC),
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
-                  BoxShadow(
-                    blurRadius: 2,
-                    color: Color.fromARGB(200, 240, 244, 252),
-                    spreadRadius: 2,
-                  ),
+                  boxShadow1(),
                 ],
               ),
               child: Padding(
@@ -113,11 +109,7 @@ class Details extends StatelessWidget {
                           color: Color(0xFFF2F5FB),
                           borderRadius: BorderRadius.circular(10),
                           boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4,
-                              color: Color.fromARGB(200, 232, 241, 249),
-                              spreadRadius: 2,
-                            ),
+                            boxShadow2(),
                           ],
                         ),
                         child: Padding(
@@ -383,13 +375,7 @@ class Details extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Color(0xFFF2F5FB),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                            blurRadius: 4,
-                            color: Color.fromARGB(200, 232, 241, 249),
-                            spreadRadius: 2,
-                          ),
-                        ],
+                        boxShadow: [boxShadow2()],
                       ),
                       child: Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
@@ -431,13 +417,7 @@ class Details extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Color(0xFFF2F5FB),
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4,
-                              color: Color.fromARGB(200, 232, 241, 249),
-                              spreadRadius: 2,
-                            ),
-                          ],
+                          boxShadow: [boxShadow1()],
                         ),
                         child: Padding(
                           padding:
@@ -481,13 +461,7 @@ class Details extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Color(0xFFF2F5FB),
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4,
-                              color: Color.fromARGB(200, 232, 241, 249),
-                              spreadRadius: 2,
-                            ),
-                          ],
+                          boxShadow: [boxShadow1()],
                         ),
                         child: Padding(
                           padding:
@@ -533,11 +507,7 @@ class Details extends StatelessWidget {
                 color: Color(0xFFF5F9FC),
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
-                  BoxShadow(
-                    blurRadius: 2,
-                    color: Color.fromARGB(200, 240, 244, 252),
-                    spreadRadius: 2,
-                  ),
+                  boxShadow1(),
                 ],
               ),
               child: Padding(
@@ -564,13 +534,7 @@ class Details extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Color(0xFFF2F5FB),
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4,
-                              color: Color.fromARGB(200, 232, 241, 249),
-                              spreadRadius: 2,
-                            ),
-                          ],
+                          boxShadow: [boxShadow2()],
                         ),
                         child: Padding(
                           padding:
@@ -608,11 +572,7 @@ class Details extends StatelessWidget {
                         color: Color(0xFFF2F5FB),
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: [
-                          BoxShadow(
-                            blurRadius: 4,
-                            color: Color.fromARGB(200, 232, 241, 249),
-                            spreadRadius: 2,
-                          ),
+                          boxShadow2(),
                         ],
                       ),
                       child: Padding(
@@ -638,7 +598,7 @@ class Details extends StatelessWidget {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8),
                                       child: Image.asset(
-                                        'assets/images/pic1.png',
+                                        'assets/images/pic4.png',
                                         width: 300,
                                         height: 200,
                                         fit: BoxFit.cover,
@@ -661,7 +621,7 @@ class Details extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: Image.asset(
-                                          'assets/images/pic1.png',
+                                          'assets/images/pic2.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -685,7 +645,7 @@ class Details extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: Image.asset(
-                                          'assets/images/pic2.png',
+                                          'assets/images/pic4.png',
                                           width: 300,
                                           height: 200,
                                           fit: BoxFit.cover,
@@ -743,7 +703,7 @@ class Details extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(8),
                                           child: Image.asset(
-                                            'assets/images/pic4.png',
+                                            'assets/images/pic1.png',
                                             width: 300,
                                             height: 200,
                                             fit: BoxFit.cover,
@@ -806,6 +766,22 @@ class Details extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  BoxShadow boxShadow2() {
+    return BoxShadow(
+      blurRadius: 4,
+      color: Color.fromARGB(220, 232, 241, 249),
+      spreadRadius: 2,
+    );
+  }
+
+  BoxShadow boxShadow1() {
+    return BoxShadow(
+      blurRadius: 2,
+      color: Color.fromARGB(255, 240, 244, 252),
+      spreadRadius: 2,
     );
   }
 }
