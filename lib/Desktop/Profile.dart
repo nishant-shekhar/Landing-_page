@@ -11,8 +11,7 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Scaffold(
-// Find the ScaffoldMessenger in the widget tree
-// and use it to show a SnackBar.
+
         body: SafeArea(
             top: true,
             child: ScreenTypeLayout.builder(

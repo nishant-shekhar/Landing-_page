@@ -4,7 +4,6 @@ import 'package:flutter_application_1/Model/company.dart';
 class MobileprofileWidget extends StatefulWidget {
   final CompanyModel companyModel;
   MobileprofileWidget(this.companyModel);
-  
 
   @override
   State<MobileprofileWidget> createState() => _MobileprofileWidgetState();
@@ -25,7 +24,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Container(
-            height: MediaQuery.sizeOf(context).height * 0.35,
+            height: MediaQuery.of(context).size.height * 0.35,
             decoration: BoxDecoration(
               color: Colors.white,
             ),
@@ -39,8 +38,8 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            width: MediaQuery.sizeOf(context).width,
-                            height: MediaQuery.sizeOf(context).height * 0.22,
+                            width: MediaQuery.of(context).size.width,
+                            height: MediaQuery.of(context).size.height * 0.22,
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.only(
@@ -58,7 +57,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                 topRight: Radius.circular(0),
                               ),
                               child: Image.asset(
-                                'assets/images/ccc.png',
+                                widget.companyModel.cover,
                                 width: 300,
                                 height: 200,
                                 fit: BoxFit.cover,
@@ -102,7 +101,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                 shape: BoxShape.circle,
                               ),
                               child: Image.asset(
-                                'assets/images/ppp.png',
+                                widget.companyModel.profile,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -155,7 +154,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0, 0, 10, 10),
                                   child: Text(
-                                    'B-hub Space ',
+                                    widget.companyModel.name,
                                     textAlign: TextAlign.start,
                                     style: TextStyle(
                                       fontFamily: 'Readexpro',
@@ -169,7 +168,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0, 0, 0, 10),
                                   child: Text(
-                                    'Co-working space',
+                                    widget.companyModel.details,
                                     style: TextStyle(
                                       fontFamily: 'Readex Pro',
                                       fontSize: 16,
@@ -181,7 +180,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0, 0, 0, 10),
                                   child: Text(
-                                    'A-block 5th floor Mauryalok complex Patna',
+                                    widget.companyModel.address,
                                     style: TextStyle(
                                       fontFamily: 'Readex Pro',
                                       letterSpacing: 0,
@@ -256,7 +255,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Text(
-                                            'https://bhub.org.in',
+                                            widget.companyModel.website,
                                             style: TextStyle(
                                               fontFamily: 'Readex Pro',
                                               fontSize: 15,
@@ -307,7 +306,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Text(
-                                              'enquiry@bhub.org.in',
+                                              widget.companyModel.email,
                                               style: TextStyle(
                                                 fontFamily: 'Readex Pro',
                                                 fontSize: 15,
@@ -359,7 +358,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Text(
-                                              '+919128712345',
+                                          widget.companyModel.phone,
                                               style: TextStyle(
                                                 fontFamily: 'Readex Pro',
                                                 fontSize: 15,
@@ -411,7 +410,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Text(
-                                              '26 March,2015',
+                                              widget.companyModel.joined,
                                               style: TextStyle(
                                                 fontFamily: 'Readex Pro',
                                                 fontSize: 15,
@@ -629,7 +628,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   10, 10, 10, 10),
                               child: Text(
-                                'B-Hub is an innovative initiative by the Bihar government aimed at fostering the growth of startups in the region. Located in the heart of Bihar, B-Hub provides budding entrepreneurs with state-of-the-art infrastructure, mentorship, and access to a network of investors and industry experts.',
+                                widget.companyModel.aboutCompany,
                                 style: TextStyle(
                                   fontFamily: 'Readex Pro',
                                   fontSize: 14,
