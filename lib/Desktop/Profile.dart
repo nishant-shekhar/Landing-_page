@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Desktop/Profile/Details.dart';
+import 'package:flutter_application_1/Desktop/Profile/newProfile.dart';
 import 'package:flutter_application_1/Mobile/Profile/mprofile.dart';
 import 'package:flutter_application_1/Model/company.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -11,7 +12,6 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Scaffold(
-
         body: SafeArea(
             top: true,
             child: ScreenTypeLayout.builder(
@@ -34,30 +34,25 @@ class DesktopLayout extends StatelessWidget {
     final mediaQuery = MediaQuery.of(context).size;
 
     return Container(
-     color:Color(0xFFF8F8F8),
-
+      color: Color(0xFFF8F8F8),
       width: screenWidth,
       height: screenWidth,
-      child: Stack(children: [
-        Column(
-          children: [
+      child: Stack(
+        children: [
+          Column(children: [
+
+            MainProfile1Widget(),
+            /*coverProfile(mediaQuery),
             Expanded(
-              child: SingleChildScrollView(
-                
-                  child: Column(children: [
-                    coverProfile(mediaQuery),
-                    Details(companyModel),
-                  ]),
-                
-              ),
-            ),
-          ],
-        ),
-      ]),
+              child: Details(companyModel), 
+            ),*/
+          ]),
+        ],
+      ),
     );
   }
 
-  Container coverProfile(Size mediaQuery) {
+  /*Container coverProfile(Size mediaQuery) {
     return Container(
       height: mediaQuery.height * 0.35,
       child: Row(
@@ -73,7 +68,6 @@ class DesktopLayout extends StatelessWidget {
                       child: Container(
                         height: mediaQuery.height * 0.22,
                         child: ClipRRect(
-                          
                           child: Image.asset(
                             companyModel.cover,
                             fit: BoxFit.cover,
@@ -113,7 +107,7 @@ class DesktopLayout extends StatelessWidget {
         ],
       ),
     );
-  }
+  }*/
 }
 
 class TabletLayout extends StatelessWidget {
