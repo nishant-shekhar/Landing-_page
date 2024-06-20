@@ -40,7 +40,7 @@ class section1p extends StatelessWidget {
                             shape: BoxShape.circle,
                           ),
                           child: Image.asset(
-                            'assets/images/ppp.png',
+                            'assets/images/com.png',
                             fit: BoxFit.cover,
                           ),
                         ),
