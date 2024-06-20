@@ -22,10 +22,7 @@ class section3p extends StatelessWidget {
                   style: Styleb(),
                 ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                child: Service(context),
-              ),
+              Service(context),
               Service(context),
             ],
           ),
@@ -36,7 +33,7 @@ class section3p extends StatelessWidget {
 
   Padding Service(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.only(start: 20),
+      padding: EdgeInsetsDirectional.fromSTEB(20, 10, 0, 0),
       child: Container(
         decoration: BoxDecoration(
           color: Color(0xFFF9F9F9),
@@ -62,7 +59,7 @@ class section3p extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 10, 20),
+                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.2,
                   height: MediaQuery.of(context).size.height * 0.2,
@@ -71,7 +68,7 @@ class section3p extends StatelessWidget {
               ),
               Text('Website development', style: TextService1()),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsetsDirectional.fromSTEB(5, 5, 5, 5),
                 child: Text(
                     'Our website development company specializes in creating custom, user-friendly websites tailored to your business needs, ensuring a seamless online presence. We offer comprehensive services from design and development to maintenance and SEO, delivering high-quality, responsive websites that drive engagement and growth',
                     style: Brown()),

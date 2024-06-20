@@ -29,7 +29,7 @@ class section2p extends StatelessWidget {
                         style: Styleb(),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 30),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 30),
                         child: SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
@@ -56,7 +56,7 @@ class section2p extends StatelessWidget {
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 10, 0, 0),
+                                        0, 15, 0, 0),
                                     child: Text(
                                       'Add Member',
                                       style: TextMember(),
@@ -64,6 +64,7 @@ class section2p extends StatelessWidget {
                                   ),
                                 ],
                               ),
+
                               Member(),
                               Member(),
                               Member(),
@@ -352,7 +353,7 @@ class section2p extends StatelessWidget {
 
   Padding Member() {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+      padding: EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -399,7 +400,7 @@ class section2p extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
             child: Text(
               'Emily',
               style: TextMember(),
