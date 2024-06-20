@@ -31,12 +31,7 @@ class Details extends StatelessWidget {
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      //Container(
-                      //width: MediaQuery.sizeOf(context).width * 0.2,
-                      //decoration: BoxDecoration(
-                      //color: Color(0xFFF7F7F7),
-                      //borderRadius: BorderRadius.circular(10),
-                      //),
+                      
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                         child: Column(
@@ -136,8 +131,9 @@ class Details extends StatelessWidget {
                                           ),
                                         ),
                                         Padding(
-                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                              5, 0, 0, 0),
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  5, 0, 0, 0),
                                           child: SelectableText(
                                             'Website',
                                             style: TextStyle(
@@ -168,8 +164,8 @@ class Details extends StatelessWidget {
                                   ],
                                 ),
                                 Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 10, 0, 0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -220,8 +216,8 @@ class Details extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 10, 0, 0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -272,8 +268,8 @@ class Details extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 10, 0, 0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -324,8 +320,8 @@ class Details extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 10, 0, 0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
@@ -379,7 +375,8 @@ class Details extends StatelessWidget {
                           boxShadow: [boxShadow2()],
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -436,8 +433,8 @@ class Details extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 10, 0),
                                   child: SelectableText(
                                     'Connect with Investors',
                                     style: TextStyle(
@@ -480,8 +477,8 @@ class Details extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding:
-                                      EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 10, 0),
                                   child: SelectableText(
                                     'Pool of Resources',
                                     style: TextStyle(
@@ -579,7 +576,8 @@ class Details extends StatelessWidget {
                           ],
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -590,10 +588,11 @@ class Details extends StatelessWidget {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Container(
-                                      width:
-                                          MediaQuery.sizeOf(context).width * 0.24,
-                                      height: MediaQuery.sizeOf(context).height *
-                                          0.23,
+                                      width: MediaQuery.sizeOf(context).width *
+                                          0.24,
+                                      height:
+                                          MediaQuery.sizeOf(context).height *
+                                              0.23,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(10),
@@ -612,17 +611,20 @@ class Details extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           20, 0, 0, 0),
                                       child: Container(
-                                        width: MediaQuery.sizeOf(context).width *
-                                            0.14,
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                0.14,
                                         height:
                                             MediaQuery.sizeOf(context).height *
                                                 0.23,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          borderRadius: BorderRadius.circular(10),
+                                          borderRadius:
+                                              BorderRadius.circular(10),
                                         ),
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(8),
+                                          borderRadius:
+                                              BorderRadius.circular(8),
                                           child: Image.asset(
                                             'assets/images/pic2.png',
                                             width: 300,
@@ -636,17 +638,20 @@ class Details extends StatelessWidget {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           20, 0, 0, 0),
                                       child: Container(
-                                        width: MediaQuery.sizeOf(context).width *
-                                            0.14,
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                0.14,
                                         height:
                                             MediaQuery.sizeOf(context).height *
                                                 0.23,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          borderRadius: BorderRadius.circular(10),
+                                          borderRadius:
+                                              BorderRadius.circular(10),
                                         ),
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(8),
+                                          borderRadius:
+                                              BorderRadius.circular(8),
                                           child: Image.asset(
                                             'assets/images/pic4.png',
                                             width: 300,
@@ -666,10 +671,11 @@ class Details extends StatelessWidget {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0, 20, 0, 0),
                                     child: Container(
-                                      width:
-                                          MediaQuery.sizeOf(context).width * 0.28,
-                                      height: MediaQuery.sizeOf(context).height *
-                                          0.25,
+                                      width: MediaQuery.sizeOf(context).width *
+                                          0.28,
+                                      height:
+                                          MediaQuery.sizeOf(context).height *
+                                              0.25,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(10),
@@ -694,9 +700,9 @@ class Details extends StatelessWidget {
                                           width:
                                               MediaQuery.sizeOf(context).width *
                                                   0.27,
-                                          height:
-                                              MediaQuery.sizeOf(context).height *
-                                                  0.25,
+                                          height: MediaQuery.sizeOf(context)
+                                                  .height *
+                                              0.25,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius:
@@ -721,9 +727,9 @@ class Details extends StatelessWidget {
                                           width:
                                               MediaQuery.sizeOf(context).width *
                                                   0.27,
-                                          height:
-                                              MediaQuery.sizeOf(context).height *
-                                                  0.25,
+                                          height: MediaQuery.sizeOf(context)
+                                                  .height *
+                                              0.25,
                                           decoration: BoxDecoration(
                                             boxShadow: [
                                               BoxShadow(

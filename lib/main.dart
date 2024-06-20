@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'My App',
       theme: ThemeData(
           primarySwatch: Colors.amber,
-        fontFamily: GoogleFonts.montserrat().fontFamily),
+        fontFamily: GoogleFonts.merriweather().fontFamily),
       initialRoute: '/',
       routes: {
         '/': (context) => MainProfile1Widget(),
