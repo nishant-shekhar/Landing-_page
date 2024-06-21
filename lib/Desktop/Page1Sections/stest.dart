@@ -78,14 +78,10 @@ class _Search1State extends State<search1> {
                   width: 300,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 8,
-                        color: Color(0x33525252),
-                        offset: Offset(0, 2),
-                        spreadRadius: 2,
-                      )
-                    ],
+                    border: Border.all(
+                      color: Color(0xFF14181B),
+                      width: 0.5,
+                    ),
                     borderRadius: BorderRadius.circular(40),
                   ),
                   child: Row(

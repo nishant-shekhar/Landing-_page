@@ -14,7 +14,7 @@ class _NavbarState extends State<Navbar> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(90, 30, 450, 0),
+      padding: EdgeInsetsDirectional.fromSTEB(90, 30, 0, 40),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
