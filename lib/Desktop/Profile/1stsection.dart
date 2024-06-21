@@ -53,7 +53,7 @@ class section1p extends StatelessWidget {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Text(
                             'B-hub Space',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               fontSize: 20,
                               letterSpacing: 0,
                               fontWeight: FontWeight.w600,
@@ -78,7 +78,8 @@ class section1p extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
                             child: Icon(
                               Icons.facebook,
                               color: Colors.black,
@@ -86,7 +87,8 @@ class section1p extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
                             child: SvgPicture.asset(
                               'assets/images/instagram.svg',
                               width: 20,
@@ -94,7 +96,8 @@ class section1p extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
                             child: SvgPicture.asset(
                               'assets/images/linkedin.svg',
                               width: 20,
@@ -102,7 +105,8 @@ class section1p extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
                             child: Icon(
                               Icons.location_on,
                               color: Colors.black,
@@ -275,7 +279,6 @@ class section1p extends StatelessWidget {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
                 child: Container(
-                  
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -294,9 +297,9 @@ class section1p extends StatelessWidget {
       ),
     );
   }
-TextStyle Textstyleabout() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+
+  TextStyle Textstyleabout() {
+    return GoogleFonts.poppins(
       fontSize: 12,
       letterSpacing: 0,
       fontWeight: FontWeight.w400,
@@ -306,8 +309,7 @@ TextStyle Textstyleabout() {
   }
 
   TextStyle Textstylel() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       fontSize: 18,
       letterSpacing: 0,
       fontWeight: FontWeight.w600,
@@ -317,21 +319,20 @@ TextStyle Textstyleabout() {
   }
 
   TextStyle Textstyle() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       letterSpacing: 0,
       fontWeight: FontWeight.w500,
-      fontSize: 14,
+      fontSize: 12,
       decoration: TextDecoration.none,
       color: Colors.black,
     );
   }
 
   TextStyle Brown() {
-    return TextStyle(
+    return GoogleFonts.poppins(
         color: Color.fromARGB(190, 150, 149, 149),
         letterSpacing: 0,
-        fontSize: 14,
+        fontSize: 12,
         decoration: TextDecoration.none,
         fontWeight: FontWeight.w400);
   }

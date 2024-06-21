@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
 class section3p extends StatelessWidget {
@@ -45,7 +46,7 @@ class section3p extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children: [ 
               Row(
                 children: [
                   SizedBox(
@@ -70,7 +71,7 @@ class section3p extends StatelessWidget {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(5, 5, 5, 5),
                 child: Text(
-                    'Our website development company specializes in creating custom, user-friendly websites tailored to your business needs, ensuring a seamless online presence. We offer comprehensive services from design and development to maintenance and SEO, delivering high-quality, responsive websites that drive engagement and growth',
+                    'Our website development company specializes in creating custom, user-friendly websites tailored to your business needs, ensuring a seamless online presence.',
                     style: Brown()),
               )
             ],
@@ -114,8 +115,7 @@ class section3p extends StatelessWidget {
   }
 
   TextStyle Styleb() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       fontSize: 20,
       letterSpacing: 0,
       fontWeight: FontWeight.w600,
@@ -125,8 +125,7 @@ class section3p extends StatelessWidget {
   }
 
   TextStyle Textstyleabout() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       fontSize: 12,
       letterSpacing: 0,
       fontWeight: FontWeight.w400,
@@ -136,8 +135,7 @@ class section3p extends StatelessWidget {
   }
 
   TextStyle Textstylel() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       fontSize: 18,
       letterSpacing: 0,
       fontWeight: FontWeight.w600,
@@ -147,8 +145,7 @@ class section3p extends StatelessWidget {
   }
 
   TextStyle Textstyle() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       letterSpacing: 0,
       fontWeight: FontWeight.w500,
       fontSize: 14,
@@ -158,7 +155,7 @@ class section3p extends StatelessWidget {
   }
 
   TextStyle Brown() {
-    return TextStyle(
+    return GoogleFonts.poppins(
         color: Color.fromARGB(230, 90, 89, 89),
         letterSpacing: 0,
         fontSize: 12,

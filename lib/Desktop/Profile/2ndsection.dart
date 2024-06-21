@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class section2p extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -64,7 +65,6 @@ class section2p extends StatelessWidget {
                                   ),
                                 ],
                               ),
-
                               Member(),
                               Member(),
                               Member(),
@@ -87,7 +87,7 @@ class section2p extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Feeds',
+                            'Show case',
                             style: Styleb(),
                           ),
                           Container(
@@ -161,14 +161,7 @@ class section2p extends StatelessWidget {
                             children: [
                               Text(
                                 'Ankit vatsal',
-                                style: TextStyle(
-                                  fontFamily: 'Readex Pro',
-                                  letterSpacing: 0,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 14,
-                                  decoration: TextDecoration.none,
-                                  color: Colors.black,
-                                ),
+                                style: TextMember(),
                               ),
                               Text(
                                 'Human resources',
@@ -332,8 +325,7 @@ class section2p extends StatelessWidget {
                       padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                       child: Text(
                         'views',
-                        style: TextStyle(
-                          fontFamily: 'Readex Pro',
+                        style: GoogleFonts.poppins(
                           letterSpacing: 0,
                           fontSize: 14,
                           decoration: TextDecoration.none,
@@ -412,10 +404,9 @@ class section2p extends StatelessWidget {
   }
 
   TextStyle TextMember() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       letterSpacing: 0,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.w600,
       fontSize: 12,
       decoration: TextDecoration.none,
       color: Colors.black,
@@ -423,8 +414,7 @@ class section2p extends StatelessWidget {
   }
 
   TextStyle Styleb() {
-    return TextStyle(
-      fontFamily: 'Readex Pro',
+    return GoogleFonts.poppins(
       fontSize: 18,
       letterSpacing: 0,
       fontWeight: FontWeight.w600,
@@ -434,7 +424,7 @@ class section2p extends StatelessWidget {
   }
 
   TextStyle Brown() {
-    return TextStyle(
+    return GoogleFonts.poppins(
         color: Color.fromARGB(190, 150, 149, 149),
         letterSpacing: 0,
         fontSize: 12,
