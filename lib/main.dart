@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
       title: 'My App',
       theme: ThemeData(
           primarySwatch: Colors.amber,
-        fontFamily: GoogleFonts.merriweather().fontFamily),
+        fontFamily: GoogleFonts.poppins().fontFamily),
       initialRoute: '/',
       routes: {
-        '/': (context) => MainProfile1Widget(),
+        '/': (context) => HomeMain(),
       
       },
     );

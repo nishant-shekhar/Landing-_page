@@ -27,87 +27,23 @@ class Profile extends StatelessWidget {
 class DesktopLayout extends StatelessWidget {
   final CompanyModel companyModel;
   DesktopLayout(this.companyModel);
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
 
-    final mediaQuery = MediaQuery.of(context).size;
-
     return Container(
-      color: Color(0xFFF8F8F8),
       width: screenWidth,
-      height: screenWidth,
-      child: Stack(
-        children: [
-          Column(children: [
-
-            MainProfile1Widget(),
-            /*coverProfile(mediaQuery),
-            Expanded(
-              child: Details(companyModel), 
-            ),*/
-          ]),
-        ],
-      ),
-    );
-  }
-
-  /*Container coverProfile(Size mediaQuery) {
-    return Container(
-      height: mediaQuery.height * 0.35,
-      child: Row(
-        mainAxisSize: MainAxisSize.max,
+      height: double.infinity, // Allow the container to take full height
+      child: Column(
         children: [
           Expanded(
-            child: Stack(
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Expanded(
-                      child: Container(
-                        height: mediaQuery.height * 0.22,
-                        child: ClipRRect(
-                          child: Image.asset(
-                            companyModel.cover,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                Align(
-                  alignment: AlignmentDirectional(-0.81, 0.63),
-                  child: Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.all(2),
-                      child: Container(
-                        clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                        ),
-                        child: Image.asset(
-                          companyModel.profile,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            child: MainProfile1Widget(),
           ),
         ],
       ),
     );
-  }*/
+  }
 }
 
 class TabletLayout extends StatelessWidget {

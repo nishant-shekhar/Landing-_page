@@ -42,9 +42,9 @@ class DesktopLayout extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xFFFD7E41),
-            Color(0xFFFCC232),
-            Color(0xFFFDF6EC),
+            Color(0xFFFFFFFF),
+            Color(0xFFFFFFFF),
+            Color(0xFFFFFFFF),
             Color(0xFFFFFFFF),
           ],
           stops: [0, 0.1, 0.23, 0.615],
@@ -85,6 +85,12 @@ class DesktopLayout extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        Positioned(
+          top:10,
+          right: 40,
+          child: Row(children: [search1(),
+          ]),
         ),
       ]),
     );

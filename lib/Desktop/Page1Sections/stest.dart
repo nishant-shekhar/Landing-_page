@@ -75,7 +75,7 @@ class _Search1State extends State<search1> {
                   );
                 },
                 child: Container(
-                  width: 380,
+                  width: 300,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     boxShadow: [
@@ -86,12 +86,42 @@ class _Search1State extends State<search1> {
                         spreadRadius: 2,
                       )
                     ],
-                    borderRadius: BorderRadius.circular(50),
+                    borderRadius: BorderRadius.circular(40),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(15, 10, 10, 10),
+                        child: TweenAnimationBuilder<double>(
+                          tween: Tween<double>(
+                              begin: 0, end: showSearchIcon ? 1 : 0),
+                          duration: Duration(seconds: 1),
+                          builder: (context, value, child) {
+                            return Opacity(
+                              opacity: value,
+                              child: Transform.translate(
+                                offset: Offset(100 * (1 - value), 0),
+                                child: child,
+                              ),
+                            );
+                          },
+                          child: Container(
+                            width: 32,
+                            height: 32,
+                            //decoration: BoxDecoration(
+                            //color: Color(0xFF3978F2),
+                            // shape: BoxShape.circle,
+                            //),
+                            child: Icon(
+                              Icons.search,
+                              color: Color.fromARGB(255, 170, 170, 170),
+                              size: 22,
+                            ),
+                          ),
+                        ),
+                      ),
                       Expanded(
                         child: Padding(
                           padding: EdgeInsets.symmetric(horizontal: 20),
@@ -99,7 +129,7 @@ class _Search1State extends State<search1> {
                             child: TextField(
                               controller: _search1Controller,
                               decoration: InputDecoration(
-                                hintText: 'Search openings',
+                                hintText: 'Search companies',
                                 hintStyle: TextStyle(
                                   color: Color(0xFF7E7E7E),
                                   letterSpacing: 0,
@@ -115,36 +145,6 @@ class _Search1State extends State<search1> {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 10, 10),
-                        child: TweenAnimationBuilder<double>(
-                          tween: Tween<double>(
-                              begin: 0, end: showSearchIcon ? 1 : 0),
-                          duration: Duration(seconds: 1),
-                          builder: (context, value, child) {
-                            return Opacity(
-                              opacity: value,
-                              child: Transform.translate(
-                                offset: Offset(100 * (1 - value), 0),
-                                child: child,
-                              ),
-                            );
-                          },
-                          child: Container(
-                            width: 40,
-                            height: 40,
-                            decoration: BoxDecoration(
-                              color: Color(0xFF3978F2),
-                              shape: BoxShape.circle,
-                            ),
-                            child: Icon(
-                              Icons.search,
-                              color: Color(0xFFFFFFFF),
-                              size: 24,
-                            ),
-                          ),
-                        ),
-                      ),
                     ],
                   ),
                 ),
@@ -153,14 +153,13 @@ class _Search1State extends State<search1> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(4, 10, 0, 6),
                   child: Container(
-                    width: 380,
+                    width: 300,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       boxShadow: [
                         BoxShadow(
-                          blurRadius: 8,
+                          blurRadius: 2,
                           color: Color(0x33525252),
-                          offset: Offset(0, 2),
                           spreadRadius: 2,
                         )
                       ],

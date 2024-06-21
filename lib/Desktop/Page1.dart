@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/bodySection.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
+import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
 
 class LandingPage extends StatelessWidget {
   
@@ -8,10 +9,10 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        BodySection(),
+        
         Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(90, 0, 90, 20),
-        child:search1(),
+      padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
+       child: BodySection(),
         ),
       ],
     );

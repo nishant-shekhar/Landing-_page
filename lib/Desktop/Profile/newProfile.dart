@@ -16,24 +16,18 @@ class _MainProfile1WidgetState extends State<MainProfile1Widget> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsetsDirectional.fromSTEB(50, 0, 50, 0),
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          Expanded(
-            child: Row(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                section1p(),
-                section2p(),
-                section3p(),
-                
-              ],
-            ),
-          ),
-        ],
+      child:Expanded(
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            section1p(),
+            section2p(),
+            section3p(),
+          ],
+        ),
       ),
     );
   }
 }
-
-  

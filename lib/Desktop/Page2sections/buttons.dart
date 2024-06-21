@@ -15,7 +15,7 @@ class _ThirdSectionState extends State<ThirdSection> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(90, 20, 90, 20),
+      padding: EdgeInsetsDirectional.fromSTEB(0, 20, 90, 20),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.start,

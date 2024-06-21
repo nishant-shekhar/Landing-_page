@@ -49,22 +49,7 @@ class _MobileprofileWidgetState extends State<MobileprofileWidget> {
                           ),
                         ],
                       ),
-                      Align(
-                        alignment: AlignmentDirectional(1, -1.02),
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
-                          child: Container(
-                            width: MediaQuery.sizeOf(context).width * 0.02,
-                            height: MediaQuery.sizeOf(context).height * 0.04,
-                            decoration: BoxDecoration(),
-                            child: Icon(
-                              Icons.edit_outlined,
-                              color: Color(0xFF57636C),
-                              size: 24,
-                            ),
-                          ),
-                        ),
-                      ),
+                      
                       Align(
                         alignment: AlignmentDirectional(0.025, 0.333),
                         child: Container(

@@ -9,7 +9,7 @@ class Page2 extends StatelessWidget {
     return Column(
       children: [
         Section1(),
-        ThirdSection(),
+        
       ],
     );
   }

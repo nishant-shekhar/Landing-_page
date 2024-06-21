@@ -14,7 +14,7 @@ class _NavbarState extends State<Navbar> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(90, 30, 90, 0),
+      padding: EdgeInsetsDirectional.fromSTEB(90, 30, 450, 0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -24,7 +24,7 @@ class _NavbarState extends State<Navbar> {
             children: [
               RichText(
                 text: TextSpan(
-                  text: 'TM',
+                  text: 'Startup Space',
                   style: TextStyle(
                     fontSize: 25,
                     letterSpacing: 0,
@@ -65,6 +65,7 @@ class _NavbarState extends State<Navbar> {
                           letterSpacing: 0,
                           fontWeight: FontWeight.w600,
                           color: isResourceHovered ? Colors.blue : Colors.black,
+                          fontSize: 16,
                         ),
                       ),
                       Container(
@@ -82,7 +83,7 @@ class _NavbarState extends State<Navbar> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(90, 0, 0, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
                 child: MouseRegion(
                   onEnter: (_) {
                     setState(() {
@@ -100,63 +101,13 @@ class _NavbarState extends State<Navbar> {
                       fontFamily: 'Readex Pro',
                       letterSpacing: 0,
                       fontWeight: FontWeight.w600,
+                      fontSize: 16,
                       color: isNewsHovered ? Colors.blue : Colors.black,
                     ),
                   ),
                 ),
               ),
             ],
-          ),
-          MouseRegion(
-            onEnter: (_) {
-              setState(() {
-                isDownloadHovered = true;
-              });
-            },
-            onExit: (_) {
-              setState(() {
-                isDownloadHovered = false;
-              });
-            },
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) =>
-                          Myteamm()), // Replace with your target screen
-                );
-              },
-              child: Container(
-                width: 120,
-                decoration: BoxDecoration(
-                  color:
-                      isDownloadHovered ? Colors.blue[700] : Color(0xFF3978F2),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 6,
-                      color: Color(0x33000000),
-                      offset: Offset(0, 2),
-                      spreadRadius: 2,
-                    ),
-                  ],
-                  borderRadius: BorderRadius.circular(50),
-                  shape: BoxShape.rectangle,
-                ),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10, 15, 10, 15),
-                  child: Text(
-                    'Download app',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontFamily: 'Readex Pro',
-                      color: Color(0xFFFFFFFF),
-                      letterSpacing: 0,
-                    ),
-                  ),
-                ),
-              ),
-            ),
           ),
         ],
       ),
