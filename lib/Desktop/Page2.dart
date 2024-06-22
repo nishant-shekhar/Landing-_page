@@ -28,7 +28,7 @@ class _Page2WidgetState extends State<Page2Widget> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Top companies in startup space bihar',
+                  'Top companies of startup space bihar',
                   style: GoogleFonts.poppins(
                     color: Color(0xFFF8F8F8),
                     fontSize: 40,
