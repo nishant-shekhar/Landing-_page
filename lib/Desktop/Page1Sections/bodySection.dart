@@ -107,12 +107,7 @@ class _BodySectionState extends State<BodySection> {
                     },
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => MainProfile1Widget(),
-                          ), // Replace with your target screen
-                        );
+                        _showDownloadDialog(context);
                       },
                       child: Container(
                         width: 215,
@@ -132,12 +127,13 @@ class _BodySectionState extends State<BodySection> {
                           shape: BoxShape.rectangle,
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(10.0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
                           child: Row(
                             children: [
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    10, 15, 10, 15),
+                                    10, 15, 5, 15),
                                 child: Text(
                                   'Download app',
                                   textAlign: TextAlign.center,
@@ -149,10 +145,15 @@ class _BodySectionState extends State<BodySection> {
                                   ),
                                 ),
                               ),
-                              Icon(
-                                Icons.chevron_right,
-                                color: Color(0xFFFFFFFF),
-                                size: 20,
+                              AnimatedContainer(
+                                duration: Duration(milliseconds: 300),
+                                margin: EdgeInsets.only(
+                                    left: isDownloadHovered ? 10 : 0),
+                                child: Icon(
+                                  Icons.chevron_right,
+                                  color: Color(0xFFFFFFFF),
+                                  size: 20,
+                                ),
                               ),
                             ],
                           ),
@@ -285,64 +286,6 @@ class _BodySectionState extends State<BodySection> {
                         ),
                       ),
                     ),
-
-                    /*TweenAnimationBuilder<double>(
-                        tween: Tween<double>(begin: 100, end: 0),
-                        duration: Duration(seconds: 1),
-                        builder: (context, value, child) {
-                          return Transform.translate(
-                            offset: Offset(0, value),
-                            child: Opacity(
-                              opacity: (100 - value) / 100,
-                              child: child,
-                            ),
-                          );
-                        },
-                       child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
-                            child: Container(
-                              width: MediaQuery.sizeOf(context).width * 0.18,
-                              decoration: BoxDecoration(),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.zero,
-                                child: Image.asset(
-                                  'assets/images/anim2.json',
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),*/
-                    /*TweenAnimationBuilder<double>(
-                        tween: Tween<double>(begin: 100, end: 0),
-                        duration: Duration(seconds: 1),
-                        builder: (context, value, child) {
-                          return Transform.translate(
-                            offset: Offset(-value, 0),
-                            child: Opacity(
-                              opacity: (100 - value) / 100,
-                              child: child,
-                            ),
-                          );
-                        },
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
-                          child: Container(
-                            width: MediaQuery.sizeOf(context).width * 0.1,
-                            decoration: BoxDecoration(),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.zero,
-                              child: Image.asset(
-                                'assets/images/Home3.png',
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),*/
                   ],
                 ),
               ),
@@ -350,6 +293,44 @@ class _BodySectionState extends State<BodySection> {
           ),
         ],
       ),
+    );
+  }
+
+  void _showDownloadDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Dialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.5,
+            height: MediaQuery.of(context).size.height * 0.5,
+            padding: EdgeInsets.all(20.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: Lottie.asset(
+                    'assets/images/dialog1.json', // Replace with your animation file path
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                
+                Text(
+                  'Thank you for choosing us!',
+                  style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 }

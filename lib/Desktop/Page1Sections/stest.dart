@@ -79,8 +79,8 @@ class _Search1State extends State<search1> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     border: Border.all(
-                      color: Color(0xFF14181B),
-                      width: 0.5,
+                      color: Color.fromARGB(255, 222, 222, 222),
+                      width: 1,
                     ),
                     borderRadius: BorderRadius.circular(40),
                   ),
@@ -104,8 +104,8 @@ class _Search1State extends State<search1> {
                             );
                           },
                           child: Container(
-                            width: 32,
-                            height: 32,
+                            width: 24,
+                            height: 24,
                             //decoration: BoxDecoration(
                             //color: Color(0xFF3978F2),
                             // shape: BoxShape.circle,
@@ -125,7 +125,7 @@ class _Search1State extends State<search1> {
                             child: TextField(
                               controller: _search1Controller,
                               decoration: InputDecoration(
-                                hintText: 'Search companies',
+                                hintText: 'Search companies..',
                                 hintStyle: TextStyle(
                                   color: Color(0xFF7E7E7E),
                                   letterSpacing: 0,
