@@ -20,31 +20,34 @@ class _Page2WidgetState extends State<Page2Widget> {
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      
         children: [
           Container(
             decoration: BoxDecoration(),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text.rich(
+                Container(
+                  width: MediaQuery.of(context).size.width*0.6,
+                    
+                  child: Text.rich(
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: 'Top companies of ',
+                          text: 'Top Companies of ',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontSize: 40,
                             letterSpacing: 1.5,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                      
                         TextSpan(
                           text: 'Startup space ',
                           style: GoogleFonts.poppins(
-                              color: Color.fromARGB(255, 249, 227, 87), // Highlight color
+                              color: Color.fromARGB(
+                                  255, 249, 227, 87), // Highlight color
                               fontSize: 40,
                               letterSpacing: 1.5,
                               fontWeight: FontWeight.w600),
@@ -52,7 +55,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                         TextSpan(
                           text: 'in Bihar',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontSize: 40,
                             letterSpacing: 1.5,
                             fontWeight: FontWeight.w600,
@@ -61,15 +64,17 @@ class _Page2WidgetState extends State<Page2Widget> {
                       ],
                     ),
                   ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
-                  child: Container(
-                    width: MediaQuery.of(context).size.width*0.3,
-                    height: MediaQuery.of(context).size.height*0.3,
-                    decoration: BoxDecoration(),
-                    child: Lottie.asset('assets/images/rocket.json'),
-                  ),
                 ),
+                /*Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
+                  child: Lottie.asset(
+                    'assets/images/rocket.json',
+                    repeat: true,
+                    width: MediaQuery.of(context).size.width * 0.3,
+                    height: MediaQuery.of(context).size.height * 0.3,
+                    
+                  ),
+                ),*/
               ],
             ),
           ),
@@ -79,7 +84,7 @@ class _Page2WidgetState extends State<Page2Widget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(
+               /* Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(40, 0, 0, 0),
                   child: Container(
                     width: 50,
@@ -94,7 +99,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                       size: 24,
                     ),
                   ),
-                ),
+                ),*/
                 Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -120,7 +125,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/com.png',
+                              'assets/images/nsapps.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -128,7 +133,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                       ),
                     ),
                     Text(
-                      'Ns appps innovation',
+                      'Ns apps innovation',
                       style: GoogleFonts.poppins(
                         color: Color(0xFFF8F8F8),
                         fontSize: 20,
@@ -163,7 +168,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/com.png',
+                              'assets/images/logo.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -206,7 +211,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/com.png',
+                              'assets/images/logo.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -249,7 +254,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/com.png',
+                              'assets/images/logo.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -292,7 +297,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/com.png',
+                              'assets/images/logo.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -335,7 +340,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(
-                              'assets/images/com.png',
+                              'assets/images/logo.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -353,7 +358,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                     ),
                   ],
                 ),
-                Padding(
+               /* Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(40, 0, 40, 0),
                   child: Container(
                     width: 50,
@@ -368,7 +373,7 @@ class _Page2WidgetState extends State<Page2Widget> {
                       size: 24,
                     ),
                   ),
-                ),
+                ),*/
               ],
             ),
           ),

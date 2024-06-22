@@ -264,25 +264,24 @@ class _BodySectionState extends State<BodySection> {
           ),
           Expanded(
             flex: 1,
-            child: Column(children: [
+            child: Column(
+              children: [
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                 child: Row(
-                  mainAxisSize: MainAxisSize.min,
+                  mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
-                      child: Container(
-                        width: MediaQuery.sizeOf(context).width * 0.3,
-                        decoration: BoxDecoration(),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.zero,
-                          child: Lottie.asset(
-                            'assets/images/anim1.json',
-                            fit: BoxFit.cover,
-                          ),
+                    Container(
+                      width: MediaQuery.sizeOf(context).width * 0.35,
+                      decoration: BoxDecoration(),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.zero,
+                        child: Lottie.asset(
+                          'assets/images/anim1.json',
+                          
+                          repeat: true,
                         ),
                       ),
                     ),
@@ -318,7 +317,6 @@ class _BodySectionState extends State<BodySection> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                
                 Text(
                   'Thank you for choosing us!',
                   style: TextStyle(

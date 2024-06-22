@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class BottomPage extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -49,33 +48,28 @@ class BottomPage extends StatelessWidget {
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                'https://picsum.photos/seed/371/600',
-                                width: 40,
-                                height: 35,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Text(
-                                  'TM',
-                                  style: TextStyle(
-                                    fontSize:25,
-                                    letterSpacing: 0,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                                Text(
-                                  '.',
-                                  style: TextStyle(
-                                    color: Color(0xFFF60B0B),
-                                    fontSize: 25,
-                                    letterSpacing: 0,
-                                    fontWeight: FontWeight.w600,
+                                RichText(
+                                  text: TextSpan(
+                                    text: 'Startup Space',
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      letterSpacing: 0,
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                                    children: const <TextSpan>[
+                                      TextSpan(
+                                        text: '.',
+                                        style: TextStyle(
+                                          fontSize: 25,
+                                          letterSpacing: 0,
+                                          fontWeight: FontWeight.w900,
+                                          color: Colors.red,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ],
@@ -88,7 +82,7 @@ class BottomPage extends StatelessWidget {
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                             child: Text(
-                              'Design at Meta is a window into the unique expertise and perspectives of the multidisciplinary teams who are building the future of digital connection and bringing the world closer together',
+                              'Startup Space is a dynamic hub fostering innovation and entrepreneurship, providing resources and support for emerging startups to thrive.',
                               style: TextStyle(
                                 color: Color(0xFF67788A),
                                 fontSize: 16,
@@ -104,8 +98,8 @@ class BottomPage extends StatelessWidget {
                             children: [
                               Icon(
                                 Icons.facebook,
-                                color: Color(0xFF172c34),
-                                size: 20,
+                                color: Colors.black,
+                                size: 24,
                               ),
                               Padding(
                                 padding:
@@ -115,10 +109,9 @@ class BottomPage extends StatelessWidget {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(0),
                                     child: SvgPicture.asset(
-                                      'assets/images/inst.svg',
+                                      'assets/images/instagram.svg',
                                       width: 20,
                                       height: 20,
-                                      fit: BoxFit.contain,
                                     ),
                                   ),
                                 ),
@@ -126,15 +119,14 @@ class BottomPage extends StatelessWidget {
                               Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                               child: Container(
+                                child: Container(
                                   decoration: BoxDecoration(),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(0),
                                     child: SvgPicture.asset(
-                                      'assets/images/ln.svg',
+                                      'assets/images/linkedin.svg',
                                       width: 20,
                                       height: 20,
-                                      fit: BoxFit.contain,
                                     ),
                                   ),
                                 ),
@@ -142,7 +134,7 @@ class BottomPage extends StatelessWidget {
                               Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
-                               child: Container(
+                                child: Container(
                                   decoration: BoxDecoration(),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(0),
@@ -164,8 +156,8 @@ class BottomPage extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(0),
                                     child: SvgPicture.asset(
                                       'assets/images/dribbble.svg',
-                                      width: 20,
-                                      height: 20,
+                                      width: 24,
+                                      height: 24,
                                       fit: BoxFit.contain,
                                     ),
                                   ),
@@ -327,9 +319,12 @@ class BottomPage extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Icon(
                       Icons.copyright_sharp,
@@ -350,22 +345,29 @@ class BottomPage extends StatelessWidget {
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.max,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text(
-                          'TM',
-                          style: TextStyle(
-                            fontSize: 16,
-                            letterSpacing: 0,
-                            color: Color(0xFF67788A),
-                            fontWeight: FontWeight.w200,
-                          ),
-                        ),
-                        Text(
-                          '.',
-                          style: TextStyle(
-                            color: Color(0xFFF60B0B),
-                            fontSize: 20,
-                            letterSpacing: 0,
+                        RichText(
+                          text: TextSpan(
+                            text: 'Startup Space',
+                            style: TextStyle(
+                              fontSize: 16,
+                              letterSpacing: 0,
+                              color: Color.fromARGB(255, 122, 122, 122),
+                              fontWeight: FontWeight.w600,
+                            ),
+                            children: const <TextSpan>[
+                              TextSpan(
+                                text: '.',
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  letterSpacing: 0,
+                                  fontWeight: FontWeight.w900,
+                                  color: Colors.red,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
