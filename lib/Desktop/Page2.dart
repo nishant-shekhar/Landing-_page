@@ -20,6 +20,7 @@ class _Page2WidgetState extends State<Page2Widget> {
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      
         children: [
           Container(
             decoration: BoxDecoration(),
@@ -27,20 +28,44 @@ class _Page2WidgetState extends State<Page2Widget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  'Top companies of startup space bihar',
-                  style: GoogleFonts.poppins(
-                    color: Color(0xFFF8F8F8),
-                    fontSize: 40,
-                    letterSpacing: 0,
-                    fontWeight: FontWeight.w600,
+                Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'Top companies of ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 40,
+                            letterSpacing: 1.5,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      
+                        TextSpan(
+                          text: 'Startup space ',
+                          style: GoogleFonts.poppins(
+                              color: Color.fromARGB(255, 249, 227, 87), // Highlight color
+                              fontSize: 40,
+                              letterSpacing: 1.5,
+                              fontWeight: FontWeight.w600),
+                        ),
+                        TextSpan(
+                          text: 'in Bihar',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 40,
+                            letterSpacing: 1.5,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(40, 0, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
                   child: Container(
-                    width: 300,
-                    height: 300,
+                    width: MediaQuery.of(context).size.width*0.3,
+                    height: MediaQuery.of(context).size.height*0.3,
                     decoration: BoxDecoration(),
                     child: Lottie.asset('assets/images/rocket.json'),
                   ),

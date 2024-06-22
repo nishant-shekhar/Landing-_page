@@ -62,16 +62,13 @@ class DesktopLayout extends StatelessWidget {
                 child: Column(
                   children: [
                     //Page1
-                    Container(
-                      width: screenWidth,
-                      height: screenHeight - 70,
-                      child:LandingPage(),
-                    ),
+                    LandingPage(),
+                    
 
                     //page2
                     Container(
                       width: screenWidth,
-                      height: screenHeight - 70,
+                      height: screenHeight,
                       child: Page2Widget(),
                     ),
                     //page3
