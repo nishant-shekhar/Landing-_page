@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Desktop/Page2sections/ImageText.dart';
+import 'package:flutter_application_1/Desktop/Page3sections/ImageText.dart';
 
 class Section1 extends StatelessWidget {
   @override
@@ -33,7 +33,7 @@ class Section1 extends StatelessWidget {
                       text: 'Core',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 30,
+                        fontSize: 35,
                         letterSpacing: 2,
                         fontWeight: FontWeight.w600,
                       ),
@@ -41,17 +41,17 @@ class Section1 extends StatelessWidget {
                     TextSpan(
                       text: ' Features ',
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 35,
                         letterSpacing: 2,
                         fontWeight: FontWeight.w600,
-                        color: Colors.blue,
+                        color: Color(0xFF704FE6),
                       ),
                     ),
                     TextSpan(
                       text: 'of Our Job Application Platform',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 30,
+                        fontSize: 35,
                         letterSpacing: 2,
                         fontWeight: FontWeight.w600,
                       ),

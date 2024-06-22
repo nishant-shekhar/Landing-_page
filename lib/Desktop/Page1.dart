@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/bodySection.dart';
 import 'package:flutter_application_1/Desktop/Page1Sections/stest.dart';
-import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
+import 'package:flutter_application_1/Desktop/Page3sections/buttons.dart';
 
 class LandingPage extends StatelessWidget {
   

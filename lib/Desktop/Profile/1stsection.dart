@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class section1p extends StatelessWidget {
   Widget build(BuildContext context) {
-    String fontname = 'lato';
+    
     return Expanded(
       flex: 3,
       child: Container(

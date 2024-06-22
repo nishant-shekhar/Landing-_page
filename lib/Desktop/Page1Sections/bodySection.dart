@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Desktop/Page2sections/buttons.dart';
+import 'package:flutter_application_1/Desktop/Page3sections/buttons.dart';
 import 'package:flutter_application_1/Desktop/Profile/newProfile.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -26,7 +26,7 @@ class _BodySectionState extends State<BodySection> {
             flex: 1,
             child: Column(
               mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
