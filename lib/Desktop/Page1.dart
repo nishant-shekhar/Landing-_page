@@ -10,10 +10,7 @@ class LandingPage extends StatelessWidget {
     return Column(
       children: [
         
-        Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
-       child: BodySection(),
-        ),
+        
       ],
     );
   }

@@ -5,32 +5,17 @@ import 'package:flutter_application_1/Desktop/Page3sections/ImageText.dart';
 class Section1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      //crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
       Padding(
         padding: EdgeInsetsDirectional.fromSTEB(90, 40, 90, 40),
-        child: Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              width: MediaQuery.sizeOf(context).width * 0.4,
-              decoration: BoxDecoration(),
-              child: TweenAnimationBuilder<double>(
-                tween: Tween<double>(begin: -100, end: 0),
-                duration: Duration(seconds: 1),
-                builder: (context, value, child) {
-                  return Transform.translate(
-                    offset: Offset(value, 0),
-                    child: Opacity(
-                      opacity: (100 + value) / 100,
-                      child: child,
-                    ),
-                  );
-                },
-                child: Text.rich(
+        
+        child: Text.rich(
                   TextSpan(children: [
                     TextSpan(
-                      text: 'Core',
+                      text: '\nExplore, ',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 35,
@@ -38,17 +23,19 @@ class Section1 extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
+                    
                     TextSpan(
-                      text: ' Features ',
+                      text: 'Connect, ',
                       style: TextStyle(
-                        fontSize: 35,
+                        fontSize: 40,
+                        fontFamily: 'AmsterdamOne',
                         letterSpacing: 2,
                         fontWeight: FontWeight.w600,
                         color: Color(0xFF704FE6),
                       ),
                     ),
                     TextSpan(
-                      text: 'of Our Job Application Platform',
+                      text: 'Engage: Unveiling the Journey!\n',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 35,
@@ -58,11 +45,11 @@ class Section1 extends StatelessWidget {
                     )
                   ]),
                 ),
-              ),
-            ),
-          ],
-        ),
+              
+            
+        
       ),
+      SizedBox(height: 40,),
       Stack(
         children: [
           Align(
@@ -90,22 +77,22 @@ class Section1 extends StatelessWidget {
                   Flexible(
                     flex: 1,
                     child: ImageTextWidget(
-                        "Application",
-                        "he process of submitting interest in a job opening through a job app",
+                        "Explore & Discover",
+                        "Connect with Bihar's brightest startups based on various criteria and search options.",
                         'assets/images/Appl.png'),
                   ),
                   Flexible(
                     flex: 1,
                     child: ImageTextWidget(
-                        "Dashboard",
-                        "A user interface in a job app providing an overview of job search activities and updates.",
+                        "Connect with Startup",
+                        "Initiate connections with startups to explore opportunities and collaborations.",
                         'assets/images/dash.png'),
                   ),
                   Flexible(
                     flex: 1,
                     child: ImageTextWidget(
-                        "Algorithm",
-                        'A set of rules used by a job app to match users with relevant job opportunities based on their data',
+                        "Engage Service",
+                        "Actively participate and utilize startup services to support Bihar's entrepreneurial growth.",
                         'assets/images/algo.png'),
                   ),
                 ],
@@ -114,6 +101,8 @@ class Section1 extends StatelessWidget {
           ),
         ],
       ),
+            //SizedBox(height: 80,),
+
       
     ]);
   }

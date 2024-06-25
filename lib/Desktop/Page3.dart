@@ -8,7 +8,6 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Section1(),
         
       ],
     );
